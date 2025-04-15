@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Health Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            kwl: {
+              blue: '#00528a',
+              yellow: '#fec819',
+              black: '#000000',
+              white: '#ffffff'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+</head>
+<body class="bg-kwl-white text-kwl-black" x-data="customerDashboard()">
+
+  <!-- Header -->
+  <header class="bg-kwl-blue shadow p-4">
+    <h1 class="text-2xl font-bold text-kwl-white">
+      {{ Sales Person }}'s Customer Health Dashboard
+    </h1>
+  </header>
+
+  <!-- Filters -->
+  <div class="p-4">
+    <div class="bg-white border border-gray-200 shadow-sm rounded-lg p-4 w-full max-w-md">
+      <div class="flex justify-between items-center mb-2">
+        <label for="filter-segment" class="text-sm font-semibold text-kwl-black">Filter by Segment</label>
+        <span class="text-xs text-gray-400">Choose from available segments</span>
+      </div>
+      <select id="filter-segment" x-model="selectedSegment" class="block w-full p-2 border border-gray-300 rounded-md text-sm focus:ring-2 focus:ring-kwl-blue">
+        <option value="">All Segments</option>
+        <template x-for="segment in segments" :key="segment">
+          <option :value="segment" x-text="segment"></option>
+        </template>
+      </select>
+    </div>
+  </div>
+
+  <!-- Customer Portfolio Grid -->
+  <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-4">
+    <template x-for="customer in filteredCustomers" :key="customer.id">
+      <div class="bg-white border border-gray-100 p-4 rounded-xl shadow hover:shadow-md transition">
+        <h2 class="text-lg font-semibold text-kwl-blue" x-text="customer.name"></h2>
+        <p class="text-sm text-gray-600" x-text="'Segment: ' + customer.segment"></p>
+        <p class="mt-2 text-sm">
+          Health Score:
+          <span
+            class="font-bold px-2 py-1 rounded"
+            :class="{
+              'bg-green-100 text-green-700': customer.health === 'Excellent',
+              'bg-yellow-100 text-yellow-700': customer.health === 'Good',
+              'bg-orange-100 text-orange-700': customer.health === 'Fair',
+              'bg-red-100 text-red-700': customer.health === 'At Risk'
+            }"
+            x-text="customer.health">
+          </span>
+        </p>
+      </div>
+    </template>
+  </main>
+
+  <script>
+    function customerDashboard() {
+      return {
+        selectedSegment: '',
+        customers: [
+          { id: 1, name: 'Acme Corp', segment: 'Enterprise', health: 'Good' },
+          { id: 2, name: 'Beta Ltd', segment: 'SMB', health: 'At Risk' },
+          { id: 3, name: 'Delta Inc', segment: 'Enterprise', health: 'Excellent' },
+          { id: 4, name: 'Gamma LLC', segment: 'SMB', health: 'Fair' }
+        ],
+        get segments() {
+          return [...new Set(this.customers.map(c => c.segment))];
+        },
+        get filteredCustomers() {
+          if (!this.selectedSegment) return this.customers;
+          return this.customers.filter(c => c.segment === this.selectedSegment);
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
