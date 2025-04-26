@@ -75,6 +75,8 @@ async function main() {
  //for district of districtArray -> iterates over the values themselves
 
 
+ //NOTE: GENERIC FOR LOOP WITH ASYNC IS NOT INHERENTLY PROBLEMATIC, BUT
+ // IT **IS** SLOW. LATER REPLACE WITH .map function wrapped in Promise.all.
 for (district of districtArray) {
     console.log(district["districtId"]);
 
