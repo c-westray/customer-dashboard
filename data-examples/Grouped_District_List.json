@@ -9815,6 +9815,7 @@
           "studentcount": 78,
           "teachercount": 1,
           "type": null,
+          "detailexists": null,
           "schoolDomain": null,
           "tagCategory": null,
           "districtId": 0,

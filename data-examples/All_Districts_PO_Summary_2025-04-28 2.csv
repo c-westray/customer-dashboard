@@ -1,0 +1,30 @@
+District Name;District ID;PO Group;Purchase Order Number;PO Start Date;PO Expiry Date;License Type;Total License Count;Redeemed Count;Product Titles;Number of Users Assigned
+Vallejo City Unified School District;71238;Active PO;POPO25-00601_Defifrancophone1-2;2024-09-04;2025-10-08;User;100;2;"Défi francophone 1; Défi francophone 2";5
+Vallejo City Unified School District;71238;Active PO;PO25-00601_Reportersfrancophones1-3;2024-09-04;2025-10-08;User;400;3;"Reporters francophones 3; Reporters francophones 1; Reporters francophones 2";142
+Vallejo City Unified School District;71238;Active PO;PO25-00601_Proyectos1-2;2024-09-04;2025-10-08;User;310;2;"Proyectos 1; Proyectos 2";7
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125424FE121_Reporters_Francophones_1;2024-08-30;2025-10-03;User;541;12;Reporters francophones 1;239
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125424FE121_Reporters_Francophones_2;2024-08-30;2025-10-03;User;313;12;Reporters francophones 2;85
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125424FE121_Reporters_Francophones_3;2024-08-30;2025-10-03;User;185;10;Reporters francophones 3;47
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125424FE121_Davvero_1;2024-08-30;2025-10-03;User;320;7;Davvero 1;105
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125424FE121_Davvero_2;2024-08-30;2025-10-03;User;250;6;Davvero 2;25
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125425FE086_Reporteros_Francophones_1;2024-11-26;2025-12-30;User;41;3;Reporters francophones 1;24
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125425FE086_Reporteros_Francophones_2;2024-11-26;2025-12-30;User;41;3;Reporters francophones 2;6
+Department of Defense Education Activity (DoDEA);70550;Active PO;PO_HE125425FE086_Reporters_Francopohones_3;2024-11-26;2025-12-30;User;41;2;Reporters francophones 3;3
+Waukesha School District (WI);71140;Active PO;PO#4572500023_Waukesha_Reporteros1-4;;2025-09-30;User;;;;0
+Waukesha School District (WI);71140;Active PO;PO#4572500023_Waukesha_RepFrancophones1;;2025-09-30;User;;;;0
+Waukesha School District (WI);71140;Active PO;TeacherTrial_Waukesha_RepFrancophones2-3;;2025-10-09;User;;;;0
+Waukesha School District (WI);71140;Active PO;Waukesha_PilotAddendum_Reporteros3;;2025-06-15;User;;;;0
+Waukesha School District (WI);71140;Expired PO;SO-48659_WaukeshaSD_Pilot_GeneracionAP;;2025-03-09T00:00:00Z;;;;;0
+Waukesha School District (WI);71140;Expired PO;SO-48659_WaukeshaSD_Pilot_Reporteros;;2025-03-09T00:00:00Z;;;;;0
+Franklin Towne Charter High School;71205;Active PO;PO#2425-000119_FranklinTowneCS_Rep1_Teacher3year;;2027-12-11;User;;;;0
+Franklin Towne Charter High School;71205;Active PO;PO#2425-000119_FranklinTowneCS_Readers_Teacher12mo;;2025-10-02;User;;;;0
+St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated;70659;Active PO;PO5240342_Reporteros1-2_Classlink;;2025-09-19;User;;;;0
+St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated;70659;Active PO;PO5240342_RF1-3_Classlink;;2025-09-19;User;;;;0
+St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated;70659;Active PO;PO5240342_FrenchReaderSeries_Classlink;;2025-09-22;User;;;;0
+South Kitsap School District;70563;Active PO;POZQ002761_SouthKitsapHS_Proyectos1;;2025-09-19;User;;;;0
+Lyons Township High School District 204;70480;Active PO;7302500010_ Lyons TownshipHS;;2025-09-18;User;;;;0
+Effingham County Schools;68095;Active PO;PO462-00_Reporteros1-3;;2025-09-15;User;;;;0
+Effingham County Schools;68095;Active PO;PO462-00_Reportersfrancophones1-3;;2025-09-15;User;;;;0
+Sacramento City Unified School District - ClassLink;68384;Active PO;KSO4355000002108046_SacramentoCityUSD_PDN1-4;;2025-09-01;User;;;;0
+Sacramento City Unified School District - ClassLink;68384;Active PO;KSO4355000002108046_SacramentoCityUSD_PDN1-4_tchr;;2025-09-01;User;;;;0
+Elmwood-Murdock Public Schools (NE);69246;Active PO;PO#EM24-25KWL_Elmwood-MurdockSchools_Reporteros;;2025-09-08;User;;;;0
