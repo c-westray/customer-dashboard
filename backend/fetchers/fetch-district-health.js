@@ -100,8 +100,8 @@ async function processDistrictList() {
 
 
 async function main() {
-    //await FetchDistrictList(); UNCOMMENT FOR REAL CODE
-    await demoFetchDistrictList();
+    await fetchDistrictList(); UNCOMMENT FOR REAL CODE
+   // await demoFetchDistrictList();
     const districtListArray = await processDistrictList(); //const is block-scoped, so it's ok to use this same name in main() as in processDistrictList
    
     // await appendSchoolsToEachDistrict(districtListArray); // Appends schools to each district, then saves to a file called transformedDistricts.json.     //Overwrites the existing transformedDistricts.json file.

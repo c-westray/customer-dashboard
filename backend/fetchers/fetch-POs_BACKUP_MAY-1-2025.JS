@@ -497,7 +497,7 @@ return jsonParsedResponse;
 
 //?schoolId=70906&poId=556306"
 
-getAdminIndividualPoDetails(61205, 560410);
+//getAdminIndividualPoDetails(61205, 560410);
 
 //getAdminIndividualPoDetails(72361, 572401);
 //This one requires my session cookie since not on the api

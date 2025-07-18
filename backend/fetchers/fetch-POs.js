@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 dotenv.config({path: '/Users/cellawestray/Desktop/customer-dashboard-git/.env'}); // need to specify {path: '' if I'm not always running my script from the parent directory.
 const fs = require('fs');
 const { json } = require('express/lib/response');
-const { UNABLE_TO_FIND_POSTINSTALL_TRIGGER_JSON_SCHEMA_ERROR } = require('@prisma/client/scripts/postinstall.js');
+//const { UNABLE_TO_FIND_POSTINSTALL_TRIGGER_JSON_SCHEMA_ERROR } = require('@prisma/client/scripts/postinstall.js');
 
 const MagicBoxApiKey = process.env.MAGICBOX_API_KEY;
 const MagicBoxBaseUrl = process.env.MAGICBOX_BASE_URL;
@@ -19,7 +19,7 @@ async function saveToFile(data, filename) {
 }
 
 //global variable
-const JSESSIONCOOKIE = '435c4634-cdd8-4660-92f8-3808b883b68f';
+const JSESSIONCOOKIE = '30e1201d-ddd8-461c-92f8-94cb0c9f9cff';
 console.log(`Working with global variable JSESSIONCOOKIE ${JSESSIONCOOKIE}.`)
 
 
@@ -82,7 +82,7 @@ async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
 
 
 //main();
-//poTestSuite();
+poTestSuite();
 
 
 async function main() {
@@ -458,7 +458,7 @@ return jsonParsedResponse;
 */
 }
 
-fullAdminProgram('King School', 60006);
+//fullAdminProgram('King School', 60006);
 
 async function fullAdminProgram(districtName, districtId, poId) {
 
@@ -959,7 +959,8 @@ const url = 'https://klettlp.com/services/licensing/accesscode/getLicenses.json?
 
       return licenseList;
 
-/* Example data: KEEP IN MIND THE LICENSES ASSIGNED AND LICENSES USED FIELDS ARE 0 HERE, NEED TO MAKE ONE MORE REQUEST
+//Example data: KEEP IN MIND THE LICENSES ASSIGNED AND LICENSES USED FIELDS ARE 0 HERE, NEED TO MAKE ONE MORE REQUEST
+/*
 [
   {
     accessCode: 'DRZN-XCFY-WHB7-YPM8',
@@ -998,16 +999,7 @@ const url = 'https://klettlp.com/services/licensing/accesscode/getLicenses.json?
     userCount: 0
   }
 
-
-/*
-
-
-
-}
-
-
-
-
+*/
 
 
 
@@ -1420,5 +1412,4 @@ async function getExpiredPOsForDistrict(districtName) {
 
     return jsonParsedResponse;
 }
-
-
+}
