@@ -257,14 +257,14 @@ try {
     for (let school of district.schools) {
       const schoolId = school.schoolId;
       const processedPoList = await retrieveProcessedPoList(schoolId) // function retrieveProcessedPoList() combines two MB API calls: getActivePoList() and getPoData() 
-      poEnrichedSchools.push({...school, ...processedPoList})
+      poEnrichedSchools.push({...school, activePurchaseOrders: processedPoList})
     }
     //push all orphan schools to poEnrichedDistricts under same __NO_DISTRICT__ entry
       poEnrichedDistricts.push({...district, schools: poEnrichedSchools});
     } else {
       console.log('Retrieving POs at the DISTRICT LEVEL.')
       const processedPoList = await retrieveProcessedPoList(districtId); // function retrieveProcessedPoList() combines two MB API calls: getActivePoList() and getPoData() 
-      poEnrichedDistricts.push({...district, ...processedPoList});
+      poEnrichedDistricts.push({...district, activePurchaseOrders: processedPoList});
     }
   }
 }  catch (error) {
@@ -277,11 +277,6 @@ try {
 let formattedDate = makeFormattedTodayDate();
 saveToFile(poEnrichedDistricts, `cleanedScript ${formattedDate}`); // save file with all districts and nested under each district are POs and schools
 }
-
-
-
-
-
 
 
 //Enriches either a School or District by attaching its purchase order information.
@@ -297,14 +292,14 @@ try{
 
     if (!Array.isArray(poList) || poList.length === 0) {
     console.log(`No valid PO list for schoolOrDistrictId ${schoolOrDistrictId}, skipping.`);
-    continue; 
+    return [];
   }
     const processedPoList = [];
 
     for (const po of poList) {
       const poData = await getPoData(po?.purchaseOrderNumber);
       if (!poData) {
-        console.log(`Skipping PO ${po?.purchaseOrderNumber} due to invalid data or fetch error.`); 
+        console.log(`Skipping PO due to invalid data or fetch error.`); 
         // still need to fix forward slash / URI encoding issue, may retrieve some bad POs ~10
         // Push a placeholder to keep the entry visible
         processedPoList.push({
@@ -321,7 +316,7 @@ try{
   } catch (error) {
     // console.error('Error processing PO list:', error);
     //***Swallow error */  for now-- fix uri encoding problem later, for now there will be missing data for ~10 schools that have / in the purchaseOrderNumber
-    console.log(`Error processing PO list with po ${po?.purchaseOrderNumber}, check uri encoding of / characters or other troubleshooting`);
+    console.log(`Error processing PO list, check uri encoding of / characters or other troubleshooting`);
   }
 }
 
@@ -337,7 +332,6 @@ try{
     // Optionally handle or alert user here
   }
 })();
-
 
 //----------------------------------------------------------------------------
 
@@ -376,8 +370,6 @@ async function getCompleteDistrictList() {
    throw error; // re-throw 
   }
 }
-
-
 
 function processDistricts(rawDistrictArray) {
 // data fields we want: districtId, districtName
@@ -426,7 +418,6 @@ async function getSchoolsInDistrict(districtId) {
     throw error; // re-throw so caller can handle it
   }
 }
-
 
 //----------------------------------------------------------------------------
 //ENDPOINT: GET /school/v1.1/getSchools
