@@ -162,8 +162,11 @@ async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
 
 // SECOND FOR-LOOP: Enrich all schools w/ Purchase Order (PO) data
 //      STEP 4.0: Enrich schools with active PO data 
-//      (ENDPOINTS:     //get /license/v1.0/poListBySchoolId/{schoolId} //***Note this also works with a district Id, even though it's called school ID... )
-//      (ENTPOINTS:)
+//      Call // function retrieveProcessedPoList() combines two MB API calls: getActivePoList() and getPoData() 
+//      getActivePoList() function ENDPOINT is GET /license/v1.0/poListBySchoolId/{schoolId} 
+//          --> ***Note this also works with a district Id, even though it's called school ID, see notes. Used to get poList with all purchaseOrderNumber (aka {poNumber})
+//      getPoData() function ENDPOINT is GET /license/v1.0/consumedata/{poNumber}.
+//          --> Used for DATA FIELDS: startDate, expiryDate, totalLicenseCount, licenseConsumeCount, and synthetic field userCounts of admin, teacher, learner (optional but nice to have)
 //      STEP 5.0: Enrich schools with expired PO data (requires my superpub login credentials, technically webscraping...no official endpoint, ask MB to build one for me?)
 // END OF SECOND FOR-LOOP
 
@@ -240,46 +243,91 @@ async function main() {
     console.log(partialDistricts[0])
   */
 
-    const finalPoEnrichedDistrictArray = [];
+    const poEnrichedDistricts = []
 try {
-     for (const district of orphanEnrichedDistricts) {
-      const poList = await getActivePoList(district.district.districtId);
-      console.log(poList)
+  for (let district of orphanEnrichedDistricts) {
+    const districtId = district.district.districtId;
 
-      const processedPoList = [];
+    if (districtId === "__NO_DISTRICT__") {
+      console.log('Orphan school entry found. Retrieving POs at the SCHOOL LEVEL.');
+      //if they're individual schools we need to iterate through the individual schools and attach their PO lists at school-level, not district-level
+      
+      const poEnrichedSchools = [];
 
-      for (const po of poList) {
-        const poData = await getPoData(po?.purchaseOrderNumber);
-        if (!poData) {
-        console.log(`Skipping PO ${po?.purchaseOrderNumber} due to invalid data or fetch error.`);
-        // Push a placeholder with minimal info to keep the entry visible
-        processedPoList.push({
-        purchaseOrderNumber: po?.purchaseOrderNumber,
-        error: 'Failed to fetch PO data'
-    });
-  } else {
- // else keep going as normal
-        const processedPo = poData
-        processedPoList.push(processedPo)
-        }
-        const poEnrichedDistrict = {...district, poList: processedPoList}
-        console.log(poEnrichedDistrict);
-        finalPoEnrichedDistrictArray.push(poEnrichedDistrict);
+    for (let school of district.schools) {
+      const schoolId = school.schoolId;
+      const processedPoList = await retrieveProcessedPoList(schoolId) // function retrieveProcessedPoList() combines two MB API calls: getActivePoList() and getPoData() 
+      poEnrichedSchools.push({...school, ...processedPoList})
     }
-} catch (error) {
- // console.error('Error processing PO list:', error);
- //***Swallow error */  for now-- fix uri encoding problem later, for now there will be missing data for ~10 schools that have / in the purchaseOrderNumber
- console.log(`Error processing PO list with po ${po?.purchaseOrerNumber}, check uri encoding of / characters or other troubleshooting`);
-}
-    //SAVE TO FILE
-let formattedDate = makeFormattedTodayDate();
-saveToFile(finalPoEnrichedDistrictArray, `cleanedScript ${formattedDate}`); // save file with all districts and nested under each district are POs and schools
+    //push all orphan schools to poEnrichedDistricts under same __NO_DISTRICT__ entry
+      poEnrichedDistricts.push({...district, schools: poEnrichedSchools});
+    } else {
+      console.log('Retrieving POs at the DISTRICT LEVEL.')
+      const processedPoList = await retrieveProcessedPoList(districtId); // function retrieveProcessedPoList() combines two MB API calls: getActivePoList() and getPoData() 
+      poEnrichedDistricts.push({...district, ...processedPoList});
+    }
+  }
+}  catch (error) {
+  // console.error('Error processing PO list:', error);
+  //***Swallow error */  for now-- fix uri encoding problem later, for now there will be missing data for ~10 schools that have / in the purchaseOrderNumber
+  console.log(`Error processing PO list, check uri encoding of / characters or other troubleshooting`);
 }
 
+//SAVE TO FILE
+let formattedDate = makeFormattedTodayDate();
+saveToFile(poEnrichedDistricts, `cleanedScript ${formattedDate}`); // save file with all districts and nested under each district are POs and schools
+}
+
+
+
+
+
+
+
+//Enriches either a School or District by attaching its purchase order information.
+//Takes a schoolId or districtId 
+//--> fetches poList for that school or district by calling getActivePoList(),
+//--> then fetches individual PO details and processes them by calling getPoData(), 
+// --> attaches the resulting processed po list to the district (if called using districtId) or school (if called using schoolId);
+//Currently only for active POs! nothing expired
+async function retrieveProcessedPoList(schoolOrDistrictId) {
+try{
+    const poList = await getActivePoList(schoolOrDistrictId);
+    console.log(poList);
+
+    if (!Array.isArray(poList) || poList.length === 0) {
+    console.log(`No valid PO list for schoolOrDistrictId ${schoolOrDistrictId}, skipping.`);
+    continue; 
+  }
+    const processedPoList = [];
+
+    for (const po of poList) {
+      const poData = await getPoData(po?.purchaseOrderNumber);
+      if (!poData) {
+        console.log(`Skipping PO ${po?.purchaseOrderNumber} due to invalid data or fetch error.`); 
+        // still need to fix forward slash / URI encoding issue, may retrieve some bad POs ~10
+        // Push a placeholder to keep the entry visible
+        processedPoList.push({
+          purchaseOrderNumber: po?.purchaseOrderNumber,
+          error: 'Failed to fetch PO data'
+        });
+      } else {
+        // else keep going as normal
+        const processedPo = poData;
+        processedPoList.push(processedPo);
+      }
+    }
+    return processedPoList;
+  } catch (error) {
+    // console.error('Error processing PO list:', error);
+    //***Swallow error */  for now-- fix uri encoding problem later, for now there will be missing data for ~10 schools that have / in the purchaseOrderNumber
+    console.log(`Error processing PO list with po ${po?.purchaseOrderNumber}, check uri encoding of / characters or other troubleshooting`);
+  }
+}
 
 //----------------------------------------------------------------------------
 //invoking main function
-/*
+
 (async () => {
   try {
     await main();
@@ -289,7 +337,7 @@ saveToFile(finalPoEnrichedDistrictArray, `cleanedScript ${formattedDate}`); // s
     // Optionally handle or alert user here
   }
 })();
-*/
+
 
 //----------------------------------------------------------------------------
 
@@ -481,7 +529,7 @@ Old version adding one entry per school
 */
 //Revised version adding single entry for all orphans
   const orphanSchoolEntry = {
-    district: {districtName: "No Parent District", districtId: null},
+    district: {districtName: "No Parent District", districtId: '__NO_DISTRICT__'}, // flag id with '__NO_DISTRICT__' to signal it contains orphans
     schools: [...orphanSchools]
   }
   return [...districtArray, orphanSchoolEntry];
@@ -517,42 +565,6 @@ Old version adding one entry per school
 //    --> call GET /license/v1.0/poListBySchoolId/{schoolId}
 //    --> returns list of POs in that school
 //----------------------------------------------------------------------------
-async function test() {
-
-const poList = await getActivePoList(56232);
-console.log(poList);
-
-const processedPoList = [];
-
-for (const po of poList) {
-
-const data = await getPoData();
-console.log(data);
-
-try {
-     for (const district of orphanEnrichedDistricts) {
-      const poList = await getActivePoList(district.district.districtId);
-      console.log(poList)
-
-      const processedPoList = [];
-
-      for (const po of poList) {
-        const poData = await getPoData(po?.purchaseOrderNumber);
-        if (!poData) {
-        console.log(`Skipping PO ${po?.purchaseOrderNumber} due to invalid data or fetch error.`);
-        continue; // skip to next po
-          } // else keep going as normal
-        const processedPo = poData ///waittt...what if this doesn't exist...
-        processedPoList.push(processedPo)
-        }
-        const poEnrichedDistrict = {...district, poList: processedPoList}
-        console.log(poEnrichedDistrict);
-        finalPoEnrichedDistrictArray.push(poEnrichedDistrict);
-    }
-
-}
-test()
-
 async function getActivePoList(districtOrSchoolId) {
   try {
     const url = `${MagicBoxBaseUrl}/license/v1.0/poListBySchoolId/${districtOrSchoolId}?token=${MagicBoxApiKey}`;
@@ -570,23 +582,21 @@ async function getActivePoList(districtOrSchoolId) {
   }
 }
 //----------------------------------------------------------------------------
-/*
 //ENDPOINT: GET /license/v1.0/consumedata/{poNumber}
 // For each purchase order, get details (expiration date and consumption details)
-//
-// 
+
 // 
 // Used for DATA FIELDS: 
 // startDate // Date as string
 // expiryDate // Date as string 
 // licenseCount // total license count
 // licenseConsumeCount // We now know this IS the real number of consumed licenses. (Licenses assigned where the user has logged in WITH the book) 
-// consumeUsers (don't necessarily need this but could be very useful to see which user TYPES have consumed the licenses: how many ADMINS, TEACHERS, LEARNERS
+// consumeUsers (don't necessarily need this but could be useful to see which user TYPES have consumed the licenses: how many ADMINS, TEACHERS, LEARNERS
 //  --> esp since admin and teacher licenses are provided complimentary, we want to assess actual student consumption metrics
 //  --> consumeUsers result overspills / is paginated so to get total count we need to page through. this might not be worth it....
 
 // Discarded info about autoassign b/c we don't currently need this, however can re-add in future if needed
-
+/*
 Example cleaned data after processing:
     {
   purchaseOrderNumber: 'PO_60427_PD_Neu_1',
@@ -603,7 +613,7 @@ Example cleaned data after processing:
 }
 */
 
-  //----------------------------------------------------------------------------
+//----------------------------------------------------------------------------
 async function getPoData(purchaseOrderNumber) {
   let offset = 0;
   const limit = 1000; // max limit per API docs
@@ -668,7 +678,7 @@ async function getPoData(purchaseOrderNumber) {
       totalLicenseCount: lastData?.licenseCount,
       licenseConsumeCount: lastData?.licenseConsumeCount,
       productTitles: lastData?.productTitles || [],
-      // consumeUsers: consumeUserArray // don't actually include real user data in cleaned object
+      // consumeUsers: consumeUserArray // don't include real user data in cleaned object
       userCounts,
       rawConsumeUserCount, // total before deduplication
       duplicateUserCount    // how many users were filtered out as duplicates
@@ -1018,7 +1028,7 @@ async function getExpiredPOsForDistrict(districtName) {
             "cookie": "_ga=GA1.1.1042487296.1746109864; SESSIONID=66B60C729C3A3FC0CAF348E24170F622; JSESSIONID=c55e4cca-7c02-4d59-9043-bc6c2350065c; jwt_token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjd2VzdHJheUBrbGV0dHdsLmNvbSIsInVzZXJOYW1lIjoiY3dlc3RyYXlAa2xldHR3bC5jb20iLCJ1c2VyUm9sZSI6IlNVUF9QVUJMSVNIRVIiLCJ1c2VyR3VpZCI6IjY0MmM5OGEwLTY5NWQtNGRjMC1iN2IyLTBmMDM3NDZlMjM2YSIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiU3VwIiwibGFzdE5hbWUiOiJwdWJsaXNoZXIiLCJkb21haW4iOiJrbGV0dGxwLmNvbSJ9.HsIOqir3kx6vtkjUsZE2Qdww6DFO8Wk8aCDB9sqbNGTUER12dgYJWNtuoK7ERyjr78hRQQgbQ2Zj7C_iJrF0yPEuzZlKiQTTzJ1aoKFdLd8QHhwUffLNVW7O7Gf-xdlrKsSJZhFeRqLNti7TT3I-8Emay0EzGn4UqqAtZlW5bHE; CloudFront-Key=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Policy=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Signature=c55e4cca-7c02-4d59-9043-bc6c2350065c; Cloudfront-domain=https://klettlp-mbx-cloud.klettlp.com/content/secure/804/0/; CloudFront-Key-Pair-Id=c55e4cca-7c02-4d59-9043-bc6c2350065c; pdftronAppUrl=https://klettlp-mbx-cloud.klettlp.com/static/pdftron/26/index.html; pdftronWebLicense=; Cloudfront-parent-domain=klettlp.com; _ga_E6TQHW6LEH=GS1.1.1746121362.2.1.1746121372.0.0.0",
             "Referer": "https://klettlp.com/admin/purchaseorder/polist.htm",
             "Referrer-Policy": "strict-origin-when-cross-origin"
-          },
+      },
   }); 
 
     const jsonParsedResponse = await response.json();
