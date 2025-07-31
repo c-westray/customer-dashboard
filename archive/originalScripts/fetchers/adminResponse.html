@@ -1,0 +1,4151 @@
+<!DOCTYPE html">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title type="localization" localizationid="assign,access_codes"></title>
+<script type="text/javascript" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/school/js/schoolcommon.js?v=20250501 "></script>
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/school/css/school_teacher.css?v=20250501 " />
+	
+ <script type="text/javascript" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/school/js/assignaccesscode.js?v=20250501 "></script>
+  <link rel="stylesheet" type="text/css" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/school/css/tcm-style.css?v=20250501 " />
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		<script src="https://s3.amazonaws.com/prd.stcn.prashanthms.9j245k.s3-use1.prd.getmagicbox.com/static/magicbox/tresource/js/ga.js?v=20250501 "></script>
+	
+	
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+<script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset="utf-8">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+<!--basic styles-->
+
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/bootstrap.min.css?v=20250501 " />
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/font-awesome.min.css?v=20250501 "/>
+<script type="text/javascript"  src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/admin/js/placeholders.min.js?v=20250501 "></script>
+
+ 
+<!--[if IE 7]>
+	<link rel="stylesheet" basepath="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/font-awesome-ie7.min.css?v=20250501 "  href=""/>
+<![endif]-->
+
+<!--page specific plugin styles-->
+
+<!--fonts-->
+
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/ace-fonts.css?v=20250501 "/>
+
+<!--ace styles-->
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/ace.min.css?v=20250501 "/>
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/ace-responsive.min.css?v=20250501 "/>
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/css/global_styles.css?v=20250501 "/>
+<link rel="stylesheet" basepath="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/css/seablue/theme.css?v=20250501 "  href=""/>
+<!--[if lte IE 8]>
+<link rel="stylesheet" basepath="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/ace-ie.min.css?v=20250501 "  href="" />
+<![endif]-->
+<!--basic scripts-->
+
+<script type="text/javascript">
+	window.jQuery
+			|| document.write("<script src='https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/jquery-2.0.3.min.js?v=20250501 '>"
+					+ "<"+"/script>");
+</script>
+
+<script type="text/javascript">
+	if ("ontouchend" in document)
+		document.write("<script src='https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/jquery.mobile.custom.min.js?v=20250501 '>"
+				+ "<"+"/script>");
+	$(document).ready(function () {
+		$('body').css('visibility','hidden');
+		GlobalUtil.applyTheme("");
+		sessionStorage.setItem('cloudCdnUrl', 'https://klettlp-mbx-cloud.klettlp.com');
+				
+	});
+</script>
+
+
+<link rel="stylesheet" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/school/css/school_teacher.css?v=20250501 " /> 
+
+
+<script type="text/javascript">
+	function Validate(licenseCount) {
+		 
+		licenseCount.value = licenseCount.value.replace(/[^0-9]/g,'');
+		licenseCount.value = licenseCount.value.replace(/ /g, '');
+		 if(licenseCount.value=="")
+		{
+			licenseCount.value=0;
+		} 
+	
+		   if (isNaN(licenseCount.value)) 
+		     return 0;
+		   else
+		     return licenseCount.value= parseInt(licenseCount.value);
+		
+	}
+	</script>	
+<style>
+
+
+.instructionText{
+margin-top:20px;
+color: #3399ff;
+margin-bottom:10px;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    height: 15px;
+    opacity: 1;
+    position: relative;
+    width: 18px;
+    z-index: 12;
+	margin:5px;
+}
+
+ul.accessCodePage li span{display:block}
+.midFormBlock{padding:25px 0 0 10px}
+.prchOrderLabelTxt{font-size:15px; color:#333333; display:inline-block; float:left; margin:7px 30px 0 0;}
+.orderLabelRt{float:left;}
+.color{color:#252525;}
+input[class="orderInpFld"] {
+    border: 0;
+    border-bottom: 1px #59a3ac solid;
+    font-size: 16px;
+    color: #4397a1;
+    text-align: center;
+    padding: 5px;
+    width: 100px;
+    height: auto;
+    line-height: normal;
+    margin-right: 10px;
+}
+.assignAccessPage{width:auto; max-width:66%; }
+.assignAccessPage li{width:33%}
+.requestMoreLicenses{margin-top: 10px;text-align: right;width: auto;max-width: 68%;}
+.add-on{font-weight:bold !important;background-color:#F9F9F9 !important;}
+.input-prepend{width:100%;height:100%;}
+#prependedInputTo{ width:95%; border-top-right-radius:4px !important; border-bottom-right-radius:4px !important; background-color: #fff; font-weight: bold;color: #aeaeae; }
+#prependedInputSubject{width:89%;border-top-right-radius:4px !important; border-bottom-right-radius:4px !important; }
+textarea{width:100%;height:100px;}
+#teacherList_processing{text-align:center;}
+#teacherList>thead{font-size:13px !important;}
+.break{    word-break: break-word !important;    word-break: break-all !important;}
+.tableFontSize{ font-size:13px !important;}
+#teacherSearchText{height: 30px;
+    border-radius: 4px !important;
+    min-width: 300px;    padding-right: 38px;}
+#teacherInput:before{    content: "\f002";}
+ label{cursor:auto;} 
+ .dataTables_filter label input[type="search"]{border-radius:5px !important;margin-left:8px;padding-left:25px;width:300px;}
+ #teacherList_filter label{margin-bottom: -3px !important;}
+ #requestMoreLicenses{border-radius:5px !important;display:none;}
+ .modal-footer{border-top-color: #ffffff !important;     background-color: #ffffff !important;}
+#cancelModalBtn{    background-color: #E9E9E9 !important;
+    border: 1px solid #E9E9E9 !important;
+    color: #000 !important;
+    border-radius: 3px !important;
+    padding-right: 40px;
+    padding-left: 40px;}
+#sendEmail{    border: 1px solid #E9E9E9 !important;
+    border-radius: 3px !important;
+    padding-right: 40px;
+    padding-left: 40px;}
+.tCol1{width:1% !important;}
+.tCol2{width:10% !important;}
+.tCol3{width:10% !important;}
+.tCol4{width:15% !important;}
+.tCol5{width:10% !important;}
+.tCol6{width:7% !important;}
+.primaryText{
+padding-left:5px;
+color:#20ad9d;
+}
+.dataTables_filter{
+float:right!important;
+text-align: right;
+margin-right:8px;
+
+}
+
+.primaryEmail{
+font-weight: bold !important;
+color: #000 !important;
+}
+::-ms-clear {
+display: none;
+}
+</style>
+</head>
+
+<body style="visibility: hidden;">
+
+<!--Start Header-->
+    
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        
+        
+        
+        
+
+
+            
+
+<html>
+<head>
+<script id="chosenLibraryFile" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/chosen.jquery.min.js?v=20250501 "></script>
+<link rel="stylesheet" type="text/css"
+	href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/css/chosen.css?v=20250501 " />
+<script type="text/javascript" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/js/globalnavigation.js?v=20250501 "></script>
+<script type="text/javascript">
+const ONE_TRUST_RIGHT = "ONE_TRUST";
+const THIRD_PARTY_API_URL = "/api/admin/super/api/getThirdPartyConfigIntegrations.json";
+function hasIntigrationRightEnabled(rightList, right){
+for(var obj of rightList) {
+if(obj.integrationType === right && obj.enabled) return true;
+}
+return false;
+}
+function getThridPartyConfiguration(){
+      const xhr = new XMLHttpRequest();
+      const basePath = "";
+    xhr.open("GET",  
+    basePath + THIRD_PARTY_API_URL , false);
+
+    // When response is ready
+    xhr.onload = function () {
+        if (this.status === 200) {
+            // Changing string data into JSON Object
+            var list = JSON.parse(this.responseText);
+            if(hasIntigrationRightEnabled(list.thirdPartyIntegrations, ONE_TRUST_RIGHT)){  
+            var oneTrustObject
+            for(var obj of list.thirdPartyIntegrations){
+            if(obj.integrationType === 'ONE_TRUST'){
+            oneTrustObject =  obj;
+            }
+            }
+        var configObj = JSON.parse(oneTrustObject.params);
+        addOneTrustIntigrationScripts(configObj.key);
+       
+            if(!window.thirdPartyIntigration) {
+            window.thirdPartyIntigration = {};
+            }
+            window.thirdPartyIntigration.hasOneTrustEnabled = true;
+            }
+        }
+         
+    }
+    // At last send the request
+    xhr.send();  
+};
+getThridPartyConfiguration();
+
+function addOneTrustIntigrationScripts(assessKey) {
+var script_tag = document.createElement('script');
+
+script_tag.setAttribute('src', "https://cdn.cookielaw.org/scripttemplates/otSDKStub.js");
+
+script_tag.setAttribute('data-document-language', "true");
+
+script_tag.setAttribute('type', "text/javascript");
+
+script_tag.setAttribute('charset', "UTF-8");
+script_tag.setAttribute('data-domain-script', assessKey);
+
+document.head.appendChild(script_tag);
+}
+</script>
+
+ <script>
+sessionStorage.setItem('access_token', '8677d842-9f2a-432d-9bb1-ea3639fa697b');
+sessionStorage.setItem('refresh_token', 'b7dc3bd9-12b3-4701-be37-c22b61afeab3');
+sessionStorage.setItem('user_name', 'kingschool.admin@kingschoolct.org');
+sessionStorage.setItem('user_guid', '1b980065-8b22-4581-bca1-bbaaef21c588');
+sessionStorage.setItem('JSESSIONID', 'e30ad909-c4ff-4912-b37a-d3541d5b9860');
+sessionStorage.setItem('jwt_token', 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJraW5nc2Nob29sLmFkbWluQGtpbmdzY2hvb2xjdC5vcmciLCJ1c2VyTmFtZSI6ImtpbmdzY2hvb2wuYWRtaW5Aa2luZ3NjaG9vbGN0Lm9yZyIsInVzZXJSb2xlIjoiRElTVFJJQ1RfQURNSU4iLCJ1c2VyR3VpZCI6IjFiOTgwMDY1LThiMjItNDU4MS1iY2ExLWJiYWFlZjIxYzU4OCIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiS2luZyBTY2hvb2wgQWRtaW4iLCJsYXN0TmFtZSI6IkNsYXNzbGluayIsImRvbWFpbiI6ImtsZXR0bHAuY29tIn0.ACqBoVblnlmtRHuksye62_tkSS4mvDgacQ7kbfqDR0hACFOXVpj5FvSXR54bpebNVm3TbqT1EE1cvL3yBKMBIOPjj5UyBT6AHB_QW0DpIRcxWPukoUrZmFtu9Ib_Y7-z19HrkauPCk3vhb9X0bRdftjwhaBy6eZYsM1Mtl0tNGk');
+sessionStorage.setItem('isExternalAssessmentPlayerEnabled', 'true');
+sessionStorage.setItem('externalAssessmentPlayerURL', 'https://klettlp.com/assessment-app/');
+sessionStorage.setItem('school_id','0')
+sessionStorage.setItem('platformToken', 'bb4508c58bf5f6c52775b99a66c2933e');
+sessionStorage.setItem('isPDFTronEnabled', 'false');
+sessionStorage.setItem('isMathEnabled', 'false');
+sessionStorage.setItem('apiGatewayBackendURL', 'api-us.getmagicbox.com');
+sessionStorage.setItem('searchByTagEnabled', 'false');
+sessionStorage.setItem('tagManagerUrl', 'tagmanager.getmagicbox.com/');
+sessionStorage.setItem('cl', 'false');
+sessionStorage.setItem('workId', '804');
+sessionStorage.setItem('isMSVEnabled', 'false');
+sessionStorage.setItem('customPoContentType', 'false');
+sessionStorage.setItem('courseCloneConfig','{"isShareCourseAllowed":false,"isCloneArtifactsAllowed":false,"isCourseCloneAllowed":false,"isIncludeAllToc":false,"isAutoPublishAllowed":false}')
+sessionStorage.setItem('isCourseCloneAllowed','false')
+sessionStorage.setItem('isCKEditorAIPluginEnabled', 'false');
+sessionStorage.setItem('aimlApiEndpoint', '');
+sessionStorage.setItem('zuulUrl', 'mbx-auth.klettlp.com');
+
+sessionStorage.setItem('isAssetVersioningEnabled', 'false');
+
+var sessionStorage_transfer = function(event) {
+	  if(!event) { event = window.event; }
+	  if(!event.newValue) return;
+      if (!event.url.startsWith(window.location.origin)) return; // check if the origin subdomain is same
+	  if (event.key == 'getSessionStorage') {
+	    localStorage.setItem('sessionStorage', JSON.stringify(sessionStorage));
+	    localStorage.removeItem('sessionStorage');
+	  } else if (event.key == 'sessionStorage' && !sessionStorage.length) {
+	    var data = JSON.parse(event.newValue);
+	    for (var key in data) {
+	      sessionStorage.setItem(key, data[key]);
+	    }
+	  }
+	};
+
+	if(window.addEventListener) {
+	  window.addEventListener("storage", sessionStorage_transfer, false);
+	} else {
+	  window.attachEvent("onstorage", sessionStorage_transfer);
+	};
+
+
+function splitHostname() {
+    var result = {};
+    var regexParse = new RegExp('([a-z\-0-9]{2,63})\.([a-z\.]{2,5})$');
+    var urlParts = regexParse.exec(window.location.hostname);
+    result.domain = urlParts[1];
+    result.type = urlParts[2];
+    result.subdomain = window.location.hostname.replace(result.domain + '.' + result.type, '').slice(0, -1);;
+    return result;
+}
+
+var splitHostName = splitHostname();
+var parentDomain = '.'+splitHostName.domain+'.'+splitHostName.type;
+if('klettlp.com' != null && 'klettlp.com' != ''){
+	parentDomain = 'klettlp.com';
+}
+
+function delete_cookie(name) {
+	  document.cookie = name +'=; Path=/; domain='+parentDomain +'; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	  document.cookie = name +'=; Path=/;Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+	}
+
+
+console.log('true', "Is cdn enabled")
+if('true'){
+	
+	// removing cloud front cookies
+	delete_cookie('CloudFront-Key')
+	delete_cookie('CloudFront-Policy')
+	delete_cookie('CloudFront-Signature')
+	delete_cookie('Cloudfront-domain')
+	delete_cookie('CloudFront-Key-Pair-Id')
+	delete_cookie('parentAsset')
+	delete_cookie('Cloudfront-parent-domain')
+	delete_cookie('pdftronAppUrl')
+	delete_cookie('pdftronWebLicense')
+	
+	document.cookie = "CloudFront-Key="+ 'e30ad909-c4ff-4912-b37a-d3541d5b9860'+';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "CloudFront-Policy="+ 'e30ad909-c4ff-4912-b37a-d3541d5b9860' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "CloudFront-Signature="+ 'e30ad909-c4ff-4912-b37a-d3541d5b9860' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "Cloudfront-domain="+ 'https://klettlp-mbx-cloud.klettlp.com/content/secure/804/0/' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "CloudFront-Key-Pair-Id="+ 'e30ad909-c4ff-4912-b37a-d3541d5b9860' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "jwt_token="+ 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJraW5nc2Nob29sLmFkbWluQGtpbmdzY2hvb2xjdC5vcmciLCJ1c2VyTmFtZSI6ImtpbmdzY2hvb2wuYWRtaW5Aa2luZ3NjaG9vbGN0Lm9yZyIsInVzZXJSb2xlIjoiRElTVFJJQ1RfQURNSU4iLCJ1c2VyR3VpZCI6IjFiOTgwMDY1LThiMjItNDU4MS1iY2ExLWJiYWFlZjIxYzU4OCIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiS2luZyBTY2hvb2wgQWRtaW4iLCJsYXN0TmFtZSI6IkNsYXNzbGluayIsImRvbWFpbiI6ImtsZXR0bHAuY29tIn0.ACqBoVblnlmtRHuksye62_tkSS4mvDgacQ7kbfqDR0hACFOXVpj5FvSXR54bpebNVm3TbqT1EE1cvL3yBKMBIOPjj5UyBT6AHB_QW0DpIRcxWPukoUrZmFtu9Ib_Y7-z19HrkauPCk3vhb9X0bRdftjwhaBy6eZYsM1Mtl0tNGk' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "pdftronAppUrl="+ 'https://klettlp-mbx-cloud.klettlp.com/static/pdftron/26/index.html' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	document.cookie = "pdftronWebLicense="+ '' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+	if('klettlp.com' != null && 'klettlp.com' != ''){
+		document.cookie = "Cloudfront-parent-domain="+ 'klettlp.com' +';domain='+parentDomain+';path=/; SameSite=None; Secure';
+		console.log('Header.jsp: cloudFrontParentDomain: '+'klettlp.com');
+	}
+	
+	sessionStorage.setItem('parentDomain',parentDomain);
+	sessionStorage.setItem('Cloudfront-domain','https://klettlp-mbx-cloud.klettlp.com/content/secure/804/0/');
+	sessionStorage.setItem('jwt_token','Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJraW5nc2Nob29sLmFkbWluQGtpbmdzY2hvb2xjdC5vcmciLCJ1c2VyTmFtZSI6ImtpbmdzY2hvb2wuYWRtaW5Aa2luZ3NjaG9vbGN0Lm9yZyIsInVzZXJSb2xlIjoiRElTVFJJQ1RfQURNSU4iLCJ1c2VyR3VpZCI6IjFiOTgwMDY1LThiMjItNDU4MS1iY2ExLWJiYWFlZjIxYzU4OCIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiS2luZyBTY2hvb2wgQWRtaW4iLCJsYXN0TmFtZSI6IkNsYXNzbGluayIsImRvbWFpbiI6ImtsZXR0bHAuY29tIn0.ACqBoVblnlmtRHuksye62_tkSS4mvDgacQ7kbfqDR0hACFOXVpj5FvSXR54bpebNVm3TbqT1EE1cvL3yBKMBIOPjj5UyBT6AHB_QW0DpIRcxWPukoUrZmFtu9Ib_Y7-z19HrkauPCk3vhb9X0bRdftjwhaBy6eZYsM1Mtl0tNGk');
+	sessionStorage.setItem('pdftronAppUrl','https://klettlp-mbx-cloud.klettlp.com/static/pdftron/26/index.html');
+	sessionStorage.setItem('pdftronWebLicense','');
+	
+}
+
+if(''){
+	var jwt = sessionStorage.getItem("jwt_token");
+	localStorage.setItem('authToken', jwt);
+	sessionStorage.setItem('switchedFromOld', true);
+	var uri = window.location.protocol + "/v3/?switchfrom=old"
+	window.location.href = uri;	
+}
+
+if(''){
+    window.location.href = '';    
+}
+
+</script>
+
+        <!-- Kea bot code starts -->
+        <!-- <link rel="manifest" href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bot-files/manifest.json" />
+        <link href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bot-files/static/css/main.2d9b172f.css" rel="stylesheet" />
+        <meta name="theme-color" content="#000000" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito" /> -->
+        <!-- Kea bot code ends -->
+
+<!-- no drm check variable  -->
+
+
+<!-- kwl chatbot check  -->
+
+
+<script type="text/javascript" src="https://s3.amazonaws.com/prd.stcn.prashanthms.9j245k.s3-use1.prd.getmagicbox.com/static/magicbox/tresource/js/kwlchatbot.js?v=20250501 "></script>
+
+<!-- Start of campion Zendesk Widget script -->
+
+
+        <!-- End of campion Zendesk Widget script -->
+
+        
+
+        <!-- <style type="text/css">
+        .sidebar{ position:static !important; float:left !important;}
+        </style> -->
+
+        <style type="text/css">
+        /* kea bot css */
+        .rcw-widget-container{
+        z-index: 1001 !important;
+        /* right: auto !important; */
+        }
+        form.rcw-sender > input {
+        border: none !important;
+        background: transparent;
+        }
+        /* .kea-launchButton{
+        align-self: flex-start !important;
+        } */
+        /* kea bot css */
+
+        .popRedBox {
+        top: 46px;
+        z-index: 999;
+        }
+        .ace-nav>li.originlibrary{
+        background:transparent !important;
+        border:none !important;
+        }
+        .ace-nav>li.originlibrary a{
+        background:url(/static/images/marketplace_icon.png) no-repeat center center;
+        display:block;
+        height:30px;
+        padding:2px 8px;
+        }
+        .ace-nav>li.originlibrary span{
+        color:white;
+        display:block;
+        padding-top: 13px;
+        font-size: 11px;
+        }
+        #loaderTitles{height: 50%;}
+        #managementConsole .manageconsole{ display:inline-block;vertical-align:middle; margin-left:0px}
+        #managementConsole .manageconsole{padding-top:0; padding-bottom:0}
+        .break {-ms-word-break: break-all; word-break: break-all; word-break: break-word;}
+        #attachProfilePic{cursor: pointer;height: 36px;width: 36px;border: 0px solid #FFF;/*background-image: url("/static/images/magic-loader.gif");background-size: 100% 100%;*/}
+
+
+        /* GDPR pop up css */
+
+        .popup{
+        position: fixed; /* Stay in place */
+        z-index: 1200; /* Sit on top */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        padding: 4% 10% 4% 10%;
+        box-sizing: border-box;
+        }
+        .popheader{
+        margin: 0px 15px;
+        border-bottom: 1px solid #9ca9b7;
+        box-sizing: border-box;
+        }
+        .popheader h1,.popheader p{
+        text-align: center;
+        box-sizing: border-box;
+        }
+        .leftpanel{
+        float:left;
+        width: 50%;
+        box-sizing: border-box;
+        }
+        .popup h3{
+        font-size:16px;
+        }
+        .rightpanel{
+        float: right;
+        width: 50%;
+        box-sizing: border-box;
+        }
+        .leftpanel1,.leftpanel2,.leftpanel3,.leftpanel4,.rightpanel1,.rightpanel2{
+        border-bottom: 1px solid #9cacb7;
+        margin: 0px 15px;
+        box-sizing: border-box;
+        }
+
+        .agreebutton{
+        text-align: center;
+        height: 40px;
+        line-height: 40px;
+        border: 0px solid transparent;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        cursor: pointer;
+        box-sizing: border-box;
+        color:white;
+        }
+
+        .clear{
+        clear:both;
+        box-sizing: border-box;
+        }
+        .popcontent{
+        background: white;
+        border: 0px solid transparent;
+        border-radius: 15px;
+        box-sizing: border-box;
+        margin: 3% 0% 2% 10%;
+        width: 80%;
+        }
+        .headercontent{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top: 1px solid transparent;
+        box-sizing: border-box;
+        }
+        .footerbody p{
+        text-align: center;
+        box-sizing: border-box;
+        }
+        .popup ul{
+        margin: 0px 0 1px 25px;
+        box-sizing: border-box;
+        }
+        .popup h3{
+        display:inline-block;
+        margin: 10px 0px 0px 15px;
+        box-sizing: border-box;
+        }
+        .rightpanel2 ul li{
+        margin: 20px 10px 0px 10px;
+        box-sizing: border-box;
+        }
+        .rightpanel3 ul li{
+        margin: 0px 0px 0px 25px;
+        box-sizing: border-box;
+        }
+        .font-weight{
+        font-weight:600;
+        }
+        .closebutton{
+        position:absolute;top:0;right:0;
+        cursor:pointer;
+        box-sizing: border-box;
+        }
+        .imagemargin{
+        margin-top: -5px;
+        box-sizing: border-box;
+        }
+
+        .popuplifontsize{
+        font-size: 12px;
+        }
+
+        .popup h1{
+        font-size:25px;
+        }
+        .leftfloat{
+        width: 12%;
+        padding: 0px 0px 0px 10px;
+        float: left;
+        }
+
+        .rightfloat{
+        padding-top: 3px;
+        }
+
+        @media only screen and (min-width:900px) and (max-width: 1260px) {
+
+        .leftpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+        .rightpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+
+        .leftfloat{
+        width:8%;
+        }
+
+        .popcontent{
+        width:90%;
+        margin: 2% 5% 2% 5%;
+        }
+
+        }
+
+        @media only screen and (min-width:700px) and (max-width: 900px) {
+
+        .leftpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+        .rightpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+
+        .leftfloat{
+        width:8%;
+        }
+
+        .popcontent{
+        width:90%;
+        margin: 2% 5% 2% 5%;
+        }
+
+        }
+
+        @media only screen and (min-width:400px) and (max-width: 700px) {
+
+        .leftpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+        .rightpanel{
+        width: 100%;
+        box-sizing: border-box;
+        }
+
+        .leftfloat{
+        width:8%;
+        }
+
+        .popcontent{
+        width:100%;
+        margin: 2% 0% 2% 0%;
+        }
+
+        .popup{
+        padding: 0% 2%;
+        }
+
+        }
+
+        @media only screen and (min-width:400px) and (max-width: 600px) {
+
+        .leftfloat{
+        width:11%;
+        }
+
+        }
+        .initials{
+        border: 1px solid #c5c5c5;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+        display: inline-block;
+        font-weight: 900;
+        text-transform: uppercase;
+        color:white;
+        }
+
+        .schoolLogoAndDisplayName{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        }
+        .schoolLogoAndDisplayName > div{
+        margin-left: 20px;
+        font-size: 16px;
+        font-weight: bold;
+        }
+        .autoAssignpopup{
+        position: fixed; /* Stay in place */
+        z-index: 1200; /* Sit on top */
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.8); /* Black w/ opacity */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        padding: 4% 10% 4% 10%;
+        box-sizing: border-box;
+        display:none;
+
+        }
+
+        .vertical-center {
+        margin: 0;
+        position: absolute;
+        width:600px;
+        height:400px;
+        top: 40%;
+        left:50%;
+        -ms-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+        background-color:#fff;
+        border-radius: 6px 6px 0 0;
+        }
+        .vertical-center .modal-header{
+
+        }
+        .autoAssignmodal-body{
+        height:330px;
+        overflow-y:auto;
+        padding:15px;
+        }
+        .tabauto {
+        display: none;
+        }
+        .subject,.lang,.grade{
+        opacity:1 !important;
+        }
+        .tabauto label{
+        float:none !important;
+        margin-left:10px;
+        width:150px;
+        white-space: nowrap;
+        white-space: pre-line;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        text-align: justify;
+        font-size:13px;
+        display: inline;
+        }
+        .row-fluid [class*="span"]:first-child input[type=checkbox]{
+        margin-left: 10px;
+        }
+
+        .sppan6{
+        display:inline-block ! important;
+        width: 48.93617021276595% !important;
+        vertical-align: top;
+        margin-top:10px;
+        margin-right: 5px;
+        }
+        .impersonateHeader{
+        text-align: center;
+        padding: 4px;
+        border-top-width: 1px;
+        border-bottom-width: 1px;
+        border-style: solid;
+        }
+
+.class-grade-modal .chzn-container{
+	min-width: 325px !important;
+    width: 70% !important;
+}
+
+.class-grade-modal .class-grade-section .row {
+    margin-bottom: 20px;
+	margin-left: -10px;
+}
+
+.class-grade-modal .lastClassGrade .chzn-container .chzn-drop {
+	top: auto;
+    bottom: 100%;
+    border-top: 1px solid;
+}
+
+.header-resource-banner {
+    display: none;
+}
+</style>
+
+        
+            <link id="faviconTag" href="https://s3.amazonaws.com/prd.stcn.prashanthms.9j245k.s3-use1.prd.getmagicbox.com/static/magicbox/tresource/images/fevicon.ico" rel="Shortcut icon" type="image/x-icon" />
+        
+        
+
+<input type="hidden" value="804" id="tenantId"/>
+<input type="hidden" value="klettlp" id="tenantName"/>
+<input type="hidden" value="kingschool.admin@kingschoolct.org" id="userName"/>
+<input type="hidden" value="DISTRICT_ADMIN" id="userType"/>
+<input type="hidden" value="" id="contextPathURL"/>
+<input type="hidden" value="1b980065-8b22-4581-bca1-bbaaef21c588" id="userGuid"/>
+<input type="hidden" value="DEFAULT" id="tenantType"/>
+<input type="hidden" id="magicBoxVersion" value="20250501 "/>
+<input type="hidden" value="King School Admin" id="fname"/>
+<input type="hidden" value="null" id="elevioHashCode"/>
+<input type="hidden" value="true" id="gdprStatusTenant"/>
+<input type="hidden" value="" id="pdftronServiceURL"/>
+<input type="hidden" value="Classlink" id="lname"/>
+<input type="hidden" value="kingschool.admin@kingschoolct.org" id="emailOfUser"/>
+
+<input type="hidden" value="false" id="isCleverDistrict"/>
+<input type="hidden" value="6a897fee-ccec-460c-88da-6b53349a9d29" id="cleverDistrictId"/>
+<input type="hidden" value="false" id="navbarHeaderRole"/>
+<input type="hidden" value="1" id="tenantLanguageId"/>
+<input type="hidden" value="false" id="isPearsonLoginEnabled"/>
+<input type="hidden" value="false" id="isNoDRMEnabled"/>
+
+
+
+
+
+	
+	<input type="hidden" id="custom_date_format"
+	value="false" />
+
+<body>
+<!-- <div id="kea"></div> -->
+<div id="navbarheader" class="navbar" style="visibility: hidden;">
+
+            
+                <div class="impersonateHeader">
+                <span type="localization" localizationid="impersonate_user"></span>
+                <span>King School Admin&nbsp;Classlink&nbsp;</span>
+                <a class="switchOrgAccount switchOrgAccountLink" href="/switchBackToOriginalAccount.htm"><span type="localization" localizationid="switch_original_account"></span></a>
+                </div>
+            
+
+            <div class="navbar-inner" style="height:45px;">
+            <div class="container-fluid">
+
+            <div style="float:left;">
+            <table border="0" cellspacing="0" cellpadding="0">
+            <tr>
+            <td style="height:45px; vertical-align:middle;">
+            <a href="javascript:void(0);" class="brand" style="padding:0 0 0 7px;">
+                
+
+            
+                <img style="max-height:43px" src="https://s3.amazonaws.com/prd.stcn.prashanthms.9j245k.s3-use1.prd.getmagicbox.com/static/magicbox/tresource/images/schoolheader.png" />
+            
+            
+                
+            </a>
+            </td>
+            </tr>
+            </table>
+            </div>
+
+            <div style="height: 0px; overflow: hidden">
+            <!-- <form id="proImage" method="post" enctype="multipart/form-data">
+            <input type="file" id="fileInput_profile" name="filedata" />
+            </form> -->
+            </div>
+            <div class="popRedBox messageClass" id="errorMessage" style="display: none;"></div>
+            <ul class="nav ace-nav pull-right">
+            <li class="light-blue" id="supportIcon" style="display:none" onclick="window._elev.open();" >
+            <span></span>
+            </li>
+            <li class="light-blue" id="mltilangFlag">
+            <style>
+            #mltilangFlag, #mltilangFlagPage{  height: 20px;float: left;padding: 1px 10px;}
+            #mltilangFlag .tooltip-inner{border-radius:5px;padding:2px 5px;}
+            #mltilangFlag .langHeading{font-size:13px; color:#ffffff;}
+            #headerContainer{border: none;}
+            </style>
+            <link href="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/css/flags.css?v=20250501 " rel="stylesheet" type="text/css" />
+            
+            <span class="langHeading" type="localization" style="display: none;" localizationid="language_text">Language:</span>
+            <span id="mltilangFlags"></span>
+            </li>
+            
+            
+				
+			
+            
+            
+                <li class="light-blue">
+                
+                </li>
+                <li class="divider" id="clever_sync_divider"></li>
+            
+            
+            <li class="light-blue" style="border-left:0;" id="hdTopDropMenu">
+            
+            <div class="initials"></div>
+            <a class="dropdown-toggle" style="float:right;" href="#" data-toggle="dropdown">
+            <span class="user-info" title="King School Admin">
+            <small localizationid="Welcome" type="localization">Welcome </small>
+            King School Admin
+            </span>
+            <span  style="display:none" class="user-info" title="Classlink">
+            <small localizationid="Welcome" type="localization">Welcome </small>
+            Classlink
+            </span>
+            <i class="icon-caret-down"></i>
+            </a>
+
+
+            <ul	class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-closer">
+            
+            
+            
+                <li id="userH"><a href="javascript:void(0);"> <i class="icon-user"></i> <span localizationid="Profile" type="localization"></span></a></li>
+                <li class="divider" id="userProfileDivider"></li>
+            
+            
+
+            
+
+            
+                <li id="managementConsole"><a href="javascript:void(0);">
+                <i class="icon-th-large" style="display:inline-block"></i>
+                <span class="manageconsole break" style="display:inline-block; vertical-align:middle; margin-left:0px" localizationid="Management_br_Console" type="localization"></span></a></li>
+                <li class="divider" id="managementConsoleDevider"></li>
+            
+
+					
+			<input type="hidden" value="switchPortalAllowed" />	
+ 			
+            
+
+            
+
+            
+            
+        
+            
+            
+                <li class="switchOrgAccount">
+                <a class="switchOrgAccountLink"  href="/switchBackToOriginalAccount.htm">
+                <!-- <i class="icon-off"></i> -->
+                <span localizationid="switch_original_account" type="localization"></span>
+                </a>
+                </li>
+            
+
+            
+
+            </ul>
+            </li>
+
+
+            </ul>
+
+            <div class="clearfix"></div>
+            </div>
+            <input type="hidden" id="tenant"
+            value="804" />
+            <input type="hidden" value="DISTRICT_ADMIN" id="usertype"/>
+            <input type="hidden" id="proSettingTabBtnVal"
+            value="" />
+
+
+            </div>
+            </div>
+
+<div id="resourceBanner" class="header-resource-banner">
+    <span class="header-resource-banner-title" type="localization" localizationid="resourceBannerTitle"></span>
+    <span class="header-resource-banner-info" type="localization" localizationid="resourceBannerInfo"></span>
+</div>
+
+            <!-- adding GTM code -->
+
+            <!-- Google Tag Manager (noscript) -->
+            <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M6C5QFN"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+            <!-- End Google Tag Manager (noscript) -->
+
+
+            </body>
+            <div id="cleverSyncPopup" style="position:fixed; width:100%; height:100%; background:rgba(0,0,0,0.5); left:0; top:0;z-index:9999;display:none;">
+            <div class="modal-body2" style="background:#fff; width:400px; margin:250px auto 0; padding:20px; border-radius:4px">
+
+
+            <img
+            src="/images/assessment/form-loader.gif"
+            title="Loading..." style="margin-left: 40%;width:70px;height:70px;margin-top:25px;" />
+            <div  id="modalHtml" ></div>
+
+            </div>
+            </div>
+        
+
+<div>
+		<div id="readingZoneModal" style="display: none; border: none;"
+	class="modal hide fade reading-zone-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	
+	<div class="modal-header no-padding reading-zone-modal-header">
+		<div  localizationid="reading_zone" type="localization"></div>
+		
+	</div>
+	<div class="modal-body reading-zone-modal-body">
+			<p localizationid="reading_zone_info" type="localization"> </p>
+	</div>
+	
+	<div class="modal-footer">
+		<a class="btn btn-primary btn-small no-border close-reading-zone" id="readingModalInfoOkay" onclick="closeReadingModal()" localizationid="ok" type="localization"></a>
+	</div>
+
+	<style type="text/css">
+		.reading-zone-modal {
+			border-bottom-left-radius: 0 !important;
+		    border-bottom-right-radius: 0 !important;
+            top: 15% !important		
+        }
+		.reading-zone-modal .modal-header {
+			font-size: 14px;
+			line-height: 38px;
+		    margin-bottom: 1px;
+		    padding-left: 12px;
+		}
+		.reading-zone-modal .reading-zone-modal-body{
+			min-height: 100px;
+            font-size: 14px;
+            padding-bottom: 20px;
+		}
+		.reading-zone-modal .reading-zone-modal-body > p{
+			margin-bottom: 20px;
+		}
+		.reading-zone-modal .reading-zone-modal-body > a, .reading-zone-modal .reading-zone-modal-body > a:hover, .reading-zone-modal .reading-zone-modal-body > a:focus{
+			text-decoration: none;
+		}
+		.reading-zone-modal .close-reading-zone{
+			min-width: 50px;
+		}
+	</style>
+	
+</div>
+
+</div>
+<div>
+		<div id="classGradeModal" style="display: none; border: none"
+	class="modal hide fade class-grade-modal" tabindex="-1" role="dialog"
+	aria-labelledby="myModalLabel">
+
+	<div class="modal-header no-padding class-grade-modal-header">
+		<div class="modal-heading">
+		<span class="choose-grade" id="modalHeading" localizationid="choose_a_grade" type="localization"></span>
+		<span class="grade-level-heading" id="gradeLevelHeading" localizationid="grade_level" type="localization"></span>
+		</div>
+	</div>
+	<div class="modal-body class-grade-modal-body" id="classGradeModalBody">
+		<span class="class-grade-heading" id="class-grade-heading-default"
+			localizationid="select_grade_reading_zone" type="localization"></span>
+			
+		<span style="display: none" class="class-grade-heading" id="class-grade-heading"
+			localizationid="Grade_Level_Hint_Text" type="localization"></span>
+
+			<div id="modalSelectionListContainer">
+				<div class="class-grade-section" id="classGradeList"></div>
+			</div>
+		<span class="class-grade-error-section" id="classGradeError"
+			localizationid="class_grade_modal_try_again" type="localization"></span>
+		<span class="class-grade-error-section" id="classGradeSaveError"
+			localizationid="class_grade_save_try_again" type="localization"></span>
+		<div class="select-class-grade-container">
+			<span style="visibility: hidden " class="select-class-grade" id="select-class-grade"
+				localizationid="Select_Grade_Level_Text" type="localization"></span>
+		</div>
+			
+	</div>
+
+	<div class="modal-footer">
+		
+		<button class="btn btn-primary btn-small no-border saveBtn" onclick="hideModal()"
+			style="display: none"
+			id="cancelModalButton" localizationid="cancel" type="localization"
+			></button>
+		
+		<button class="btn btn-primary btn-small no-border saveBtn"
+			id="saveClassGradeData" localizationid="save" type="localization"
+			disabled="true"></button>
+		
+		<button class="btn btn-primary btn-small no-border saveBtn"
+			style="display: none"
+			id=saveGradeData localizationid="save" type="localization"
+			onclick="saveGradeData()"
+			disabled="true"
+			></button>
+	</div>
+
+	<style type="text/css">
+	
+	
+/* #modalSelectionListContainer{
+	padding: 20px 0px;
+}
+ */
+
+#modalSubTitle{
+	float: left;
+}
+	
+.class-grade-modal {
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+	top: 5% !important;
+}
+
+.class-grade-modal .modal-header {
+	font-size: 14px;
+	line-height: 38px;
+	margin-bottom: 1px;
+	padding-left: 12px;
+}
+
+.class-grade-modal .class-grade-section {
+	padding-top: 20px;
+}
+
+.class-grade-modal .class-grade-section .class-section {
+	font-size: 14px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+.class-grade-modal .chzn-container .chzn-results {
+	max-height: 100px;
+}
+
+.class-grade-modal .class-grade-modal-body {
+	min-height: 250px;
+	max-height: calc(100vh - 300px);
+	font-size: 14px;
+}
+
+.class-grade-modal .class-grade-modal-body .class-grade-heading {
+	font-size: 14px;
+}
+
+.class-grade-modal .span2 {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	padding-top: 10px;
+}
+
+.class-grade-modal .class-grade-error-section {
+	display: none;
+	font-size: 14px;
+	float: left;
+}
+
+.class-grade-modal .saveBtn {
+	min-width: 50px;
+	padding: 0 8px;
+	line-height: 24px;
+	font-size: 13px;
+	width: 65px;
+}
+
+ .class-grade-section .chzn-select{
+	height: 30px !important;
+}
+
+.class-grade-modal .class-grade-section .span2{
+	/* width: 140px !important; */
+	margin-left: 20px !important;
+}
+
+.class-grade-modal .class-grade-section .span4{
+	width: 300px !important;
+	margin-left: 20px !important;
+}
+
+.class-grade-modal .class-grade-section .chzn-container .search-field input {
+	width: 150px !important;
+}
+
+
+.class-grade-modal .class-grade-section .chzn-container .search-field .default {
+	width: 150px !important;
+}
+
+.class-grade-modal .modal-heading .grade-level-heading {
+	display: none
+}
+
+.class-grade-modal .select-class-grade-container {
+	padding-top: 5px;
+}
+
+</style>
+
+</div>
+
+</div>
+
+<div>
+		<div id="setupClassModal" style="display: none; border-radius: 15px;"
+	class="modal hide fade class-grade-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	
+	<div class="modal-header no-padding class-grade-modal-header">
+		<div class="" localizationid="setup_classes" type="localization"></div>
+	</div>
+	<div class="modal-body setup-class-modal-body">
+		<div id = "createClassModal">
+			<span localizationid="setup_classes_info" type="localization"></span>
+			<a href="https://nightly-www.savvasrealizedev.com/community/home" class="savvas-url" localizationid="savvas_realize_url" type="localization"></a>
+		</div>
+		<span class="class-grade-error-section" id="createClassError" localizationid="class_grade_modal_try_again" type="localization"></span>
+	</div>
+	
+	<div class="modal-footer">
+		<a href="https://nightly-www.savvasrealizedev.com/community/home" class="btn btn-primary btn-small no-border go_to_saavas_btn" id="goToSaavasReealize" localizationid="go_to_savvas_realize" type="localization"></a>
+	</div>
+
+	<style type="text/css">
+		.class-grade-modal {
+			border-bottom-left-radius: 0 !important;
+		    border-bottom-right-radius: 0 !important;
+            top: 15% !important		
+        }
+		.class-grade-modal .modal-header {
+			font-size: 14px;
+			line-height: 38px;
+		    margin-bottom: 1px;
+		    padding-left: 12px;
+		}
+		.class-grade-modal .setup-class-modal-body{
+			min-height: 100px;
+            font-weight: 600;
+            font-size: 14px;
+		}
+		.class-grade-modal .savvas-url, .savvas-url:hover, .savvas-url:focus{
+			color: inherit;
+			text-decoration: underline;
+		}
+		.class-grade-modal .class-grade-error-section{
+			display: none;
+			font-size: 14px;
+		}
+		.class-grade-modal .go_to_saavas_btn{
+			padding: 0 8px;
+    		line-height: 24px;
+    		font-size: 13px;
+		}
+	}
+	</style>
+	
+</div>
+
+</div>
+
+<div>
+	<div class="loaderOverlay">
+
+     <div class="overlay__inner">
+           <div class="overlay__content">
+           		<span class="spinner"></span>
+           </div>
+     </div>  
+          
+	<style type="text/css">
+	
+	.loaderOverlay {
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    position: fixed;
+	    background: rgb(0,0,0,0.5);
+	    z-index: 1;
+	    display: none;
+	}
+	
+	.loaderOverlay .overlay__inner {
+	    left: 0;
+	    top: 0;
+	    width: 100%;
+	    height: 100%;
+	    position: absolute;
+	}
+	
+	.loaderOverlay .overlay__content {
+	    left: 50%;
+	    position: absolute;
+	    top: 50%;
+	    transform: translate(-50%, -50%);
+	}
+	
+	.loaderOverlay .spinner {
+	    width: 60px;
+	    height: 60px;
+	    display: inline-block;
+	    border-width: 3px;
+	    border-color: rgba(255, 255, 255, 0.05);
+	    border-top-color: #fff;
+	    animation: spin 1s infinite linear;
+	    border-radius: 100%;
+	    border-style: solid;
+	}
+	
+	@keyframes spin {
+	  100% {
+	    transform: rotate(360deg);
+	  }
+	} 								
+	</style>
+</div>
+</div>
+
+        <div class="popup" style="display:none;">
+        <div class="popcontent">
+        <div class="popheader">
+        <div class="headercontent" style="position:relative;">
+        <h1 class="font-weight"><span type="localization" localizationid="GDPRheader"></span></h1>
+        <p class="popuplifontsize"><span type="localization" localizationid="GDPRsummary"></span></p>
+        <span class="closebutton" (click)="logout()" style="position:absolute;top:0;right:0;"><img src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/close.png" height="20px" width="20px"/></span>
+        </div>
+        </div>
+
+        <div class="popbody">
+        <div class="leftpanel">
+        <div class="leftpanel1">
+        <span><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/type_of-data_we_collect.png" width="30px" height="30px"/></span><h3 class="font-weight"><span type="localization" localizationid="leftpanel1heading"></span></h3>
+        <ul>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel1firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel1secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel1thirdpoint"></span></li>
+        </ul>
+        </div>
+        <div class="leftpanel2">
+        <span><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/how_we_use_your_data.png" width="30px" height="30px"/></span><h3 class="font-weight"><span type="localization" localizationid="leftpanel2heading"></span></h3>
+        <ul>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel2firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel2secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel2thirdpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel2fourthpoint"></span></li>
+        </ul>
+        </div>
+        <div class="leftpanel3">
+        <span><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/third_parties_who_process_you_data.png" width="30px" height="30px"/></span><h3 class="font-weight"><span type="localization" localizationid="leftpanel3heading"></span></h3>
+        <p style="margin-top:15px;" class="popuplifontsize"><span type="localization" localizationid="leftpanel3para"></p>
+
+        <ul>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel3firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel3secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel3thirdpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel3fourthpoint"></span></li>
+        </ul>
+        </div>
+        <div class="leftpanel4" style="border: none;">
+        <span><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/we_use_cookies.png" width="30px" height="30px"/><h3 class="font-weight"><span type="localization" localizationid="leftpanel4heading"></span></h3>
+        <ul>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel4firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel4secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="leftpanel4thirdpoint"></span><a href="https://klettwl.com/privacy-policy/" target="_blank"> <span type="localization" localizationid="cookiepolicy"></span></a>.</li>
+        </ul>
+        </div>
+        </div>
+
+        <div class="rightpanel">
+        <div class="rightpanel1" style="border:none;">
+        <span><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/when_and_how_we_collect_data.png" width="30px" height="30px"/></span><h3 class="font-weight"><span type="localization" localizationid="rightpanel1heading"></span></h3>
+        <p style="margin-top:15px;"  class="popuplifontsize"><span type="localization" localizationid="rightpanel1para"></p>
+        </div>
+        <div class="rightpanel2" style="margin-top:30px;">
+        <p style="width: 55px;text-align: center;color: #12a0dc;line-height: 18px;" class="font-weight popuplifontsize"><span type="localization" localizationid="rightpanel1highlight"></span></p>
+        <div>
+        <div class="leftfloat">
+        <span><img src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/data_we_collect.png" width="30px" height="30px"/></span>
+        </div>
+        <div class="rightfloat">
+        <ul style="list-style:none;">
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel1firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel1secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel1thirdpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel1fourthpoint"></span></li>
+        </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        </div>
+        <ul style="margin-bottom: 7px;margin-top: 0px;">
+        <li class="popuplifontsize" style="margin-top: 12px;"><span type="localization" localizationid="rightpanel1fifthpoint"></span></li>
+        <li class="popuplifontsize" style="margin-top: 12px;"><span type="localization" localizationid="rightpanel1sixpoint"></span></li>
+        </ul>
+        </div>
+        <div class="rightpanel3" style="border: none;">
+        <span style="margin-left:20px;"><img class="imagemargin" src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/images/know_your_rights.png" width="30px" height="30px"/></span><h3 class="font-weight"><span type="localization" localizationid="rightpanel2heading"></span></h3>
+        <ul>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel2firstpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel2secondpoint"></span></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel2thirdpoint"></li>
+        <li class="popuplifontsize"><span type="localization" localizationid="rightpanel2fourthpoint"></span></li>
+        </ul>
+        </div>
+        </div>
+        <div class="clear"></div>
+        </div>
+
+        <div class="footerbody">
+        <p class="popuplifontsize"><span type="localization" localizationid="emailmessage"></span><a href="mailto:" target="_blank"><span></span></a></p>
+        <div class="agreebutton choosebtn" (click)="agreefunction()"><span type="localization" localizationid="buttontext" style="color: white;font-size:22px;"></span></div>
+        </div>
+        </div>
+        </div>
+        <div class="autoAssignpopup">
+        <div class="vertical-center">
+        <div class="modal-header no-padding">
+        <div class="table-header">
+        <span id="chooseGradeMsg" type="localization" localizationid="Choose_Grade" ></span>
+        <span id="chooseSubjectMsg" type="localization" localizationid="Choose_Subject" ></span>
+        <span id="chooseLanguageMsg" type="localization" localizationid="Choose_language" ></span>
+        </div>
+        </div>
+        <div id="autoasignModal-data" class="autoAssignmodal-body">
+
+
+        </div>
+        <div class="modal-footer">
+        <button class="btn btn-small btn-success no-border" type="button" id="prevBtn">
+        <span type="localization" localizationid="previous" ></span>
+        </button>
+        <button class="btn btn-small btn-success no-border" type="button" id="nextBtn" disabled>
+        <span type="localization" localizationid="next" ></span>
+        </button>
+        <button class="btn btn-small btn-success no-border" type="button" id="submitBtn" disabled>
+        <span type="localization" localizationid="submit" ></span>
+        </button>
+        </div>
+        </div>
+        </div>
+        <!-- Google Tag Manager (noscript) -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push(
+
+        {'gtm.start': new Date().getTime(),event:'gtm.js'}
+        );var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M6C5QFN');</script>
+        <!-- End Google Tag Manager (noscript) -->
+
+        </head>
+        </html>
+        <script type="text/javascript">
+        
+        
+        
+        function getLrsDetails(callback){
+        var path = location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+        $.ajax({
+        type: "GET",
+        url: path+"/api/admin/scrom/getLRSDetails.json",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success: function (data) {
+        var courseReportChartLocalization = data && data.scormLaunchData && data.scormLaunchData.courseReportChartLocalization;
+        sessionStorage.setItem('courseReportChartLocalization', courseReportChartLocalization);
+        callback({status:true, data:data});
+        },
+        error: function (jqXHR, textStatus, errorThrown) {
+        callback({status:false, data:errorThrown});
+        }
+        });
+
+        }
+        $(document).ready(function(){
+        	var stringNavHideValue = $('#navbarHeaderRole') && $('#navbarHeaderRole').val();
+    		var stringNavHideFlag = (stringNavHideValue =="true");
+            var tincanInfo = sessionStorage.getItem('tincanInfo');
+
+			if(stringNavHideFlag){
+				$("#navbarheader").hide();
+			}
+			
+        // Setting assessment tincan launcher
+        try {
+            if(!tincanInfo){
+                getLrsDetails(function(response){
+            if(response.status){
+            try {
+            var lrsDetail = response.data.scormLaunchData.lrs;
+            var assessmentTincanInfo = {
+            "userId":
+            "1b980065-8b22-4581-bca1-bbaaef21c588",
+            "activityId": '',
+            "lrs": {
+            "endpoint": lrsDetail.courseLrsEndpoint,
+            "user": lrsDetail.courseUser,
+            "password": lrsDetail.coursePassword
+            },
+            "params": {
+            "product_launch_source": "platform"
+            }
+            };
+
+            sessionStorage.setItem('tincanInfo', window.btoa(JSON.stringify(assessmentTincanInfo)));
+            }
+            catch (e){
+            console.log(e);
+            }
+            }
+            });
+            }
+        }
+        catch (e){
+        console.log(e);
+        }
+        /*mblite tour guide starts*/
+        checkForElevio();
+        checkUrl();
+        function checkUrl(){
+        if($("#userType").val() == 'TEACHER'){
+        autoAssignPopup();
+        }
+        }
+
+        var colorarray = ["#f0e91b","#81c341","#467a2e","#e55f1c","#ed1f6d","#c44e7e","#984198","#575da9","#ad73b1","#3f505a"];
+        var x = Math.floor((Math.random() * 10));
+        $('.initials').css('background-color',colorarray[x]);
+        var fname = $('#fname').val();
+        var first = fname[0];
+        $('.initials').text(first);
+        var autoassignPopupOrder = false;
+
+		var isClassGradePopupShown = false;
+		var isCreateClassPopupShown = false;
+		var classGradePopupOrder = false;
+		var callPopulateClassGradeList = false;
+
+		var stringValue = $('#gdprStatusTenant').val();
+		var gdprflag = (stringValue =="true");
+		var gdprAccepted = false;
+
+		if(gdprflag){
+			var path="";
+	 		path=location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+	 		$.ajax({
+	 			type: "GET",
+	 			url: path+"api/user-privacy/getUserPrivacy.json?privacyType=privacy",
+	 			contentType: "application/json; charset=utf-8",
+	 			dataType: "json",
+	 			success: function (data) {
+					 console.log(data);
+					// if(window.sessionStorage.getItem("tenantId")!=data.userPrivacy[0]["tenantId"]){
+					//  if(data.userPrivacy[0]["tenantId"]!==476) {
+					//  document.getElementById('kea').style.display='none';
+					//  console.log('style got changed');
+					//  }
+					//  window.sessionStorage.setItem("tenantId",data.userPrivacy[0]["tenantId"]);
+					// }
+	 				if(data.code == 200){
+	 					if(data.userPrivacy==null || data.userPrivacy==undefined && data.userType!='LEARNER'){
+	 						$('.popup').css('display','block');
+	 					}
+	 					else if(data.userPrivacy.length == 0 && data.userType!='LEARNER'){
+	 						$('.popup').css('display','block');
+	 					}
+	 					else if(data.userType=='LEARNER' && data.gdprApproval=='Approved'){
+	 						$('.popup').css('display','none');
+	 					}
+	 					else if(data.userPrivacy[0]["accept"]==true && data.userType!='LEARNER'){
+	 						$('.popup').css('display','none');
+							gdprAccepted = true;
+	 					}
+	 					else{
+	 						$('.popup').css('display','block');
+	 					}
+	 				}
+	 				else if(data.code == 333){
+	 					window.location.href = window.location.protocol + "//" + window.location.hostname + "/" + "login.htm?signout=true&tenant=magic";
+	 				}
+	 				else{
+	 					$('.popup').css('display','block');
+	 				}
+	 			},
+	 			error: function (jqXHR, textStatus, errorThrown) {
+	 				alert(textStatus + ' / ' + errorThrown);
+	 			}
+	 		});
+		}
+		else{
+			$('.popup').css('display','none');
+		}
+
+
+	    $("a.switchOrgAccountLink").click(function() {
+	    	cleanBrowserBeforeSwitchBackAccount();
+	    });
+	    
+	    function cleanBrowserBeforeSwitchBackAccount(){
+	    	 if(typeof(Storage) !== "undefined") {
+					localStorage.clear();
+					sessionStorage.clear();
+					
+				}
+				
+				// removing cloud front cookies
+ 			delete_cookie('CloudFront-Key')
+ 			delete_cookie('CloudFront-Policy')
+ 			delete_cookie('CloudFront-Signature')
+ 			delete_cookie('Cloudfront-domain')
+ 			delete_cookie('CloudFront-Key-Pair-Id')
+ 			delete_cookie('parentAsset')
+ 			delete_cookie('Cloudfront-parent-domain')
+ 			delete_cookie('jwt_token')
+ 			delete_cookie('pdftronAppUrl')
+ 			delete_cookie('pdftronWebLicense')
+ 			delete_cookie('pdftronParams')
+	    }
+	    
+
+
+
+		$('.closebutton').click(function(){
+			$('.popup').css('display','none');
+			$.ajax({
+	 			type: "GET",
+	 			url: path+"api/logoutsetting/logout.json",
+	 			contentType: "application/json; charset=utf-8",
+	 			dataType: "json",
+	 			success: function (data) {
+	 						if(data.loginUrl !== "" || data.loginUrl !== null){
+	 					        window.location.href = window.location.protocol + "//" + window.location.hostname + "/" + data.loginUrl;
+	 					      }
+	 			},
+	 			error: function (jqXHR, textStatus, errorThrown) {
+	 				window.location.href = window.location.protocol + "//" + window.location.hostname + "/" + "login.htm?signout=true&tenant=magic";
+	 			}
+	 		});
+		})
+		tType = $("#tenantType").val();
+		if(tType!=undefined && (tType == "CORPORATE" || tType =="MBLITE") && $("#usertype").val()=="SUP_PUBLISHER"){
+			tourguideMain.mainInit(tType);
+		}
+		/*mblite tour guide ends*/
+
+
+		$('.agreebutton').click(function(){
+			var tenant = 0;
+			tenant = $("#tenantId").val();
+			var param = { "tenantId":tenant, "accept":true, "privacyType":"privacy" };
+		    var path="";
+	 		path=location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+	 		$.ajax({
+	 			type: "POST",
+	 			url: path+"api/user-privacy/saveprivacy.json",
+	 			data:JSON.stringify(param),
+	 			contentType: "application/json; charset=utf-8",
+	 			dataType: "json",
+	 			success: function (data) {
+	 				console.log(data);
+	 				if(data.code == 200){
+	 					$('.popup').css('display','none');
+                         if(autoassignPopupOrder){
+	 						$(".autoAssignpopup").show();
+	 					}
+
+						if(classGradePopupOrder){
+							if(isClassGradePopupShown && callPopulateClassGradeList){
+								populateDataInClassGradePopup()
+							}else if(isCreateClassPopupShown){
+								// localStorage.setItem('classGradePopupOrderDone', true)
+								createClassPopup()
+							}
+						}
+	 				}
+	 			},
+	 			error: function (jqXHR, textStatus, errorThrown) {
+	 				alert(textStatus + ' / ' + errorThrown);
+	 			}
+	 		});
+		})
+
+        /*---------------auto assign start here--------------------------------*/
+
+        function autoAssignPopup(){
+        $.ajax({
+        type : 'GET',
+        url : $("#contextPath").val()
+        + "/api/user-setting/product-assign-metas",
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success : function(data) {
+        console.log("data--",data);
+        if (data && data.masterData ) {
+        for(val in data.masterData) {
+        if(val == "subjectList" || val == "gradeList" || val == "languageList")
+        autoAssignPopupCreation(data);
+        break;
+        }
+
+        }
+        },
+        error : function(error) {
+        console.log(error.message);
+        }
+        });
+        }
+
+        function autoAssignPopupCreation(data){
+        console.log("autoAssignPopupCreation");
+        if(data.masterData){
+        if(data.masterData.subjectList){
+        var subjectList = data.masterData.subjectList.length;
+        }
+        if(data.masterData.gradeList){
+        var gradeList = data.masterData.gradeList.length;
+        }
+
+        if(data.masterData.languageList){
+        var languageList = data.masterData.languageList.length;
+        }
+
+
+        if(subjectList>0 && gradeList>0 && languageList>0){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab1'><div class='row-fluid'></div></div><div class='tabauto tab2'><div class='row-fluid'></div></div><div class='tabauto tab3'><div class='row-fluid'></div></div>");
+        }
+
+        else if(gradeList >0 && subjectList >0 && !languageList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab1'><div class='row-fluid'></div></div><div class='tabauto tab2'><div class='row-fluid'></div></div>");
+        }
+
+        else if(gradeList >0 && languageList >0 && !subjectList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab1'><div class='row-fluid'></div></div><div class='tabauto tab3'><div class='row-fluid'></div></div>");
+        }
+
+        else if(subjectList >0 && languageList >0 && !gradeList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab2'><div class='row-fluid'></div></div><div class='tabauto tab3'><div class='row-fluid'></div></div>");
+        }
+
+        else if(gradeList >0 && !subjectList && !languageList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab1'><div class='row-fluid'></div></div>");
+        }
+
+        else if(subjectList >0 && !gradeList && !languageList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab2'><div class='row-fluid'></div></div>");
+        }
+        else if(languageList >0 && !subjectList && !gradeList){
+        $("#autoasignModal-data").prepend("<div class='tabauto tab3'><div class='row-fluid'></div></div>");
+        }
+
+        var selectedGrade = [];
+        var selectedSubject = [];
+        var selectedLang = [];
+
+        if(data.userData.userGrade && data.userData.userGrade.length > 0){
+        for(var i=0; i<=data.userData.userGrade.length-1;i++){
+        selectedGrade.push(data.userData.userGrade[i]);
+        }
+        }
+
+        if(data.userData.userSubjects && data.userData.userSubjects.length> 0){
+        for(var i=0; i<=data.userData.userSubjects.length-1;i++){
+        selectedSubject.push(data.userData.userSubjects[i]);
+        }
+        }
+
+        if(data.userData.userLanguages && data.userData.userLanguages.length > 0){
+        for(var i=0; i<=data.userData.userLanguages.length-1;i++){
+        selectedLang.push(data.userData.userLanguages[i]);
+        }
+        }
+
+        if(data.masterData.gradeList && data.masterData.gradeList.length>0){
+        $(".tab1").prepend("<div><span class='select-msg' type='localization' localizationid='Please_Select_The_Grade_You_Teach'></span></div>");
+        for(var i=0; i<=data.masterData.gradeList.length-1;i++){
+
+        if(selectedGrade.indexOf(data.masterData.gradeList[i].gradeId) >= 0){
+
+        $(".tab1 .row-fluid").append ( "<div class='sppan6'><input class='grade' checked='checked' id='"+ data.masterData.gradeList[i].gradeId +" ' type='checkbox' value='" + data.masterData.gradeList[i].gradeName + "' /><label for='" + data.masterData.gradeList[i].gradeId  + "'>" + data.masterData.gradeList[i].gradeName + "</label></div>" );
+
+
+        }else{
+
+        $(".tab1 .row-fluid").append ( "<div class='sppan6'><input class='grade' id='"+ data.masterData.gradeList[i].gradeId +" ' type='checkbox' value='" + data.masterData.gradeList[i].gradeName + "' /><label for='" + data.masterData.gradeList[i].gradeId  + "'>" + data.masterData.gradeList[i].gradeName + "</label></div>" );
+
+        }
+
+        }
+        }
+
+        if(data.masterData.subjectList && data.masterData.subjectList.length>0){
+        $(".tab2").prepend("<div><span class='select-msg' type='localization' localizationid='Please_Select_The_Subject_You_Teach'></span></div>");
+        for(var i=0; i<=data.masterData.subjectList.length-1;i++){
+
+        if(selectedSubject.indexOf(data.masterData.subjectList[i].subjectId) >= 0){
+
+        $(".tab2 .row-fluid").append ( "<div class='sppan6'><input class='subject' checked='checked' id='"+ data.masterData.subjectList[i].subjectId +" ' type='checkbox' value='" + data.masterData.subjectList[i].subjectName + "' /><label for='" + data.masterData.subjectList[i].subjectId  + "'>" + data.masterData.subjectList[i].subjectName + "</label></div>" );
+
+        }else{
+
+        $(".tab2 .row-fluid").append ( "<div class='sppan6'><input class='subject' id='"+ data.masterData.subjectList[i].subjectId +" ' type='checkbox' value='" + data.masterData.subjectList[i].subjectName + "' /><label for='" + data.masterData.subjectList[i].subjectId  + "'>" + data.masterData.subjectList[i].subjectName + "</label></div>" );
+
+        }
+
+        }
+        }
+
+        if(data.masterData.languageList && data.masterData.languageList.length>0){
+        $(".tab3").prepend("<div><span class='select-msg' type='localization' localizationid='Please_Select_The_Language'></span></div>");
+        for(var i=0; i<=data.masterData.languageList.length-1;i++){
+
+        if(selectedLang.indexOf(data.masterData.languageList[i].languageId) >= 0){
+
+        $(".tab3 .row-fluid").append ( "<div class='sppan6'><input class='lang' checked='checked' id='"+ data.masterData.languageList[i].languageId +" ' type='checkbox' value='" + data.masterData.languageList[i].languageCode + "' /><label for='" + data.masterData.languageList[i].languageId  + "'>" + data.masterData.languageList[i].name + "</label></div>" );
+
+        }else{
+
+        $(".tab3 .row-fluid").append ( "<div class='sppan6'><input class='lang' id='"+ data.masterData.languageList[i].languageId +" ' type='checkbox' value='" + data.masterData.languageList[i].languageCode + "' /><label for='" + data.masterData.languageList[i].languageId  + "'>" + data.masterData.languageList[i].name + "</label></div>" );
+
+        }
+
+        }
+        }
+
+        }
+
+        if(gdprflag){
+        autoassignPopupOrder = true;
+        }else{
+        $(".autoAssignpopup").show();
+        }
+        var currentTab = 0;
+        showTab(currentTab);
+
+        function showTab(n) {
+        var x = document.getElementsByClassName("tabauto");
+        x[n].style.display = "block";
+        if (n == 0) {
+        document.getElementById("prevBtn").style.display = "none";
+        } else {
+        document.getElementById("prevBtn").style.display = "inline";
+        }
+        if (n == (x.length - 1)){
+        //document.getElementById("nextBtn").innerHTML = "Submit";
+        document.getElementById("nextBtn").style.display = "none";
+        document.getElementById("submitBtn").style.display = "inline";
+
+        } else {
+        //document.getElementById("nextBtn").innerHTML = "Next";
+        document.getElementById("nextBtn").style.display = "inline";
+        document.getElementById("submitBtn").style.display = "none";
+
+        }
+
+        var preselectedGrade = $(".grade:checked").length;
+        var preselectedSubject = $(".subject:checked").length;
+        var preselectedLang = $(".lang:checked").length;
+        if(preselectedGrade || preselectedSubject || preselectedLang){
+        $("#nextBtn,#submitBtn").prop("disabled", false);
+        }
+
+        if($(".tab1").is(':visible')){
+        $("#chooseGradeMsg").show();
+        $("#chooseSubjectMsg,#chooseLanguageMsg").hide();
+
+        if(!preselectedGrade){
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+
+        }else if($(".tab2").is(':visible')){
+        $("#chooseSubjectMsg").show();
+        $("#chooseGradeMsg,#chooseLanguageMsg").hide();
+
+        if(!preselectedSubject){
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+        }else if($(".tab3").is(':visible')){
+        $("#chooseLanguageMsg").show();
+        $("#chooseSubjectMsg,#chooseGradeMsg").hide();
+
+        if(!preselectedLang){
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+        }
+
+
+        }
+
+        $(".grade").change(function() {
+
+        if($('.grade:checked').length > 0) {
+        $("#nextBtn,#submitBtn").prop("disabled", false);
+        }else{
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+        });
+
+        $(".subject").change(function() {
+        if($('.subject:checked').length > 0) {
+        $("#nextBtn,#submitBtn").prop("disabled", false);
+        }else{
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+        });
+
+        $(".lang").change(function() {
+
+        if($('.lang:checked').length > 0) {
+        $("#nextBtn,#submitBtn").prop("disabled", false);
+        }else{
+        $("#nextBtn,#submitBtn").prop("disabled", true);
+        }
+        });
+
+        function nextPrev(n) {
+        var x = document.getElementsByClassName("tabauto");
+        x[currentTab].style.display = "none";
+        currentTab = currentTab + n;
+        //if (currentTab >= x.length) {
+        //submitted();
+        //return false;
+        //}
+        showTab(currentTab);
+        }
+
+        $("#prevBtn").click(function(){
+        nextPrev(-1);
+
+        });
+        $("#nextBtn").click(function(){
+        nextPrev(1);
+
+        });
+
+        $("#submitBtn").click(function(){
+        //nextPrev(1);
+        submitted()
+
+        });
+        function submitted(){
+        var selectedGrade = [];
+        var selectedSubject = [];
+        var selectedLang = [];
+        $('.grade:checked').each(function() {
+        selectedGrade.push(this.id);
+        });
+        $('.subject:checked').each(function() {
+        selectedSubject.push(this.id);
+        });
+        $('.lang:checked').each(function() {
+        selectedLang.push(this.id);
+        });
+
+        var data = {
+        gradeIdString :	selectedGrade.toString().replaceAll(" ", ""),
+        subjectIdString : selectedSubject.toString().replaceAll(" ", ""),
+        languageIdString : selectedLang.toString().replaceAll(" ", "")
+        }
+        console.log("data",data);
+        $.ajax({
+        type : 'POST',
+        url : $("#contextPath").val()
+        + "/api/user-setting/save-product-assign-metas",
+        data : JSON.stringify(data),
+        contentType: "application/json; charset=utf-8",
+        dataType: "json",
+        success : function(data) {
+        console.log("--data--",data);
+        if (data && data.code == 200) {
+        $(".autoAssignpopup").hide();
+        }
+        else if(data && data.code == 333){
+        $(".autoAssignpopup").hide();
+        window.location.href = window.location.protocol + "//" + window.location.hostname + "/" + "login.htm?signout=true&tenant=magic";
+        }
+        else{
+        $(".autoAssignpopup").hide();
+        }
+        },
+        error : function(error) {
+        console.log(error.message);
+        }
+
+        });
+
+        }
+        }
+
+        /*---------------auto assign ends here--------------------------------*/
+
+
+        $("#cleverSync").click(function(){
+        var tenant=0;
+        tenant=$("#tenantId").val();
+        $.ajax({
+        type : 'GET',
+        url : $("#contextPath").val()
+        + "/api/clever/clever-events-sync-data.json?tenant_id="+tenant+"&district="+$("#cleverDistrictId").val(),
+        async : false,
+        contentType : "application/json",
+        success : function(data) {
+        $("#modalHtml").html('').html('<span  style="text-align:center; display:block; padding:20px 0 15px 0" type="localization" localizationid="clever_sync_confirmation_popup"></span>');
+        GlobalUtil.setplatformLocalizationUtil();
+        $("#cleverSyncPopup").show();
+        setTimeout(function(){
+        $("#cleverSyncPopup").hide();
+        }, 5000);
+
+        },
+        error : function(error) {
+        console.log(error.message);
+        }
+
+        });
+        });
+
+        var faviconTag = $("#faviconTag");
+        $("head").append(faviconTag);
+
+        $("#userAccount").click(function(){
+        window.location="/accountdetail.htm";
+        });
+        $(".brand").click(function(){
+        window.location="/login.htm";
+        });
+
+        $(".originlibrary").click(function(){
+        window.location="/origin/index.html#/library";
+        });
+        setTimeout(function(){
+        $("#userH").click(function(){
+        window.location="/admin/profile.htm";
+        });
+
+        $("#managementConsole").click(function(){
+        window.location="/managementConsole.htm";
+        });
+
+        $("#switchNewUIUX").click(function(){
+        window.location="/admin/switchView.htm";
+        });
+        // Ravi
+        $("#switchUser").click(function(){
+        window.location="/switchUserPage.htm";
+        /*var tenant = $("#tenant").val();
+        var path="";
+        window.location=path+"/logout.htm?tenant="+tenant; */
+        });
+
+        $("#redirectCupaLink").click(function(){
+            console.log('hello');
+            var jwt = sessionStorage.getItem("jwt_token");
+            var urlJwt = jwt.split("Bearer")[1];
+            var url = ''+urlJwt.trim();
+
+            console.log(jwt);
+            window.open(url, '_blank');
+        });
+
+        $("#logout786").click(function(){
+        var tenant = $("#tenant").val();
+        var path="";
+        var thirdPartyLogoutUrl = "";
+        localStorage.removeItem("backToLibUrl");
+        // clearing session storage on logout
+        sessionStorage.clear();
+        if(thirdPartyLogoutUrl != undefined && thirdPartyLogoutUrl != null && thirdPartyLogoutUrl !='' && thirdPartyLogoutUrl !='null')
+        {
+        var path="";
+        path=location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+        logoutAPIHandler(path, "GET").then(function(data){
+        window.location=thirdPartyLogoutUrl;
+        }, function(error){
+        window.location=path+"/logout.htm?tenant="+tenant;
+        });
+        }
+        else{
+        window.location=path+"/logout.htm?tenant="+tenant;
+        }
+        });
+
+        $("#userPortalSetting").click(function(){
+        window.location="/updateportal.htm";
+        });
+        $("#userUpdateToPro").click(function(){
+        window.location="/upgradeaccount.htm";
+        });
+
+        }, 500);
+
+
+
+        var brand_name=$("#tenant").val();
+        var imageUrl ="/static/"+ brand_name + "/images/header.png";
+
+        var height = window.innerHeight;
+        var leftheight = height - 150;
+        var productshow = height - 130;
+        $(".mdlLft").css('height', leftheight);
+
+        $(".rtefine").css('height', productshow);
+        if (navigator.userAgent.match(/Android/i)) {
+        $(".footerMain").css('margin-left', '1%');
+        }
+
+
+        $('html').unbind("click").bind("click",function(){
+        if ($('#sidebar').hasClass('show-menu')) {
+        $('#sidebar').removeClass("show-menu");
+        }
+        });
+
+        $('.main-content').unbind("click").bind("click",function(){
+        if ($('#sidebar').hasClass('show-menu')) {
+        $('#sidebar').removeClass("show-menu");
+        }
+        });
+
+        var pageHt = $(window).height();
+        pageHt = pageHt-78; /*56*/
+        var tempHt = $("#sidebar").height();
+        if(tempHt > pageHt){
+        pageHt = tempHt;
+        }
+
+        if(pageHt<800)
+        {
+        //$('.footerMain').css({position:'fixed', bottom:'0'});
+        }else
+        {
+        //$('.footerMain').removeAttr('style');
+        }
+
+        if(navigator.userAgent.match(/(Chrome)/i)){
+        $('.itemListHt').css({minHeight:'707px'});
+        }
+
+        $('.main-content').css({minHeight:pageHt + 'px'});
+        window.addEventListener("resize", function() {
+        var pageHt = $(window).height();
+        pageHt = pageHt-31; /*56*/
+        var tempHt = $("#sidebar").height();
+        if(tempHt > pageHt){
+        pageHt = tempHt;
+        }
+        $('.main-content').css({minHeight:pageHt + 'px'});
+        }, false);
+
+        if(navigator.userAgent.match(/(desktop)/i))
+        {
+        var pageHt = $(window).height();
+        pageHt = pageHt-31; /*56*/
+        var tempHt = $("#sidebar").height();
+        if(tempHt > pageHt){
+        pageHt = tempHt;
+        }
+        $('.main-content').css({minHeight:pageHt + 'px'});
+        }
+
+
+        if(window.location.href.indexOf("/assessment/") < 0)
+        {
+        $('.sidebar').css({ position:'static !important', float:'left !important'});
+        }
+
+
+        var myInpFld = $('input[type="text"], input[type="password"], select, textarea');
+        myInpFld.click(function(){
+        var winWdh = $(window).width();
+
+        if(navigator.userAgent.match(/(iPad)|(iPod)|(iPhone)|(webOS)/i)){
+        if(winWdh==1024){
+        $('#frameId').height('590');
+        }
+        else
+        {
+        //$('.footerMain').css({position:'fixed'});
+        $('#frameId').height('auto');
+        }
+        }
+
+        if(navigator.userAgent.match(/(Android)/i)){
+        if(winWdh==800)
+        {
+        $('.page-content').css({minHeight:'1070px'});
+        $('#frameId').height('auto');
+        }
+        else
+        {
+        $('.page-content').css({minHeight:'800px'});
+        //$('.footerMain').css({position:'static'});
+        $('#frameId').height('615');
+        }
+
+        //$('.footerMain').removeAttr('style');
+        }
+        });
+
+        $(window).resize(function(){
+
+        var winWdh = $(window).width();
+        if(navigator.userAgent.match(/(iPad)|(iPod)|(iPhone)|(webOS)/i)){
+        if(winWdh==1024){
+        $('#frameId').height('650');
+        }
+        else
+        {
+        //$('.footerMain').css({position:'fixed'});
+        }
+        }
+        if(navigator.userAgent.match(/(Android)/i)){
+        if(winWdh==800)
+        {
+        $('.page-content').css({minHeight:'1070px'});
+        }
+        else
+        {
+        $('.page-content').css({minHeight:'800px'});
+        //$('.footerMain').css({position:'static'});
+        $('#frameId').height('700');
+        }
+
+        //$('.footerMain').removeAttr('style');
+        }
+
+        var pageHt = $(window).height();
+        pageHt = pageHt-78;/*56*/
+        var tempHt = $("#sidebar").height();
+        if(tempHt > pageHt){
+        pageHt = tempHt;
+        }
+
+        //$('.main-content').css({minHeight:pageHt + 'px'});
+
+        if(navigator.userAgent.match(/(desktop)/i))
+        {
+        var pageHt = $(window).height();
+        pageHt = pageHt-31; /*56*/
+        var tempHt = $("#sidebar").height();
+        if(tempHt > pageHt){
+        pageHt = tempHt;
+        }
+        $('.main-content').css({minHeight:pageHt + 'px'});
+        }
+
+        });
+        if($("#userType").val()=='IND_USER' || $("#userType").val()=='ECOM_USER'){
+        $.ajax({
+        type : 'GET',
+        url : $("#contextPath").val()
+        + "/services/user/account/getAdminLeftLink.json",
+        async : false,
+        contentType : "application/json",
+        success : function(data) {
+        if (data.adminLeftLinkRes.code == 200) {
+        if(data.adminLeftLinkRes.linkNameOne!=null && data.adminLeftLinkRes.linkNameOne != undefined){
+        $("#adminIndLink1").attr("href", data.adminLeftLinkRes.linkUrlOne);
+        $('#levelAdminIndLink1').text(data.adminLeftLinkRes.linkNameOne);
+        }
+        if(data.adminLeftLinkRes.linkNameTwo!=null && data.adminLeftLinkRes.linkNameTwo != undefined){
+        $("#adminIndLink2").attr("href", data.adminLeftLinkRes.linkUrlTwo);
+        $('#levelAdminIndLink2').text(data.adminLeftLinkRes.linkNameTwo);
+        }
+        if(data.adminLeftLinkRes.linkNameThree!=null && data.adminLeftLinkRes.linkNameThree != undefined){
+        $("#adminIndLink3").attr("href", data.adminLeftLinkRes.linkUrlThree);
+        $('#levelAdminIndLink3').text(data.adminLeftLinkRes.linkNameThree);
+        }
+        }
+        },
+        error : function(error) {
+        console.log(error.message);
+        }
+
+		});
+	    }
+
+		/*polling person session once user logged in*/
+		if($('#isPearsonLoginEnabled') && $('#isPearsonLoginEnabled').val()==='true' && ($("#usertype").val()==="LEARNER" || $("#usertype").val()==="TEACHER")){
+			pearsonSessionData.getRumbaSession();
+		}
+
+		var selectedClassGradeData = {}
+
+		var apiResponse = {
+			classListData: {},
+			gradeListData: {}
+		}
+
+		var path = "";
+	 	path = location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+
+		var teacherGuid = sessionStorage.getItem('user_guid')
+		var schoolId = sessionStorage.getItem('school_id')
+
+		var classModalRef = "";
+		function populateDataInClassGradePopup() {
+			if(apiResponse.classListData.success) {
+				if(apiResponse.classListData.success.length > 0){
+                    $('#classGradeModal').removeClass('hide fade').show();
+					var divsec = document.createElement("div");
+					divsec.classList.add('modal-backdrop','fade','in','classGradeModalBackdrop');
+					divsec.id="classGradeModalBackdrop";
+					document.body.appendChild(divsec); 
+                    var libElementCurr = document.getElementById("chosenLibraryFile");//remove existing chosen library because of wrong order
+                    if(libElementCurr){
+                        libElementCurr.parentNode.removeChild(libElementCurr);
+                    }      
+                    var script = document.createElement('script');//add chosen library
+                    script.type = 'text/javascript';
+                    script.src = '/static/bootstrap/js/chosen.jquery.min.js';
+                    $('body').append(script);
+				}else{
+					localStorage.setItem('classGradePopupOrderDone', true)
+				}
+			}
+
+			if (apiResponse.classListData.success &&
+				apiResponse.classListData.success.length > 0 &&
+				apiResponse.gradeListData.success){
+				apiResponse.classListData.success.map(function(item, index, classListArray) {
+					var classGradeRow = document.createElement('div');
+					classGradeRow.className = "row";
+					var classNameDiv = document.createElement('div')
+					classNameDiv.className = 'span2';
+/* 					classNameDiv.innerHTML = item.schoolClassName;
+					classNameDiv.setAttribute('title', item.schoolClassName); */
+					var spanClassSection = document.createElement('span')
+					spanClassSection.className = 'class-section'
+					spanClassSection.innerHTML = item.schoolClassName;
+					spanClassSection.setAttribute('title', item.schoolClassName);
+					classNameDiv.appendChild(spanClassSection);
+					var gradeListDiv = document.createElement('div');
+					gradeListDiv.className = "span4";
+					if(classListArray.length > 2 && (index === classListArray.length - 1 || index === classListArray.length - 2)) {
+						gradeListDiv.className += " lastClassGrade";
+					}
+
+					var gradeSelect = document.createElement('select');
+					gradeSelect.className = 'chzn-select';
+					gradeSelect.id = item.schoolGroupId;
+					gradeSelect.setAttribute('multiple', 'multiple');
+					var options_str = "";
+					apiResponse.gradeListData.success.map(function(grade) {
+						options_str += '<option value="' + grade.gradeId + '">' + grade.gradeName + '</option>';
+					})
+					gradeSelect.innerHTML = options_str;
+					gradeListDiv.appendChild(gradeSelect);
+					classGradeRow.appendChild(classNameDiv);
+					classGradeRow.appendChild(gradeListDiv);
+					document.getElementById('classGradeList').appendChild(classGradeRow);
+                    document.getElementById('select-class-grade').style.visibility = "hidden";
+				})
+
+				$(".chzn-select").chosen({
+    				placeholder_text_multiple: 'Select Grade Level(s)'
+				}).change(function (event) {
+					selectedClassGradeData[event.target.id] = $(event.target).val()
+					// check if all classes have valid grades associated then anable save button
+
+					if(Object.values(selectedClassGradeData).indexOf(null) === -1 && (
+						Object.keys(selectedClassGradeData).length === (
+							apiResponse.classListData.success && apiResponse.classListData.success.length
+						))){
+								document.getElementById('saveClassGradeData').disabled = false;
+                                document.getElementById('select-class-grade').style.visibility = "hidden";
+							}
+					else {
+						document.getElementById('saveClassGradeData').disabled = true;
+                        document.getElementById('select-class-grade').style.visibility = "hidden";
+					}
+					var checkIDinDoc = document.getElementById("select-class-grade-secondry");
+					if(checkIDinDoc){
+						checkIDinDoc.remove();
+					}
+        		});
+			}
+			else if(apiResponse.classListData.error || apiResponse.gradeListData.error){
+                $('#classGradeModal').removeClass('hide fade').show();
+				var divsec = document.createElement("div");
+				divsec.classList.add('modal-backdrop','fade','in','classGradeModalBackdrop');
+				divsec.id="classGradeModalBackdrop";
+				document.body.appendChild(divsec);
+				document.getElementById('classGradeError').style.display = "inline"
+				document.getElementById('classGradeModalBody').style["min-height"] = "100px"
+				document.getElementById('saveClassGradeData').style.display = "none"
+				document.getElementById('class-grade-heading-default').style.display = "none"
+				document.getElementById('classGradeList').style.display = "none"
+                document.getElementById('select-class-grade').style.visibility = "hidden";
+			}
+			return false;
+		}
+
+		function handlePopupWithGdprFlag(){
+			if(gdprflag && !gdprAccepted) {
+				callPopulateClassGradeList = true
+			} else {
+				populateDataInClassGradePopup()
+			}
+			$('.loaderOverlay')[0].style.display="none";
+		}
+
+  		function classGradePopup() {
+			apiResponse = {
+				classListData: {},
+				gradeListData: {}
+			}
+
+			$.ajax({
+		        type : 'GET',
+		        url : path + "/api/teacher/" + schoolId + "/" + teacherGuid + "/classes.json?token=DEMO_TOKEN",
+		        contentType: "application/json; charset=utf-8",
+			 	dataType: "json",
+		        success : function(classesData) {
+			        if(classesData.code == 200){
+						apiResponse.classListData.success = classesData.schoolClassList
+					}else{
+						apiResponse.classListData.error = "error";
+					}
+
+					handlePopupWithGdprFlag()
+				},
+				error : function(error) {
+					apiResponse.classListData.error = error
+					handlePopupWithGdprFlag()
+		    	}
+			})
+
+			$.ajax({
+		        type : 'GET',
+		        url : path + "/api/master/grades.json",
+		        contentType: "application/json; charset=utf-8",
+			 	dataType: "json",
+		        success : function(gradesData) {
+					if(gradesData.code == 200){
+						apiResponse.gradeListData.success = gradesData.grades
+					}else{
+						apiResponse.gradeListData.error = "error";
+					}
+					handlePopupWithGdprFlag()
+				},
+				error : function(error) {
+					apiResponse.gradeListData.error = error
+					handlePopupWithGdprFlag()
+		    	}
+			})
+		}
+
+		function createClassPopup() {
+			$('.loaderOverlay')[0].style.display="none";
+			$("#setupClassModal").modal({
+  		  		keyboard: false,
+  		  		backdrop: "static"
+  			});
+		}
+
+		function updateClassGradeAssociationErrorHandling() {
+			document.getElementById('classGradeSaveError').style.display = "inline"
+		}
+
+		function updateClassGradeAssociation(selectedResponse) {
+			$.ajax({
+	 			type: "POST",
+	 			url: path+"/api/update/classgrades.json ",
+	 			data:JSON.stringify(selectedResponse),
+	 			contentType: "application/json; charset=utf-8",
+	 			dataType: "json",
+	 			success: function (response) {
+	 				if(response.code == 200){
+                        $('#classGradeModal').addClass('hide fade').hide();
+						var modalBackdrop = document.getElementById("classGradeModalBackdrop");
+						modalBackdrop.remove();
+                        setTimeout(function(){
+                            if ($("#classGradeModal").hasClass("hide fade"))
+                            {
+                            	var modalBackdropTemp = document.getElementById("classGradeModalBackdrop");
+                            	if(modalBackdropTemp){
+                            		modalBackdropTemp.remove();
+                            	}
+                            }
+                        }, 3000)
+						localStorage.setItem('classGradePopupOrderDone', true)
+					 }
+					 else{
+						updateClassGradeAssociationErrorHandling()
+					}
+	 			},
+	 			error: function (jqXHR, textStatus, errorThrown) {
+						updateClassGradeAssociationErrorHandling()
+	 				}
+			});
+		}
+		// On Save button click
+
+		document.getElementById('saveClassGradeData').onclick = function(event) {
+
+			var selectedResponse = {
+    			"teacherClassGradeVo" : []
+			}
+
+			var stopExecutionFlag = false;
+			Object.keys(selectedClassGradeData).map((classGradeData) => {
+				if(selectedClassGradeData[classGradeData].length>1){
+					stopExecutionFlag = true;
+				}
+				selectedResponse.teacherClassGradeVo.push({
+					"classId": classGradeData,
+					"grades": selectedClassGradeData[classGradeData]
+				})
+			})
+			if(stopExecutionFlag){
+				selectedResponse = {
+		    			"teacherClassGradeVo" : []
+				}
+				var checkIDinDoc = document.getElementById("select-class-grade-secondry");
+				if(checkIDinDoc){
+					checkIDinDoc.remove();
+			    }
+				var messageDiv = document.createElement('div');
+				messageDiv.id = "select-class-grade-secondry";
+				messageDiv.className = "select-class-grade-secondry";
+				messageDiv.style.color="red";
+				messageDiv.style.cssFloat="left";
+				messageDiv.innerHTML = document.getElementById('select-class-grade').textContent;
+				var insertDiv = document.querySelector("#classGradeModal .modal-footer");
+				insertDiv.appendChild(messageDiv);
+				return false;
+			}
+			updateClassGradeAssociation(selectedResponse)
+        }
+
+		function createClassApiErrorHandling() {
+			createClassPopup()
+			document.getElementById('createClassError').style.display = "inline"
+			document.getElementById('createClassModal').style.display = "none"
+			document.getElementById('goToSaavasReealize').style.display = "none"
+		}
+
+		function createClassApiCall() {
+			// call api to get if any class is associated to teacher
+			if(!gdprflag || gdprAccepted){
+				$('.loaderOverlay')[0].style.display="block";
+			}
+
+			$.ajax({
+		        type : 'GET',
+		        url : path + "/api/teacher/" + schoolId + "/" + teacherGuid + "/checkClasses.json?token=DEMO_TOKEN",
+			 	contentType: "application/json; charset=utf-8",
+			 	dataType: "json",
+		        success: function(response) {
+					if(response.code == 200) {
+						if(response.teacherClassCount > 0) {
+							isClassGradePopupShown = true;
+						} else {
+							isCreateClassPopupShown = true;
+						}
+
+						if(gdprflag && !gdprAccepted) {
+    						classGradePopupOrder = true;
+							if(isClassGradePopupShown) {
+								classGradePopup();
+							}
+    					} else {
+    						if(isClassGradePopupShown) {
+								classGradePopup();
+							} else if(isCreateClassPopupShown) {
+								createClassPopup();
+							}
+    					}
+					} else {
+						createClassApiErrorHandling();
+					}
+				},
+				error: function(error) {
+					createClassApiErrorHandling();
+		    	}
+			})
+		}
+
+		/* call class grade popup*/
+		function classGradeLaunchHandling() {
+			if (document.getElementById('isNoDRMEnabled') &&
+				document.getElementById('isNoDRMEnabled').value == "true" &&
+				document.getElementById('classGradeTenantConfiguration') &&
+				document.getElementById('classGradeTenantConfiguration').value == "true" &&
+				document.getElementById('userType') &&
+				document.getElementById('userType').value === 'TEACHER' &&
+				teacherGuid &&
+				schoolId &&
+				!localStorage.getItem('classGradePopupOrderDone')
+				){
+					createClassApiCall()
+			}
+		}
+
+		/* Show Class grade or Create Class modal if GDPR handling is complete*/
+		/* function noDrmPopupsAfterGdpr(gdprAccepted) {
+			if(gdprAccepted) {
+				gdprAccepted = gdprAccepted;
+			} else if(classGradePopupOrder) {
+				if(isClassGradePopupShown && callPopulateClassGradeList) {
+					populateDataInClassGradePopup()
+				} else if(isCreateClassPopupShown) {
+					localStorage.setItem('classGradePopupOrderDone', true)
+					createClassPopup()
+				}
+			}
+		} */
+
+		classGradeLaunchHandling()
+
+    })/*ready close*/;
+
+	/*logout Application*/
+	function logoutAPIHandler(url, methodType, callback){
+  		 return $.ajax({
+  		    url : url+"api/logoutsetting/logout.json",
+  		    method : methodType,
+  			contentType: "application/json; charset=utf-8",
+  		    dataType : "json"
+  		 })
+    }
+
+	/*following tour guide only used for mblite Tenant*/
+	var tourguideMain={
+			mainInit:function(tType){
+				var tourend=localStorage.getItem("tour_end");/*check if user already visited*/
+				if(tourend==null || tourend==''){
+					$('body').append("<div class='tourBaseOverlay' id='tourBaseOverlay'><div class='tourContent' id='tourContent'><a href='javascript:void(0)'  class='closeBtn' id='closeBtn' onclick='tourguideMain.closeTourGuide()'><i class='icon-remove'></i></a><table class='textBlock' cellpadding='0' cellspacing='0' height='100%' width='100%' align='center' valign='middle'><tr><td valign='middle'><div class='mainBlock'><div class='firstRow'>Product Tour</div><div class='secRow'>The easiest way to create, enrich, distribute &amp; deliver.<br/>Learn more about the product.</div><div class='lastRow'><a href='javascript:void(0)' class='strtTour' id='strtTour' onclick='tourguideMain.startSlide(\""+tType+"\")'><i class='icon-play-sign'></i>  Take a Tour</a></div></div></td></tr></table></div></div>");
+					var $head = $("head");
+					var $headlinklast = $head.find("link[rel='stylesheet']:last");
+					var linkElement = "<link rel='stylesheet' href='/static/bootstrap/css/bootstrap-tour.css' type='text/css' media='screen'>";
+					if ($headlinklast.length){
+					   $headlinklast.after(linkElement);
+					}
+					else {
+					   $head.append(linkElement);
+					}
+					var script = document.createElement( 'script' );
+					script.type = 'text/javascript';
+					script.src = '/static/js/bootstrap-tour.js';
+					$('body').append(script);
+				}else{
+					$("#tourBaseOverlay").remove();
+				}
+			},
+
+			startSlide:function(tType){
+				$('#tourContent').fadeOut('fast');
+				if(tType=="MBLITE"){
+					tourguideMain.MBLiteTourLaunch();
+				}else{
+					tourguideMain.CorporateTourLaunch();
+				}
+			},
+
+			MBLiteTourLaunch:function(){
+				$('body').append("<div id='tourGuideTxt1' type='localization' localizationid='tourGuideTxt1' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt2' type='localization' localizationid='tourGuideTxt2' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt3' type='localization' localizationid='tourGuideTxt3' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt4' type='localization' localizationid='tourGuideTxt4' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt5' type='localization' localizationid='tourGuideTxt5' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt6' type='localization' localizationid='tourGuideTxt6' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt7' type='localization' localizationid='tourGuideTxt7' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt8' type='localization' localizationid='tourGuideTxt8' style='display:none'></div>");
+				GlobalUtil.setplatformLocalizationUtil();
+			    var tour = new Tour({
+				  steps: [
+				  {
+					element: "#userPortalSetting",
+					title: "Portal Settings",
+					content: function(){
+						return $('#tourGuideTxt1').html();
+					},
+					onNext: function (tour) {
+						if($(window).width()<1024){
+							$('#sidebar').show();
+							$('#products').find('.submenu').show();
+
+						}else{
+							$('#products').find('.submenu').show();
+						}
+					},
+					onShown:function(){
+						$('#tourBaseOverlay').css('background-color','rgba(0,0,0,0.3)');
+						$(".disabled").on('click',function(){
+							$(this).prop('disabled', true)
+
+						});
+					},
+					placement:"left"
+				  },
+					{
+					element: "#adminaddproduct",
+					title: "Add Content",
+					content: function(){
+						return $('#tourGuideTxt2').html();
+					},
+					onStart: function (tour) {
+						//$('#hdTopDropMenu').find('.dropdown-menu').show();
+					},
+					onShown:function(){
+						if($("#proSettingTabBtnVal").val()==true|| $("#proSettingTabBtnVal").val()=='true'){
+							$('#prevTourBtn').attr("disabled",'disabled').addClass("disabled");
+						}
+						GlobalUtil.setplatformLocalizationUtil();
+					},
+				  },
+				  {
+					element: "#adminmanagecontent",
+					title: "Manage Content",
+					content: function(){
+						return $('#tourGuideTxt3').html();
+					},
+					onNext: function (tour) {
+						$('#school').find('.submenu').show();
+					},
+					onShown:function(){
+						GlobalUtil.setplatformLocalizationUtil();
+					}
+				  },
+				  {
+					element: "#school>a",
+					title: "School",
+					content: function(){
+						return $('#tourGuideTxt4').html();
+					},
+					onShown:function(){
+						GlobalUtil.setplatformLocalizationUtil();
+					}
+				  },
+				  {
+					element: "#schooladmin",
+					title: "School Admin",
+					content: function(){
+						return $('#tourGuideTxt5').html();
+					},
+					onShown:function(){
+						GlobalUtil.setplatformLocalizationUtil();
+					},
+					onNext: function (tour) {
+						$('#purchaseOrder').find('.submenu').show();
+					}
+				 },
+			     {
+					element: "#admincraetelicense",
+					title: "License",
+					content: function(){
+						return $('#tourGuideTxt6').html();
+					},
+					onShown:function(){
+						GlobalUtil.setplatformLocalizationUtil();
+					}
+				  },
+				  {
+						element: "#accessCode",
+						title: "Access Code",
+						content: function(){
+							return $('#tourGuideTxt7').html();
+						},onNext: function (tour) {
+							$('#hdTopDropMenu').find('.dropdown-menu').show();
+						},
+						onShown:function(){
+							if($("#proSettingTabBtnVal").val()==true|| $("#proSettingTabBtnVal").val()=='true'){
+								$('#nextTourBtn').attr("disabled",'disabled').addClass("disabled");
+							}
+							GlobalUtil.setplatformLocalizationUtil();
+						}
+			      },
+			      {
+						element: "#userUpdateToPro",
+						title: "Upgrade to Pro",
+						content: function(){
+							return $('#tourGuideTxt8').html();
+						},
+						onShown:function(){
+
+							$(".disabled").on('click',function(){
+								$(this).prop('disabled', true)
+
+							});
+
+						},
+						placement:"left"
+			      }
+				],
+				onStart: function (tour) {
+					$('#hdTopDropMenu').find('.dropdown-menu').show();
+				},
+				storage: window.localStorage,/*it is set so tour guide will run once*/
+				onEnd: function (tour) {
+				$('#tourBaseOverlay').hide();
+				$('#school').find('.submenu').hide();
+				$('#purchaseOrder').find('.submenu').hide();
+				$('#products').find('.submenu').hide();
+				var tourend=localStorage.getItem("tour_end");
+				$('#sidebar').removeAttr('style');
+				$('#hdTopDropMenu').find('.dropdown-menu').css("display","");
+				},
+				template:"<div class='popover tour selfRegTour'><div class='arrow'><span class='fusePointer'><em></em></span></div><h3 class='popover-title'></h3>"+
+				    "<div class='popover-content'></div><div class='popover-navigation'>"+
+				    "<button id='prevTourBtn' class='selfregBtn btn-default' data-role='prev'>Previous</button>"+
+				     "<button id='nextTourBtn' class='selfregBtn btn-default' data-role='next'>Next</button></div>"+
+				    "<button class='selfregCloseBtn' data-role='end'><i class='icon-remove'></i></button><a data-role='end' class='SkipLink' href='javascript:void(0)'>Skip</a></div>"
+				});
+				tour.init();
+				tour.start();
+			},
+			CorporateTourLaunch:function(){
+				$('body').append("<div id='tourGuideTxt10' type='localization' localizationid='tourGuideTxt10' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt11' type='localization' localizationid='tourGuideTxt11' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt12' type='localization' localizationid='tourGuideTxt12' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt13' type='localization' localizationid='tourGuideTxt13' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt14' type='localization' localizationid='tourGuideTxt14' style='display:none'></div>");
+				$('body').append("<div id='tourGuideTxt15' type='localization' localizationid='tourGuideTxt15' style='display:none'></div>");
+				GlobalUtil.setplatformLocalizationUtil();
+			    var tour = new Tour({
+				  steps: [
+				  {
+					element: "#userPortalSetting",
+					title: "Portal Settings",
+					content: function(){
+						return $('#tourGuideTxt10').html();
+					},
+					onNext: function (tour) {
+						if($(window).width()<1024){
+							$('#sidebar').show();
+							$('#products').find('.submenu').show();
+
+						}else{
+							$('#products').find('.submenu').show();
+						}
+					},
+					onShown:function(){
+						$('#tourBaseOverlay').css('background-color','rgba(0,0,0,0.3)');
+						$(".disabled").on('click',function(){
+							$(this).prop('disabled', true)
+
+						});
+					},
+					placement:"left"
+				  },
+					{
+					element: "#adminaddproduct",
+					title: "Add Content",
+					content: function(){
+						return $('#tourGuideTxt11').html();
+					},
+					onNext: function (tour) {
+						$('#purchaseOrder').find('.submenu').show();
+					}
+				  },
+				  {
+					element: "#adminmanagecontent",
+					title: "Manage Content",
+					content: function(){
+						return $('#tourGuideTxt12').html();
+					}
+				  },
+				  {
+					element: "#accessCode",
+					title: "Create Access Code",
+					content: function(){
+						return $('#tourGuideTxt13').html();
+					}
+				  },
+				  {
+					element: "#manageAccessCode",
+					title: "Manage Access Code",
+					content: function(){
+						return $('#tourGuideTxt14').html();
+					},
+					onNext: function (tour) {
+						$('#purchaseOrder').find('.submenu').show();
+					}
+				 },
+				  {
+						element: "#userUpdateToPro",
+						title: "Upgrade to Pro",
+						content: function(){
+							return $('#tourGuideTxt15').html();
+						},
+						onShown:function(){
+							$(".disabled").on('click',function(){
+								$(this).prop('disabled', true)
+							});
+						},
+						placement:"left"
+			      }
+				],
+				onStart: function (tour) {
+					$('#hdTopDropMenu').find('.dropdown-menu').show();
+				},
+				storage: window.localStorage,/*it is set so tour guide will run once*/
+				onEnd: function (tour) {
+				$('#tourBaseOverlay').hide();
+				$('#school').find('.submenu').hide();
+				$('#purchaseOrder').find('.submenu').hide();
+				$('#products').find('.submenu').hide();
+				var tourend=localStorage.getItem("tour_end");
+				$('#sidebar').removeAttr('style');
+				$('#hdTopDropMenu').find('.dropdown-menu').css("display","");
+				},
+				template:"<div class='popover tour selfRegTour'><div class='arrow'><span class='fusePointer'><em></em></span></div><h3 class='popover-title'></h3>"+
+				    "<div class='popover-content'></div><div class='popover-navigation'>"+
+				    "<button class='selfregBtn btn-default' data-role='prev'>Previous</button>"+
+				     "<button class='selfregBtn btn-default' data-role='next'>Next</button></div>"+
+				    "<button class='selfregCloseBtn' data-role='end'><i class='icon-remove'></i></button><a data-role='end' class='SkipLink' href='javascript:void(0)'>Skip</a></div>"
+				});
+				tour.init();
+				tour.start();
+			},
+			closeTourGuide:function(){
+				$('#tourBaseOverlay').hide();
+				localStorage.setItem("tour_end","yes");/*set value if user already visited*/
+				var tourend=localStorage.getItem("tour_end");
+				$('#sidebar').removeAttr('style');
+
+			}
+		}
+
+	function checkForElevio(){
+		if('false' != 'undefined' && 'false' == 'true'){
+			if(document.getElementById("supportIcon")){
+			document.getElementById("supportIcon").style.display = "unset";
+			}
+			var hashc = $("#elevioHashCode").val();
+			var fName = $("#fname").val();
+			var lName = $("#lname").val();
+			var userEmail = $("#emailOfUser").val();
+			var jQueryScript = document.createElement('script');
+			jQueryScript.setAttribute('src','');
+			document.head.appendChild(jQueryScript);
+			jQueryScript.onload = function(){
+				loadElevioScript(fName, lName, userEmail, hashc);
+			}
+		}
+	}
+
+		/*Pearson Session verify using heartbeat API*/
+	var pearsonSessionData={
+			getRumbaSession:function(){
+				var pollingPearsonSessionData=setInterval(() => {
+					$.ajax({
+						type : 'GET',
+						url : $("#contextPath").val()
+								+ "/services/checkHeartbeat.json",
+						async : false,
+						contentType : "application/json",
+						success : function(response) {
+							if(response.hasOwnProperty('checkHeartbeat') && (response['checkHeartbeat']['code']===200 || response['checkHeartbeat']['code']===333) && response['checkHeartbeat'].hasOwnProperty('sessionAlive')){
+					      		var isRumbaSessionFlag = response['checkHeartbeat']['sessionAlive'];
+					      		if(!isRumbaSessionFlag){
+					      			clearInterval(pollingPearsonSessionData);
+					      			var hostPath=location.protocol+"//"+location.hostname+(location.port > 0 ? ":"+location.port : "")+"/";
+					   		 	    logoutAPIHandler(hostPath, "GET").then(function(data){
+                                            localStorage.removeItem("classGradePopupOrderDone");
+						   		 			window.location=hostPath + 'login.htm?signout=true&error=authfailed-1014';
+						   		 	}, function(error){
+						   		 			window.location=hostPath + 'login.htm?signout=true&error=authfailed-1014';
+						   		 	});
+					      		}
+					      	}else if(response.hasOwnProperty('checkHeartbeat') && response['checkHeartbeat']['code']===500){
+					      		console.log("Do nothing?");
+					      	}
+						},
+						error : function(error) {
+							console.log(error.message);
+						}
+
+					});
+			   },300000)/*5min== 300000*/
+			}
+	}
+</script>
+
+
+        <!-- bot script added -->
+        <script>
+
+        window.addEventListener('DOMContentLoaded', function (event) {
+
+        var basePath = window.location.origin;
+
+        var platformDetailsReq = new XMLHttpRequest();
+
+        platformDetailsReq.open('GET', basePath+'/api/bot/v1/config.json',true);
+
+        platformDetailsReq.send();
+
+        platformDetailsReq.onload = function() {
+        if (platformDetailsReq.status != 200) { // HTTP error?
+        // handle error
+        console.error('Error: ' + platformDetailsReq.status);
+        return;
+        }
+
+        // get the response from platformDetailsReq.response
+        var platformDetails = (JSON.parse(platformDetailsReq.responseText)).response;
+
+        if(platformDetails.zuulUrl){
+            sessionStorage.setItem('zuulUrl',platformDetails.zuulUrl);
+        }
+        
+        if(Object.keys(platformDetails).length === 0 && platformDetails.constructor === Object){
+        console.log('Platform session giving no data for bot.');
+        return;
+        }
+
+        if(platformDetails.botEnabled===false) {
+        console.log('Bot is disabled for this tenant.')
+        return;
+        }
+
+        var botDetailsUrl = platformDetails.botUrl+'/api/bot/projects/default/bot_details';
+        var botReq = new XMLHttpRequest();
+
+        botReq.open('GET', window.location.protocol+'//'+botDetailsUrl+'?token=fdbe7126004bbe6ab42023f16ecff46d&tenant_id='+platformDetails.tenantId,true);
+
+        botReq.send();
+
+        botReq.onload = function() {
+        if (botReq.status != 200) { // HTTP error?
+        // handle error
+        console.error( 'Error: ' + botReq.status);
+        return;
+        }
+
+        // get the response from botReq.response
+        var scriptDetails = JSON.parse(botReq.responseText);
+        sessionStorage.setItem("kea_config_endpoint", scriptDetails.kea_config_endpoint);
+        if(Object.keys(scriptDetails).length === 0 && scriptDetails.constructor === Object){
+        console.log('no bot assigned');
+        return;
+        }
+
+        var script = document.createElement('script');
+        script.src = scriptDetails.bot_init_js_url;
+        script.async = false;
+
+        document.body.append(script);
+
+        var interval = setInterval(initializeBot, 750);
+        function initializeBot() {
+        if(typeof botScript !== 'undefined' && typeof botScript.initializeBot !== 'undefined') {
+        botScript.initializeBot(
+        platformDetails.userGuid,
+        platformDetails.accessToken,
+        platformDetails.refreshToken,
+        platformDetails.tenantId,
+        window.location.protocol+'//'+platformDetails.zuulUrl,
+        scriptDetails.bot_id);
+        clearInterval(interval);
+        }
+        }
+        };
+
+        botReq.onerror = function() {
+        // handle non-HTTP error (e.g. network down)
+        console.error('something went wrong on bot side.')
+        };
+        };
+
+        platformDetailsReq.onerror = function() {
+        // handle non-HTTP error (e.g. network down)
+        console.error('something went wrong on platform session side.')
+        };
+        });
+
+        </script>
+        
+
+<!--End Header-->
+
+<div class="main-container container-fluid">
+	<a class="menu-toggler" id="menu-toggler" href="#"> <span
+		class="menu-text"></span>
+	</a>
+	
+
+
+
+
+
+<div class="sidebar" id="sidebar">
+	<ul class="nav nav-list">
+
+				
+
+
+
+				
+
+				
+
+				
+
+				
+
+				
+
+					
+
+				
+
+				
+				
+					
+
+				
+				
+
+				
+
+
+				
+
+				
+				
+
+				
+
+				
+
+				
+
+				
+
+
+
+				
+
+
+
+		<!-- Publisher Panel Starts -->
+			<!-- MP-21109 : Dashboard link should be visible for report viewer account. -->
+		
+
+	 
+		
+		
+		
+				
+		
+		
+		
+
+		
+		<!-- ClassReport -->
+		
+
+		
+	
+
+		
+			
+		
+		
+
+		
+
+
+		
+			<li id="products"><a href="javascript:void(0);" class="dropdown-toggle" onclick="checkFlag('products')">
+					<i class="icon-book"></i> <span class="menu-text">
+					
+						<span type="localization" localizationid="content"></span>
+					
+					
+					</span><b class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				
+					<li id="teacherlibrary"><a
+							href="/mylibrary.htm" angleIconOpenCloseLink="products">
+								<i class="icon-double-angle-right"></i><span type="localization" localizationid="library"></span>
+						</a>
+					</li>
+											<!-- HS-138 -->
+					
+					
+				
+				
+				
+				
+
+				
+		
+				
+				
+			 
+				
+
+
+			     
+
+
+
+			     
+				
+					
+
+				
+				
+
+			     
+
+				<!-- Assignment 2.0 Version -->
+				
+				<!-- Ticket ID:- BJU-23 , Playlist Feature -->
+				
+				
+			     
+				
+				<!-- Ticket ID:- BJU-23 , Playlist Feature -->
+				<!--  -->
+
+				
+
+				 
+				
+					
+					
+				
+				<!-- Course Progress Report Start-->
+				
+				<!-- Course Progress Report End-->
+
+						
+					</ul>
+				</li>
+		
+
+		
+
+			
+
+			     
+
+		
+
+
+		
+
+		
+	
+		
+
+
+	 
+
+		
+			<li id="school">
+			<a href="javascript:void(0);" class="dropdown-toggle" onclick="checkFlag('school')"> <i
+					class=" icon-building"></i> <span class="menu-text" localizationid="school" type="localization"></span> <b
+					class="arrow icon-angle-down"></b>
+			</a>
+			<ul class="submenu">
+				
+					<li id="schooldiv"><a
+						href="/admin/school/searchschool.htm" link2="school" link4="searchschool"  angleIconOpenCloseLink="school">
+							<i class="icon-double-angle-right"></i><span localizationid="School_List" type="localization"></span>
+					</a></li>
+				
+				
+					<li id="schooladmin"><a
+						href="/admin/school/searchadmin.htm" link="add" link4="searchadmin"  angleIconOpenCloseLink="school">
+							<i class="icon-double-angle-right"></i><span localizationid="School_Admin" type="localization" ></span>
+					</a></li>
+				
+
+				
+				
+				</ul>
+				</li>
+		
+			
+		
+			<li id="schoolRoaster"><a href="javascript:void(0);"
+				class="dropdown-toggle" onclick="checkFlag('schoolRoaster')"> <i
+					class="icon-calendar">
+					<img class="roaster-icon" style="display: none;"/>
+				</i> <span class="menu-text"
+					localizationid="schoolRoaster" type="localization"></span> <b
+					class="arrow icon-angle-down"></b>
+			</a>
+				<ul class="submenu">
+				
+					
+						<li id="classesDiv"><a
+							href="/school/teacher/classes.htm"
+							link3="classes" link2="editclass" link="createclass"
+							link4="classstudentlist" link6="notification" angleIconOpenCloseLink="schoolRoaster"
+							link7="uploadclasses" link8="promoteStudents"> <i
+								class="icon-double-angle-right"></i> <span class="menu-text"
+								localizationid="Class" type="localization"></span>
+						</a></li>
+					
+				
+				
+					
+						<li id="teachersDiv"><a
+							href="/school/teacher/manageteacher.htm"
+							link="addteacher.htm" link2="manageteacher" link3="editteacher" angleIconOpenCloseLink="schoolRoaster"
+							link4="manageteacher" link5="uploadteacher" link5="uploadteacher" link6="multiSchoolTeacher"> <i
+								class="icon-double-angle-right"></i> <span class="menu-text"
+								localizationid="teacher" type="localization"></span>
+						</a></li>
+					
+					
+						<li id="studentsDiv"><a
+							href="/school/teacher/student.htm"
+							link="student" link2="editlearner" link3="learner" angleIconOpenCloseLink="schoolRoaster"
+							link4="uploadlearner" link6="report-student-progress"
+							link5="unassignbooktolearner">
+							<i class="icon-double-angle-right"></i>
+							<span class="menu-text" localizationid="student" type="localization"></span>
+						</a></li>
+					
+					
+					
+				</ul></li>
+		
+		
+
+		
+
+
+			
+
+
+
+
+		
+
+		
+
+		
+
+		
+
+	 
+		<li id="licenses">
+			<a href="/school/purchase/history.htm" link="assign.htm" link2="assign" link4="history" link5="assignaccesscode">
+				<i class="icon-list-alt"></i>
+				<span class="menu-text" localizationid="license" type="localization"></span>
+			</a>
+		</li>
+	 
+
+		 <!-- attandance tab starts here -->
+		 
+
+		  <!-- attandance tab ends here -->
+
+
+         
+
+	  
+
+          
+          	
+	          	<li id="Settings">
+	          		<a href="javascript:void(0);" onclick="checkFlag('settings')" class="dropdown-toggle" >
+	          			<i class="icon-cog"></i>
+	          			<span class="menu-text" localizationid="Settings" type="localization"></span>
+	          			<b class="arrow icon-angle-down"></b>
+					</a>
+				<ul class="submenu">
+					<!-- CONFERENCE SETUP  -->
+						
+							
+						
+
+					
+						
+
+						
+
+						
+					  
+				       
+				       
+						 
+				<!-- Temp code for google-classroom, lti-advantage and one-roster testing -->
+				 
+				 
+					  
+						<li>
+							<a	href="/clever/cleverSync.htm" angleIconOpenCloseLink="Settings">
+								<i class="icon-double-angle-right"></i> <span class="menu-text" localizationid="clever_sync_v2" type="localization"></span>
+							</a>
+						</li>
+					  
+				
+
+				 
+					
+						<li>
+						<a href="/admin/oneroster/rosterSync2.htm" angleIconOpenCloseLink="Settings">
+						<i class="icon-double-angle-right"></i>
+						<span class="menu-text" localizationid="oneroster_v2" type="localization"></span>
+						</a>
+						</li>
+					
+				
+
+				
+					
+				
+
+				
+
+				<!-- Temp code for google-classroom, lti-advantage and one-roster testing -->
+
+
+					 
+
+					
+
+				</ul>
+			</li>
+			
+		
+
+
+		  <!-- START: lti set up close-->
+
+	
+	 
+		
+
+	 <!-- START: Social -->
+
+			
+
+
+			
+							
+			
+			
+			
+							 
+			
+
+	     <!-- START: Dynamic Link -->
+	     
+		
+		
+		
+			
+			
+			
+			
+			
+			
+		
+		<!-- END: Social -->
+
+		
+		
+		
+		
+
+		
+		
+		<div class="sidebar-collapse" id="sidebar-collapse">
+					<i class="icon-double-angle-left"></i>
+				</div>
+	</ul>
+
+	<div >
+	<input type="hidden" value="" id="contextPath">
+
+	</div>
+	<div class="one_trust_setting_button">
+		<button id="ot-sdk-btn" class="ot-sdk-show-settings"></button>
+		</div>
+	<!--/.nav-list-->
+
+<script>
+var flag=null;
+var myMenuArray = ["school","schoolDistrict", "products", "reports", "purchaseOrder", "social", "schooldiv", "assessment", "assignments","extResources", "admin", "aiSettings", 'discountCoupon',"lti",'parentDashboard','schoolRoaster', 'Settings','schoolConfig', 'trainingSupport'];
+function checkFlag(val){
+	var currentval=null;
+	$.each(myMenuArray, function(index, value){
+		if(value!=val){
+			$('#' + value + '').children('a').children('b').removeClass('icon-angle-up');
+			$('#' + value + '').children('a').children('b').addClass('icon-angle-down');
+		}else{
+			currentval=value;
+		}
+	});
+
+	if(currentval==val && $('#' + currentval + '').children('a').children('b').hasClass('icon-angle-up')){
+		$('#' + currentval + '').children('a').children('b').removeClass('icon-angle-up');
+		$('#' + currentval + '').children('a').children('b').addClass('icon-angle-down');
+	}
+}
+
+$('ul li').click(function() {
+
+	if (flag == null) {
+		flag = $(this).attr('id');
+
+		if (!($(this).hasClass('open'))){
+			$(this).children('a').children('b').removeClass('icon-angle-down');
+			$(this).children('a').children('b').addClass('icon-angle-up');
+		}
+	} else if (flag == $(this).attr('id')) {
+		if (!($(this).hasClass('open'))){
+			$(this).children('a').children('b').removeClass('icon-angle-down');
+			$(this).children('a').children('b').addClass('icon-angle-up');
+		}
+	} else if (flag!= $(this).attr('id')) {
+		if (!($(this).hasClass('open'))){
+			$(this).children('a').children('b').removeClass('icon-angle-down');
+			$(this).children('a').children('b').addClass('icon-angle-up');
+		}
+		flag = $(this).attr('id');
+
+	}
+
+
+});
+
+
+$(document).ready(function(){
+	var useroptionDetails = JSON.parse(sessionStorage.getItem('useroptionDetails'));
+	 if(window.thirdPartyIntigration && window.thirdPartyIntigration.hasOneTrustEnabled){
+		 $('.one_trust_setting_button').css("display", "block")
+	}
+
+	if(useroptionDetails === undefined || useroptionDetails === null) {
+		$.ajax({
+		type : 'GET',
+		url : $("#contextPath").val()
+				+ "/services/social/userdetail/getUserDetailsWebView1.json?_=" + Date.now(),
+		async : false,
+		contentType : "application/json",
+		success : function(response) {
+			if (response && response['object']) {
+				//response.data = JSON.parse(response.data);
+			    var useroptionDetails = response['object'];
+			    sessionStorage.setItem('useroptionDetails', JSON.stringify(useroptionDetails));
+			    var user = useroptionDetails['user'];
+				var userType = useroptionDetails ? useroptionDetails.user.userType : '';
+			    if(user && user.districtName){
+				sessionStorage.setItem('districtName', user.districtName);
+			    }
+				if(userType === 'CUSTOMER_CARE') {
+					$.ajax({
+					type : 'GET',
+					url : $("#contextPath").val()
+							+ "/services/user/account/checkIfCreatedBySupPublisher.json",
+					async : false,
+					contentType : "application/json",
+					success : function(data) {
+				if (data.userAccSrvRes.code != 200) {
+					$("#customerCareMerge").hide();
+					}
+					},
+					error : function(error) {
+						console.log(error.message);
+					}
+
+				});
+				}
+		}
+		},
+		error : function(error) {
+			console.log(error.message);
+		}
+
+	});
+	}
+
+
+	$.ajax({
+		type : 'GET',
+		url : $("#contextPath").val()
+				+ "/services/user/account/getAdminLeftLink.json",
+		async : false,
+		contentType : "application/json",
+		success : function(data) {
+     if (data.adminLeftLinkRes.code == 200) {
+	 if(data.adminLeftLinkRes.linkNameOne!=null && data.adminLeftLinkRes.linkNameOne != undefined){
+		 $("#adminLink1").attr("href", data.adminLeftLinkRes.linkUrlOne);
+		 $('#levelAdminLink1').text(data.adminLeftLinkRes.linkNameOne);
+	 }
+	 if(data.adminLeftLinkRes.linkNameTwo!=null && data.adminLeftLinkRes.linkNameTwo != undefined){
+		 $("#adminLink2").attr("href", data.adminLeftLinkRes.linkUrlTwo);
+		 $('#levelAdminLink2').text(data.adminLeftLinkRes.linkNameTwo);
+		   }
+		 if(data.adminLeftLinkRes.linkNameThree!=null && data.adminLeftLinkRes.linkNameThree != undefined){
+			 $("#adminLink3").attr("href", data.adminLeftLinkRes.linkUrlThree);
+			 $('#levelAdminLink3').text(data.adminLeftLinkRes.linkNameThree);
+		 }
+		 if(data.adminLeftLinkRes.linkCreateCourse!=null && data.adminLeftLinkRes.linkCreateCourse != undefined){
+			 $("#createCourseLink").attr("href", data.adminLeftLinkRes.linkUrlCreateCourse);
+			 $('#levelCreateCourseLink').text(data.adminLeftLinkRes.linkCreateCourse);
+		 }
+	}
+		},
+		error : function(error) {
+			console.log(error.message);
+		}
+
+	});
+	
+	 var linkStatus=$(this).find('ul.nav > li > ul >li.active > a').attr('angleIconOpenCloseLink');
+		 if ($(this).hasClass('open')) {
+			 $('#' + linkStatus + '').children('a').children('b').removeClass('icon-angle-up');
+			 $('#' + linkStatus + '').children('a').children('b').addClass('icon-angle-down');
+		} else {
+			 $('#' + linkStatus + '').children('a').children('b').removeClass('icon-angle-down');
+			 $('#' + linkStatus + '').children('a').children('b').addClass('icon-angle-up');
+			 $('#' + linkStatus + '').addClass('open');
+		}
+		 if(navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i))
+		    {
+			  $(window).load(function(){
+				  $("#sidebar li a").addClass('nohover');
+			  });
+
+			}
+
+	});
+</script>
+
+
+<style type="text/css">
+ .nav-list li a.nohover:hover:before{ background:#f9f9f9;}
+ .nav-list li a.nohover:hover{color:#555555; background:#f9f9f9;}
+</style>
+
+</div>
+
+
+
+	<div class="main-content">
+		
+			
+			<div class="page-content">
+				<div class="breadcrumbs" id="breadcrumbs">
+				<div class="page-header position-relative">
+						<h1><span type="localization" localizationid="assign"></span><span type="localization" localizationid="access_codes"></span></h1>
+				</div>
+			</div>
+			<!--page-header-->
+			<div class="row-fluid">
+				<div class="span12">
+				      <div class="mdlRt" >
+       
+          
+			
+			<input type="hidden" value="" id="addedTeacher" name="addedTeacher">
+			
+			
+			<div class="errorBoxBdr" id="errorList">
+	        </div>
+	        <div class="successBoxBdr" id="successList"> </div>
+	        <div class="popGreenBox messageClass" id="successMessage" style="display: none;">  </div>   
+		  <div class="popRedBox messageClass" id="errorMessage" style="display: none;">  </div>
+	       
+			
+			
+			<form action="assignlicense.htm" method="post" id="assignForm" style="display:block !important">
+				<input type="hidden"  id="oldLicenseCount" value="" >
+				<input type="hidden"  id="oldRestrictedLogin" value="" >
+				<input type="hidden" id="poId" name="poId" value="560410">
+				<input type="hidden" id="licenseRemaining" value="3">
+				<input type="hidden" id="restrictionRemaining" value="0">
+				<input type="hidden" id="licenseType" name="licenseType" value="User">
+
+			<div class="formBoxBdr assignAccessPage">
+			<div>
+			<ul class="clearfix tchrList accessCodePage">
+				
+				<li>
+				<div><strong class="color">Transaction Number</strong><span>POZQ002481_Reporteros3_all</span></div>			
+				</li>
+				<li>
+				<div><strong class="color">License Start Date</strong><span>30-Aug-2024</span></div>			
+				</li>
+				<li>
+				<div><strong class="color">Total Licenses</strong><span>40</span></div>			
+				</li>
+			
+				<li>
+				<div><strong class="color">Access Code</strong><span>DRZN-XCFY-WHB7-YPM8</span></div>			
+				</li>
+				<li>
+				<div><strong class="color">License Expiry Date</strong><span>03-Oct-2025</span></div>			
+				</li>
+					<li>
+				<div><strong class="color">Licenses Used</strong><span>37</span></div>			
+				</li>
+				<li>
+				<div><strong class="color">License Type</strong><span>User</span></div>	
+				</li>
+				<li></li>
+				<li>
+				<div><strong class="color">Licenses Remaining</strong><span>3</span></div>
+				</li> 
+				
+				
+				<!--  static html end -->
+			</ul>			
+			</div>
+			</div>
+			  
+			<div class="requestMoreLicenses">
+	           <button class="btn btn-primary no-border" data-toggle="modal" data-target="#requestMoreLicenses">
+	        	<span type="localization" localizationid="request_more_licenses" ></span>
+                </button>
+            </div>	
+            
+          
+
+								<div class="midFormBlock">
+						<div class="control-group clearfix">
+							<label class="control-label"><span type="localization" localizationid="school"></span><span
+										class="alert-error">*</span> </label>
+							<div class="controls control-gr" style="float:left">
+								<select id="registerInputsDropdown1" name="schooId" style="float:left">
+								<option value="None" type="localization" localizationid="select_school"></option>
+									
+										
+											<option value="61205">Entir, NA</option>
+										
+											<option value="60927">King School, 1450 Newfield Ave</option>
+										
+											<option value="72262">MS, NA</option>
+										
+											<option value="61237">US, NA</option>
+										
+									
+								</select>
+								  <div class="purchOrderSep" style="float:left;margin-left:50px;">
+												<div class="orderListSec">
+													<span class="liceNoIcon"></span>
+													<div class="prchOrderLabelTxt">
+														<span type="localization" localizationid="number_of"></span><span type="localization" localizationid="licenses"></span><span class="alert-error">*</span> 
+													</div>
+													<div class="orderLabelRt">
+														<input type="text" autocomplete="off" value="0"  name="licenseCount"  class="orderInpFld" id="licensePerUserLicenseCount"  onkeyup="Validate(this)" maxLength="5" />
+													</div>
+												</div>
+											</div>
+							</div>
+							
+						</div>
+						<div class="control-group" style="margin-bottom: 0;"
+										id="schoolAdminDiv">
+										<label style="margin-right: 111px;"><span type="localization"
+												localizationid="school_admin_list"></span><span
+												class="alert-error">*</span> </label>
+												
+											<div class="instructionText"><span type="localization" localizationid="primary_email_instruction"></span></div>
+										<div class="admin_Email" >
+											
+											
+
+											<table id="sample-table-2"
+												class="table zebra-striped table-striped table-bordered" >
+												<thead>
+													<tr>
+														<th class="break tCol1"><span><input
+																type="checkbox" class="selectAllStudents selectAllAdmins" /></span></th>
+														<th class="break tCol2"><span type="localization"
+															localizationid="first_name"></span></th>
+														<th class="break tCol3"><span type="localization"
+															localizationid="last_name"></span></th>
+														<th class="break tCol4"><span type="localization"
+															localizationid="email_id"></span></th>
+													</tr>
+												</thead>
+												<tbody>
+												</tbody>
+											</table>
+                                           
+
+
+										</div>
+
+
+									</div>
+					
+                             </div>
+                             <div id="teacherdataSection" style="margin-top:20px;margin-left:10px;">
+									<div class="formBoxBdr "
+										style="max-width: 450px;">
+										<div>
+											<ul class="clearfix tchrList accessCodePage">
+												<li>
+													<div>
+														<strong class="color">No. of Teachers</strong><span id="teacherCount"></span>
+													</div>
+												</li>
+												<li>
+													<div>
+														<strong class="color">No. of Students</strong><span id="studentCount"></span>
+													</div>
+												</li>
+												<!--  static html end -->
+											</ul>
+										</div>
+									</div>
+<br>
+									<label>
+									  <span class="color">Teacher's List</span>
+									 <!--  <div class="pull-right">
+											<input class="teacherInput" type="text" placeholder="Type somethin" id="teacherSearchText">
+											<i class="icon-search" style="position: relative;left: -30px;top: -3px;color: #858585;"></i>
+										</div>	 -->								
+									</label>
+									<!-- START: teacher's table -->
+									<div class="row-fluid">
+										<div class="span12">
+										
+						  
+                          		
+								<table id="teacherList" class="table zebra-striped table-striped table-bordered">
+									<thead>
+											<tr>
+										    <th class="break tCol1"><span><input type="checkbox" class="selectAllStudents selectAllTeachers" /></span></th>
+										    <th class="break tCol2"><span type="localization" localizationid="first_name"></span></th>
+										    <th class="break tCol3"><span type="localization" localizationid="last_name"></span></th>
+										    <th class="break tCol4"><span type="localization" localizationid="email_id"></span></th>
+										    <th class="break tCol5"><span type="localization" localizationid="Class"></span></th>
+										    <th class="break tCol6"><span type="localization" localizationid="no_of_students"></span></th>
+										    										    
+										</tr>
+									</thead>
+									<tbody>
+									</tbody>
+								</table>
+							
+							
+										</div>
+									</div>
+									<!-- End: teacher's table -->
+
+
+	
+			<div class="saveAllBtn" class="form-actions">
+			 <input type="hidden" name="poId" id="poId" value="560410"> 
+			 <input type="hidden" name="assignedTeacherNames" id="assignedTeacherNames" value="">
+			 <input type="hidden" name="unAssignedTeacherNames" id="unAssignedTeacherNames" value="">
+			 <input type="hidden" name="type" id="type" value="Change">
+			 <input type="hidden"  name="guid" id="primaryBuyer" value="" />
+			 <button name="SaveBtn" id="SaveBtn" class="btn btn-primary btn-small no-border" title="Assign" value="Add" type="submit">
+			<i class="icon-ok"></i>
+			<span type="localization" localizationid="assign"></span>
+			</button>
+			<button name="cancel" id="cancelBtn"  class="btn btn-danger btn-small no-border" title="Cancel" type="button">
+			<i class="icon-remove"></i>
+			<span type="localization" localizationid="cancel"></span>
+			</button>
+			</div>
+			</div>
+			  <!-- Modal -->
+
+								<div id="requestMoreLicenses" class="modal fade" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<button type="button" class="close" data-dismiss="modal" style="color:#aeaeae !important;    font-weight: normal !important;">&times;</button>
+												<h4 class="modal-title" style="font-weight: bold;">Send
+													Email</h4>
+											</div>
+											<div class="modal-body">
+												<div class="input-prepend">
+													<span class="add-on" style="border-top-left-radius:4px !important;border-bottom-left-radius:4px !important;">To</span> <input class="span2"
+														id="prependedInputTo" type="text" placeholder=""
+														disabled="disabled"> <input type="hidden"
+														id="emailTo" value=""> <input
+														type="hidden" id="emailFrom" value="kingschool.admin@kingschoolct.org">
+												</div>
+
+												<div class="input-prepend">
+													<span class="add-on" style="border-top-left-radius:4px !important;border-bottom-left-radius:4px !important;">Subject</span> <input class="span2"
+														id="prependedInputSubject" type="text"
+														value="Request for more licenses-POZQ002481_Reporteros3_all">
+												</div>
+                                           <div id="required" style="color:red;display:none"> required* </div>
+												<textarea id="textArea" style="border-radius:4px!important;"></textarea>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-danger" id="cancelModalBtn"
+													data-dismiss="modal">Cancel</button>
+												<button type="button" class="btn btn-primary" id="sendEmail">Send</button>
+											
+											</div>
+										</div>
+
+									</div>
+								</div>
+
+								<!-- end:modal-->
+			</form>
+  </div>
+  </div>
+</div>
+</div>
+
+	<div class="clr"></div>
+	<!--End Teachers--> 
+	</div> 
+
+	<!--End Container-->
+	</div>
+ <!--Start Footer-->
+  
+
+  
+ 
+<!--  Logic for checking cookie and removing footer, if request comes from launchpad -->     
+
+<div class="clear"></div>
+<style>
+.footer-style {
+    min-height: 38px;
+    max-height: 88px;
+    height: 38px;
+    box-sizing: border-box;
+    padding: 0 !important;
+    margin: 0 !important;
+   }
+.fixed-bottom {
+    position: fixed !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: 0 !important;
+    z-index: 1000;
+}
+</style>
+<script type="text/javascript">
+  if (window.addEventListener) {
+	      window.addEventListener('message', calculateheight, false);
+  }
+
+
+function calculateheight(event){
+      if (event.data && event.data.type === 'iframeContentHeight') {
+        $('.footer-style').css('height', event.data.value);
+      }
+    }
+</script>
+
+     
+<footer id="footer-iframe" class="fixed-bottom footer-style fixed-bottom footerMain">
+ 	
+	 		
+	 		 
+	 		 <iframe src="https://s3.amazonaws.com/prd.stcn.prashanthms.9j245k.s3-use1.prd.getmagicbox.com/static/magicbox/tresource/footer/footerwithprivacypolicy.html" class="footer-iframe-style" min-height="38" width="100%" frameborder="0" marginwidth="0" marginheight="0"
+        scrolling="auto" allowtransparency="false"></iframe>
+		    
+		
+	 	 
+ 	
+ </footer>
+<footer class="footer-style">
+</footer>
+ 
+
+
+
+
+  
+ <!--End Footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/jquery.dataTables.min.js?v=20250501 "></script>
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/jquery.dataTables.bootstrap.js?v=20250501 "></script>
+<!--ace scripts-->
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/ace-elements.min.js?v=20250501 "></script>
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/ace.min.js?v=20250501 "></script>
+
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/bootstrap/js/bootstrap.min.js?v=20250501 "></script>
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/js/util.js?ver=20250501 "></script>
+<script src="https://klettlp-mbx-cloud.klettlp.com/static/mb-platform/us/114/static/js/datesort.js?v=20250501 "></script>
+
+
+<script type="text/javascript">
+		
+		
+		
+</script>
+</body>
+
+
+</html>
+
+
+

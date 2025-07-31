@@ -1,0 +1,2203 @@
+districtId,districtName,schoolId,schoolName,studentcount,teachercount
+54718,ClassLink Certification,54721,ClassLink Elementary School,61,19
+54718,ClassLink Certification,54719,ClassLink HS,41,15
+54718,ClassLink Certification,54720,ClassLink MS,52,14
+54846,ClassLink Test District,54853,(QATeam),3,2
+54846,ClassLink Test District,54854,(QATeam)-2,3,2
+54846,ClassLink Test District,54850,ClassLink ES,62,18
+54846,ClassLink Test District,54848,ClassLink HS,38,13
+54846,ClassLink Test District,54849,ClassLink MS,47,12
+54846,ClassLink Test District,57761,Klett Classlink Test,,
+54846,ClassLink Test District,54851,"Klett World Languages, Inc.",3,2
+54846,ClassLink Test District,54852,"Klett World Languages, Inc.-2",3,2
+55204,#DEMO Klett Learning Platform (Dev) Sandbox,55205,City High School,1,
+55204,#DEMO Klett Learning Platform (Dev) Sandbox,55208,Default District Office (Auto-generated),,
+55204,#DEMO Klett Learning Platform (Dev) Sandbox,55209,Demoville Elementary (Auto-generated),,
+55204,#DEMO Klett Learning Platform (Dev) Sandbox,55206,Pineapple Elementary School,6,3
+55204,#DEMO Klett Learning Platform (Dev) Sandbox,55207,Rockaway Beach Middle School,7,4
+56232,Sales Demo District,56233,School A,1,1
+56232,Sales Demo District,56234,School B,1,1
+56232,Sales Demo District,56943,School C,1,1
+58143,Elmwood Park School District,58254,Elmwood Park Memorial High School,282,3
+58143,Elmwood Park School District,58255,Elmwood Park Memorial Middle School,514,5
+58277,Green Bay Area Public Schools,75625,Sub Account,,
+58317,MB District,61465,MBSCHOOL,7,1
+58419,DUPLICATE Pueblo SD 60 DO NOT USE,59522,Test School,,
+58881,Gwinnett County School District,62130,Collins Hill High School,576,5
+58881,Gwinnett County School District,62131,Dacula Middle School,71,1
+58881,Gwinnett County School District,62176,ISC,3,2
+58881,Gwinnett County School District,62133,Lanier Middle School,202,1
+58881,Gwinnett County School District,62135,McConnell Middle School,183,3
+58881,Gwinnett County School District,62136,Meadowcreek High School,545,4
+58881,Gwinnett County School District,62137,Mill Creek High School,327,5
+58881,Gwinnett County School District,62132,Mountain View High School,306,4
+58881,Gwinnett County School District,62138,Pinckneyville Middle School,498,5
+58881,Gwinnett County School District,62134,Seckinger High School,946,7
+58881,Gwinnett County School District,62139,Shiloh High School,592,5
+59164,Hampshire County,61139,Hampshire Senior High School,79,1
+59176,Morgan County Schools,60664,Berkeley Springs High School,234,1
+59176,Morgan County Schools,59360,Warm Springs Middle School,54,1
+59318,Richland School District (WA),59324,Carmichael Middle School,170,2
+59318,Richland School District (WA),59325,Chief Joseph Middle School,63,1
+59318,Richland School District (WA),59326,Enterprise Middle School,117,1
+59318,Richland School District (WA),71473,Enterprise Middle School,,
+59318,Richland School District (WA),59327,Hanford High School,558,5
+59318,Richland School District (WA),59331,Leona Libby Middle School,195,5
+59318,Richland School District (WA),59332,Pacific Crest Online Academy,1,
+59318,Richland School District (WA),59328,Richland High School,657,9
+59318,Richland School District (WA),59330,Rivers Edge High School,,
+59318,Richland School District (WA),59329,Special Education,,
+59318,Richland School District (WA),59333,Three Rivers Homelink School,,
+59424,Test District 17 Jul,59425,TestDSchool 17 Jul,3,1
+59446,Upper Arlington City School District,60727,Hastings Middle School,489,4
+59446,Upper Arlington City School District,60728,Jones Middle School,110,6
+59446,Upper Arlington City School District,60725,UA Online Academy,3,1
+59446,Upper Arlington City School District,60726,Upper Arlington High School,205,4
+59446,Upper Arlington City School District,,,,
+59541,Brooke County Schools,60382,Brooke High School,138,2
+59541,Brooke County Schools,60383,Brooke Middle School,103,3
+59542,Taylor County Schools,60655,Anna Jarvis Elementary School,453,
+59542,Taylor County Schools,60656,Flemington Elementary School,113,
+59542,Taylor County Schools,60659,Grafton High School,664,3
+59542,Taylor County Schools,60658,Taylor County Middle School,651,2
+59542,Taylor County Schools,73243,Taylor County Middle School,,
+59542,Taylor County Schools,60657,West Taylor Elementary School,265,
+59574,Cotati-Rohnert Park Unified School District,79115,El Camino High School,8,
+59574,Cotati-Rohnert Park Unified School District,60406,Rancho Cotate High School,505,4
+59574,Cotati-Rohnert Park Unified School District,79114,Technology High School,1,
+59857,Pueblo City School District 60,59859,Centennial HS Design and Innovation Academy,59,1
+59861,Bellevue School District,59871,Interlake High School,138,1
+59861,Bellevue School District,59867,International School,297,2
+59861,Bellevue School District,59870,Newport High School,126,1
+59861,Bellevue School District,59866,Odle Middle School,172,1
+59861,Bellevue School District,59863,Tyee Middle School,125,1
+59872,Belmont-Redwood Shores School District,59879,Nesbit School,208,1
+59872,Belmont-Redwood Shores School District,59873,Ralston Middle School,474,3
+59874,Cupertino Union School District,59876,Cupertino Middle School,211,2
+59874,Cupertino Union School District,59880,Hyde Middle School,179,3
+59874,Cupertino Union School District,59882,Kennedy Middle School,118,1
+59874,Cupertino Union School District,59875,Lawson Middle School,94,1
+59874,Cupertino Union School District,59883,Miller Middle School,219,2
+59941,Alhambra Unified School District,59942,Alhambra High School,660,9
+59941,Alhambra Unified School District,69415,HS Independent Study,53,4
+59941,Alhambra Unified School District,59945,Mark Keppel High School,596,8
+59941,Alhambra Unified School District,59946,San Gabriel High School,525,6
+60006,King School (CT),61205,Entir,98,3
+60006,King School (CT),60927,King School,,
+60006,King School (CT),72262,MS,1,
+60006,King School (CT),61237,US,96,3
+60066,Township High School District 214,60070,Buffalo Grove High School,728,10
+60066,Township High School District 214,60067,Elk Grove High School,577,9
+60066,Township High School District 214,60073,John Hersey High School,958,11
+60066,Township High School District 214,60072,Prospect High School,1174,11
+60066,Township High School District 214,60071,Rolling Meadows High School,811,18
+60066,Township High School District 214,60069,Wheeling High School,520,6
+60337,Campbell Independent School District,63457,Campbell Elementary,,1
+60337,Campbell Independent School District,60339,Campbell High School,19,2
+60337,Campbell Independent School District,63684,CAMPBELL ISD,,
+60384,Crawfordsville Community Schools,70448,Athens Virtual Academy of Indiana,,1
+60384,Crawfordsville Community Schools,60462,Crawfordsville High School,177,5
+60384,Crawfordsville Community Schools,60877,Crawfordsville Middle School,53,3
+60484,Berkeley County School District,61785,Berkeley County Virtual Students,58,2
+60484,Berkeley County School District,60485,Hedgesville High School,453,6
+60484,Berkeley County School District,60491,Hedgesville Middle School,213,1
+60484,Berkeley County School District,60486,Martinsburg High School,469,3
+60484,Berkeley County School District,60492,Martinsburg North Middle School,18,1
+60484,Berkeley County School District,60493,Martinsburg South Middle School,105,1
+60484,Berkeley County School District,60496,Mountain Ridge Middle School,57,1
+60484,Berkeley County School District,60487,Musselman High School,490,5
+60484,Berkeley County School District,60494,Musselman Middle School,34,1
+60484,Berkeley County School District,60489,Spring Mills High School,595,6
+60484,Berkeley County School District,60495,Spring Mills Middle School,66,2
+60563,Redondo Beach Unified School District,60568,Adams Middle School,512,4
+60563,Redondo Beach Unified School District,60569,Parras Middle School,254,1
+60563,Redondo Beach Unified School District,60564,Redondo Union High School,1115,8
+60563,Redondo Beach Unified School District,78848,Washington School,46,
+60585,School City Of Mishawaka,60586,John J. Young Middle School,171,2
+60585,School City Of Mishawaka,60587,Mishawaka High School,585,6
+60706,Durham Academy,60707,Durham Academy,173,4
+60708,Donegal School District,60709,Donegal High School,60,2
+60879,Washington County School District,60883,Barbara Ingram School For The Arts,359,40
+60879,Washington County School District,78946,Bester Elementary,5,1
+60879,Washington County School District,78947,Boonsboro Elementary,2,1
+60879,Washington County School District,60882,Boonsboro High School,896,76
+60879,Washington County School District,60881,Boonsboro Middle School,877,43
+60879,Washington County School District,60970,Boyd J. Michael III Technical High School,642,41
+60879,Washington County School District,71212,Clear Spring Elementary,,2
+60879,Washington County School District,60885,Clear Spring High School,524,53
+60879,Washington County School District,60884,Clear Spring Middle School,471,25
+60879,Washington County School District,70424,ConnectED,407,31
+60879,Washington County School District,60887,E Russell Hicks Middle School,1247,57
+60879,Washington County School District,76988,Eastern Elementary,3,1
+60879,Washington County School District,70425,ElectED SupportED,90,20
+60879,Washington County School District,72326,Emma K Doub Elementary,1,1
+60879,Washington County School District,71213,ExtendED,241,31
+60879,Washington County School District,78948,Fountain Rock Elementary,1,1
+60879,Washington County School District,71315,Fountaindale Elementary,5,
+60879,Washington County School District,78954,Greenbrier Elementary,3,1
+60879,Washington County School District,78949,Hancock Elementary,2,
+60879,Washington County School District,60886,Hancock Middle-Senior High School,238,32
+60879,Washington County School District,78950,Hickory Elementary,1,1
+60879,Washington County School District,78951,Jonathan Hager Elementary,4,
+60879,Washington County School District,78952,Lincolnshire Elementary,3,1
+60879,Washington County School District,78953,Maugansville Elementary,4,2
+60879,Washington County School District,60880,North Hagerstown High School,1711,125
+60879,Washington County School District,60888,Northern Middle School,1184,69
+60879,Washington County School District,63025,Pangborn Boulevard Elementary,,2
+60879,Washington County School District,78955,Pleasant Valley Elementary,1,1
+60879,Washington County School District,62471,Rockland Woods Elementary,3,2
+60879,Washington County School District,78956,Salem Avenue Elementary,5,1
+60879,Washington County School District,60889,Smithsburg High School,780,66
+60879,Washington County School District,60890,Smithsburg Middle School,756,40
+60879,Washington County School District,60891,South Hagerstown High School,1796,129
+60879,Washington County School District,60892,Springfield Middle School,1062,57
+60879,Washington County School District,70848,Wash County Job Development Center,51,9
+60879,Washington County School District,60973,Western Heights Middle School,1213,75
+60879,Washington County School District,78957,Williamsport Elementary,3,2
+60879,Washington County School District,60893,Williamsport High School,1127,90
+60961,Bloomfield Hills School Dist,60962,International Academy,773,9
+60965,North Kitsap School District 400,61364,Kingston High School,,
+60965,North Kitsap School District 400,63806,NK ONLINE ACADEMY and PAL,1,
+60965,North Kitsap School District 400,60966,NORTH KITSAP HIGH SCHOOL,162,1
+61008,Montabella Community School District,61009,Montabella Junior/Senior High,44,2
+61088,Long Beach Unified School District,70969,Bancroft Middle School,40,1
+61088,Long Beach Unified School District,79243,EPHS,4,
+61088,Long Beach Unified School District,67768,Holmes Elementary,1,
+61088,Long Beach Unified School District,63277,Hughes Middle School,3,
+61088,Long Beach Unified School District,61091,Lakewood High School,1,
+61088,Long Beach Unified School District,62311,Lindbergh STEM Academy,145,1
+61088,Long Beach Unified School District,62309,Marshall Academy of the Arts,171,1
+61088,Long Beach Unified School District,61096,Millikan High School,226,2
+61088,Long Beach Unified School District,61092,Poly High School,4,
+61088,Long Beach Unified School District,78752,Prisk Elementary,2,
+61088,Long Beach Unified School District,70873,Stephens Middle School,60,1
+61088,Long Beach Unified School District,62314,Tincher Middle School,156,1
+61088,Long Beach Unified School District,70970,Washington Middle School,138,1
+61172,Snoqualmie Valley School District 410,61173,Mount Si High School,148,2
+61172,Snoqualmie Valley School District 410,77581,Parent Partnership,1,
+61172,Snoqualmie Valley School District 410,61328,Two Rivers School,2,
+61273,Grand Forks School District 1,61274,Grand Forks Central,121,2
+61273,Grand Forks School District 1,61275,Red River High School,98,1
+61347,North Colonie Central Schools,61349,Shaker High School,986,10
+61347,North Colonie Central Schools,61348,Shaker Middle School,684,11
+61388,Georgetown Day School,61461,Middle School,243,8
+61394,Chesapeake School District,72010,Chesapeake Virtual Academy Middle,26,1
+61394,Chesapeake School District,61395,Deep Creek High,32,1
+61394,Chesapeake School District,61404,Grassfield High,75,1
+61394,Chesapeake School District,61396,Great Bridge High,57,1
+61394,Chesapeake School District,61400,Great Bridge Middle,47,1
+61394,Chesapeake School District,61402,Hickory High,71,1
+61394,Chesapeake School District,61403,Hickory Middle,26,
+61394,Chesapeake School District,61401,Hugo A. Owens Middle,29,1
+61394,Chesapeake School District,61399,Indian River High,37,1
+61394,Chesapeake School District,61397,Oscar Smith High,44,1
+61394,Chesapeake School District,61398,Western Branch High,55,1
+61428,Napa Valley Unified School District,61429,Unidos Mdl,112,2
+61471,Elmbrook School District,61475,Brookfield Central High School,110,2
+61471,Elmbrook School District,61472,Brookfield East High School,97,2
+61471,Elmbrook School District,61473,Pilgrim Park Middle School,147,2
+61471,Elmbrook School District,61474,Wisconsin Hills Middle School,98,2
+61674,Placentia Yorba Linda USD,61685,Bernardo Yorba Middle School,263,3
+61674,Placentia Yorba Linda USD,61681,Buena Vista Virtual Academy,7,
+61674,Placentia Yorba Linda USD,61677,El Dorado High School,759,118
+61674,Placentia Yorba Linda USD,61679,Esperanza High School,357,8
+61674,Placentia Yorba Linda USD,61683,Kraemer Middle School,219,4
+61674,Placentia Yorba Linda USD,61682,Parkview School,1,
+61674,Placentia Yorba Linda USD,61686,Travis Middle School,105,2
+61674,Placentia Yorba Linda USD,61684,Tuffree Middle School,186,2
+61674,Placentia Yorba Linda USD,61675,Valencia High School,664,16
+61674,Placentia Yorba Linda USD,61680,Yorba Linda High School,463,10
+61674,Placentia Yorba Linda USD,61687,Yorba Linda Middle School,221,2
+61709,Cleveland Metro School District,72073,Buhrer Dual Language,,1
+61709,Cleveland Metro School District,73534,Campus International,288,1
+61709,Cleveland Metro School District,73535,Garfield,26,1
+61709,Cleveland Metro School District,72370,Luis Munoz Marin,9,1
+61709,Cleveland Metro School District,61710,William Rainey Harper,,1
+61851,Milford Area Public Schools,61852,Milford High School,68,1
+61907,Eastport-South Manor Ctrl School District,61908,Eastport South Manor Jr-Sr High School,663,7
+61951,Salinas Union High School District,61952,Alisal High School,806,5
+61951,Salinas Union High School District,61966,El Puente School,16,1
+61951,Salinas Union High School District,61954,Everett Alvarez High School,345,3
+61951,Salinas Union High School District,73630,Intersession - Migrant,12,1
+61951,Salinas Union High School District,61963,La Paz Middle School,47,1
+61951,Salinas Union High School District,61957,Mount Toro High School,51,1
+61951,Salinas Union High School District,61956,North Salinas High School,282,4
+61951,Salinas Union High School District,61969,Rancho San Juan High School,355,4
+61951,Salinas Union High School District,61958,Salinas High School,740,7
+62008,Fremont Unified School District,62013,American High School,192,2
+62008,Fremont Unified School District,62009,Centerville Middle School,67,1
+62008,Fremont Unified School District,62011,Irvington High School,143,1
+62008,Fremont Unified School District,63452,Thornton Middle School,97,1
+62008,Fremont Unified School District,62010,William Hopkins Middle School,119,1
+62263,King's Schools (WA),62420,King's Schools,10,2
+62360,Mountain View Los Altos Union High School District,62538,Foothill Middle College Program,1,
+62360,Mountain View Los Altos Union High School District,62537,Los Altos High School,285,4
+62360,Mountain View Los Altos Union High School District,62445,Mountain View High School,240,3
+62729,San Ramón Valley USD,62768,California High School,75,1
+62729,San Ramón Valley USD,62761,Dougherty Valley High School,131,2
+62729,San Ramón Valley USD,62762,Monte Vista High School,85,1
+62729,San Ramón Valley USD,62763,San Ramon Valley High School,82,1
+62827,Southern Door School District,62913,Rural Virtual Academy,,1
+62827,Southern Door School District,62911,Southern Door Elementary School,,
+62827,Southern Door School District,62912,Southern Door High School,69,2
+62827,Southern Door School District,62910,Southern Door Middle School,109,3
+62963,Wayzata School District 284,62964,Wayzata High School,800,11
+62969,Demo School District,62978,Maplewood High School (Demo),7,2
+62969,Demo School District,62977,Windy City High School (Demo),7,1
+62973,Apple Valley Unified School District,76145,Apple Valley High School,63,1
+62973,Apple Valley Unified School District,76146,Granite Hills High School,141,1
+62973,Apple Valley Unified School District,78262,Summer Session Apple Valley HS,12,
+62973,Apple Valley Unified School District,78263,Summer Session Granite Hills HS,26,
+62973,Apple Valley Unified School District,76147,Vanguard Preparatory,19,1
+63253,Fremont School District 79,63254,Fremont Middle School,43,1
+63286,Rowland Unified School District,63287,Nogales High School,111,1
+63286,Rowland Unified School District,63288,Rowland High School,61,1
+63416,Clarke County School District,65698,CCSD Learning Center,,1
+63416,Clarke County School District,63422,Cedar Shoals High School,347,4
+63416,Clarke County School District,63421,Clarke Central High School,688,7
+63416,Clarke County School District,63417,Clarke Middle School,208,3
+63416,Clarke County School District,71920,Classic City High School,,1
+63416,Clarke County School District,63418,Coile Middle,26,1
+63416,Clarke County School District,63420,Hilsman Middle School,82,1
+63555,Liberty Union High School District,63556,Freedom High School,111,1
+63555,Liberty Union High School District,63557,Heritage High School,165,1
+63555,Liberty Union High School District,68683,Liberty High School,209,1
+65331,Davis Joint Unified School District,65336,Da Vinci Charter Academy,197,2
+65331,Davis Joint Unified School District,65335,Davis Senior High School,345,3
+65331,Davis Joint Unified School District,65333,Emerson Junior High School,237,2
+65331,Davis Joint Unified School District,65332,Harper Junior High School,184,2
+65331,Davis Joint Unified School District,65334,Holmes Junior High School,364,4
+65517,Auburn School District 408,65518,AUBURN HIGH SCHOOL,388,3
+65517,Auburn School District 408,65519,AUBURN MOUNTAINVIEW H. S.,351,3
+65517,Auburn School District 408,65520,AUBURN RIVERSIDE HIGH SCHOOL,357,3
+66023,East Providence City School District,66025,East Providence High School,1014,12
+66023,East Providence City School District,66024,Edward R. Martin Middle School,372,2
+66023,East Providence City School District,66027,Riverside Middle School,417,2
+66052,River Trails School District 26,69216,Euclid Elementary,,
+66052,River Trails School District 26,69214,Indian Grove,,
+66052,River Trails School District 26,69212,Prairie Trails,,
+66052,River Trails School District 26,69174,River Trails Middle School,346,4
+66052,River Trails School District 26,69218,Summer School,,
+66614,Palo Alto Unified School District - ClassLink,71199,Addison Elementary,,
+66614,Palo Alto Unified School District - ClassLink,67195,Ellen Fletcher Middle,144,2
+66614,Palo Alto Unified School District - ClassLink,67193,Frank S. Greene Jr. Middle,199,4
+66614,Palo Alto Unified School District - ClassLink,75800,Greendell,,
+66614,Palo Alto Unified School District - ClassLink,67196,Henry M. Gunn High,685,9
+66614,Palo Alto Unified School District - ClassLink,67192,Jane Lathrop Stanford Middle,238,3
+66614,Palo Alto Unified School District - ClassLink,67194,Palo Alto High,673,7
+66614,Palo Alto Unified School District - ClassLink,69225,Palo Alto Unified,,1
+66614,Palo Alto Unified School District - ClassLink,72656,Phony Elementary,,
+66614,Palo Alto Unified School District - ClassLink,72488,Phony High,,
+67111,Jackson County School District,67112,East Jackson Comprehensive High School,182,3
+67111,Jackson County School District,67115,Jackson County High School,444,6
+67111,Jackson County School District,68189,Legacy Knoll Middle School,178,1
+67111,Jackson County School District,67116,West Jackson Middle School,177,1
+67113,Riverside Public School District 96,67114,L. J. Hauser Junior High School,258,4
+67314,Elkhorn Public Schools,68272,Elkhorn High School,60,2
+67314,Elkhorn Public Schools,68273,Elkhorn North High School,93,1
+67314,Elkhorn Public Schools,68271,Elkhorn South High School,92,1
+67340,Victor Valley Union High School District,67352,Cobalt Institute of Math and Science,69,1
+67897,Prince William County Public Schools,67898,Battlefield High School,,
+67897,Prince William County Public Schools,68178,Benton MS,,
+67897,Prince William County Public Schools,68179,Beville MS,,
+67897,Prince William County Public Schools,68158,Brentsville District High School,,
+67897,Prince William County Public Schools,68159,Bull Run Middle School,,
+67897,Prince William County Public Schools,68160,Colgan High School,,
+67897,Prince William County Public Schools,68164,Forest Park High School,,
+67897,Prince William County Public Schools,68166,Fred M. Lynn Middle School,,
+67897,Prince William County Public Schools,68168,Freedom High School,,
+67897,Prince William County Public Schools,68169,Gainesville High School,,
+67897,Prince William County Public Schools,68171,GAINESVILLE MIDDLE SCHOOL,,
+67897,Prince William County Public Schools,68172,Gar-Field Senior High School,,
+67897,Prince William County Public Schools,68167,George M. Hampton Middle School,,
+67897,Prince William County Public Schools,68170,Graham Park Middle School,,
+67897,Prince William County Public Schools,68165,Hylton HS,,
+67897,Prince William County Public Schools,68162,Lake Ridge MS,,
+67897,Prince William County Public Schools,68137,Marsteller MS,,
+67897,Prince William County Public Schools,68138,Nokesville School,,
+67897,Prince William County Public Schools,68140,Osbourn Park,,
+67897,Prince William County Public Schools,68141,Parkside MS,,
+67897,Prince William County Public Schools,68142,Patriot HS,,
+67897,Prince William County Public Schools,68144,Pennington Traditional,,
+67897,Prince William County Public Schools,68145,Porter Traditional,,
+67897,Prince William County Public Schools,68147,Potomac HS,,
+67897,Prince William County Public Schools,68148,Potomac MS,,
+67897,Prince William County Public Schools,68149,Potomac Shores MS,,
+67897,Prince William County Public Schools,67902,Prince William County WAN,,
+67897,Prince William County Public Schools,68150,Reagan MS,,
+67897,Prince William County Public Schools,68151,Rippon MS,,
+67897,Prince William County Public Schools,68152,Saunders MS,,
+67897,Prince William County Public Schools,68157,Stuart M. Beville Middle School,,
+67897,Prince William County Public Schools,68153,Unity Braxton MS,,
+67897,Prince William County Public Schools,68154,Unity Reed HS,,
+67897,Prince William County Public Schools,68156,Woodbridge HS,,
+67897,Prince William County Public Schools,68161,Woodbridge MS,,
+68095,Effingham County Schools,68117,Blandford ES,,1
+68095,Effingham County Schools,68912,College & Career + STEM Academy,720,2
+68095,Effingham County Schools,68112,Ebenezer ES,,1
+68095,Effingham County Schools,68114,Ebenezer MS,84,3
+68095,Effingham County Schools,68122,Effingham County HS,1296,11
+68095,Effingham County Schools,68111,Effingham County MS,103,2
+68095,Effingham County Schools,68115,Guyton ES,,1
+68095,Effingham County Schools,68119,Marlow ES,,1
+68095,Effingham County Schools,68118,Sand Hill ES,,1
+68095,Effingham County Schools,68121,South Effingham ES,,1
+68095,Effingham County Schools,68120,South Effingham HS,1131,9
+68095,Effingham County Schools,68123,South Effingham MS,205,3
+68281,Knoxville CUSD 202,68282,Knoxville High School,11,1
+68384,Sacramento City Unified School District - ClassLink,69612,C K McClatchy HS,158,1
+68387,Ogden City School District,68392,Ben Lomond High School,123,2
+68387,Ogden City School District,68388,Highland Jr. High School,98,1
+68387,Ogden City School District,68389,Mound Fort Jr. High School,244,1
+68387,Ogden City School District,68391,Mount Ogden Jr. High School,764,4
+68387,Ogden City School District,68395,Ogden High School,232,2
+68452,Aurora Public School District,76134,Aurora Central High School,,
+68452,Aurora Public School District,76139,Charles Burrell Visual and Performing Arts 9-12,,
+68452,Aurora Public School District,68453,Gateway High School,89,1
+68452,Aurora Public School District,76133,Hinkley High School,,
+68452,Aurora Public School District,76731,Hinkley High School,137,1
+68452,Aurora Public School District,68454,Rangeview High School,198,2
+68515,Ridgefield Park Sch District,68516,Ridgefield Park Junior-Senior High School,295,5
+68587,Forsyth County Schools,68835,Alliance Academy,95,1
+68587,Forsyth County Schools,69050,Forsyth Academy,1,
+68587,Forsyth County Schools,68832,Forsyth Central High School,1,1
+68587,Forsyth County Schools,68834,Forsyth Virtual Academy,55,1
+68587,Forsyth County Schools,77803,Forsyth Virtual Summer School,,
+68587,Forsyth County Schools,76420,Gateway Academy,1,
+68587,Forsyth County Schools,78261,High Summer School,,
+68587,Forsyth County Schools,68833,Lakeside Middle School,3,
+68587,Forsyth County Schools,69051,Piney Grove Middle School,1,
+68587,Forsyth County Schools,68837,South Forsyth High School,151,2
+68587,Forsyth County Schools,68836,South Forsyth Middle School,,
+68589,Loudoun County Public Schools (VA),70804,Academies of Loudoun,42,
+68589,Loudoun County Public Schools (VA),70806,Belmont Ridge MS,58,1
+68589,Loudoun County Public Schools (VA),70808,Blue Ridge MS,50,1
+68589,Loudoun County Public Schools (VA),70805,Brambleton MS,56,1
+68589,Loudoun County Public Schools (VA),70809,Briar Woods HS,84,1
+68589,Loudoun County Public Schools (VA),70807,Broad Run HS,47,1
+68589,Loudoun County Public Schools (VA),70810,Dominion HS,18,1
+68589,Loudoun County Public Schools (VA),70811,Eagle Ridge MS,48,2
+68589,Loudoun County Public Schools (VA),70813,Farmwell Station MS,54,2
+68589,Loudoun County Public Schools (VA),70812,Freedom HS,114,3
+68589,Loudoun County Public Schools (VA),70815,Harmony MS,58,1
+68589,Loudoun County Public Schools (VA),70814,Harper Park MS,38,1
+68589,Loudoun County Public Schools (VA),70816,Heritage HS,63,1
+68589,Loudoun County Public Schools (VA),70817,Independence HS,59,1
+68589,Loudoun County Public Schools (VA),70819,J. Lupton Simpson MS,10,1
+68589,Loudoun County Public Schools (VA),70820,J. Michael Lunsford MS,64,1
+68589,Loudoun County Public Schools (VA),70818,John Champe HS,76,1
+68589,Loudoun County Public Schools (VA),70823,Lightridge HS,63,1
+68589,Loudoun County Public Schools (VA),70822,Loudoun County HS,28,1
+68589,Loudoun County Public Schools (VA),70824,Loudoun Valley HS,87,2
+68589,Loudoun County Public Schools (VA),70825,Mercer MS,31,1
+68589,Loudoun County Public Schools (VA),70826,Potomac Falls HS,40,1
+68589,Loudoun County Public Schools (VA),70827,River Bend MS,33,1
+68589,Loudoun County Public Schools (VA),70829,Riverside HS,75,1
+68589,Loudoun County Public Schools (VA),70828,Rock Ridge HS,34,2
+68589,Loudoun County Public Schools (VA),70833,Seneca Ridge MS,44,1
+68589,Loudoun County Public Schools (VA),70832,Smart's Mill MS,30,1
+68589,Loudoun County Public Schools (VA),70834,Sterling MS,17,1
+68589,Loudoun County Public Schools (VA),70830,Stone Bridge HS,78,1
+68589,Loudoun County Public Schools (VA),70831,Stone Hill MS,56,1
+68589,Loudoun County Public Schools (VA),70836,Trailside MS,63,1
+68589,Loudoun County Public Schools (VA),70835,Tuscarora HS,47,1
+68589,Loudoun County Public Schools (VA),70878,Virtual Distance Learning,,
+68589,Loudoun County Public Schools (VA),70877,Virtual Loudoun HS,197,1
+68589,Loudoun County Public Schools (VA),70838,Willard MS,89,1
+68589,Loudoun County Public Schools (VA),70837,Woodgrove HS,75,2
+68712,Lafayette Parish School District,68713,ACADIANA HIGH SCHOOL,380,5
+68712,Lafayette Parish School District,68714,BROADMOOR ELEMENTARY SCHOOL,,1
+68712,Lafayette Parish School District,69107,BROUSSARD MIDDLE SCHOOL,45,1
+68712,Lafayette Parish School District,68715,CARENCRO HIGH SCHOOL,207,3
+68712,Lafayette Parish School District,68874,DAVID THIBODAUX STEM MAGNET ACADEMY,223,3
+68712,Lafayette Parish School District,68720,EARLY COLLEGE ACADEMY,56,1
+68712,Lafayette Parish School District,68718,EDGAR MARTIN MIDDLE SCHOOL,113,2
+68712,Lafayette Parish School District,68716,JUDICE MIDDLE SCHOOL,51,1
+68712,Lafayette Parish School District,69172,L.J. ALLEMAN MIDDLE SCHOOL,151,1
+68712,Lafayette Parish School District,68717,LAFAYETTE HIGH SCHOOL,431,6
+68712,Lafayette Parish School District,68771,MILTON ELEMENTARY SCHOOL,28,1
+68712,Lafayette Parish School District,68902,NORTHSIDE HIGH SCHOOL,162,2
+68712,Lafayette Parish School District,68824,O. COMEAUX HIGH SCHOOL,226,2
+68712,Lafayette Parish School District,68721,SOUTHSIDE HIGH SCHOOL,582,4
+68712,Lafayette Parish School District,71257,YOUNGSVILLE MIDDLE SCHOOL,39,1
+68756,Sedro Woolley School District 101,68757,SEDRO-WOOLLEY HIGH SCHOOL,142,1
+68783,South Western City Schools,68790,Central Crossing High School,323,4
+68783,South Western City Schools,68784,Franklin Heights High School,297,3
+68783,South Western City Schools,68785,Grove City High School,699,5
+68783,South Western City Schools,68787,Westland High School,278,3
+68936,Sioux City Community School District,68938,East High School,128,1
+68936,Sioux City Community School District,68937,North High School,173,1
+68936,Sioux City Community School District,68939,West High School,230,3
+69084,Douglas USD #27,69085,Douglas High School,719,4
+69092,Jefferson Co School District,69093,Charles Town Middle School,114,1
+69092,Jefferson Co School District,69628,Harpers Ferry Middle School,94,1
+69092,Jefferson Co School District,70529,Jefferson High School,358,3
+69092,Jefferson Co School District,69629,Shepherdstown Middle School,119,1
+69092,Jefferson Co School District,69094,Washington High School,526,4
+69092,Jefferson Co School District,70528,Wildwood Middle School,80,1
+69112,KWL School District,69115,KWL High School,,
+69112,KWL School District,69116,KWL Middle School,7,8
+69166,Medford Area Public School District,69167,MEDFORD AREA SENIOR HIGH,110,2
+69246,Elmwood-Murdock Public Schools (NE),69336,Elmwood-Murdock High School,57,1
+69250,Bellflower Unified School District,69251,Bellflower High School,841,5
+69250,Bellflower Unified School District,69252,Mayfair High School,921,7
+69253,Hesperia Unified School District,79337,Hesperia Community Day,1,
+69253,Hesperia Unified School District,69254,Hesperia High School,323,3
+69253,Hesperia Unified School District,79178,Hesperia Jr.,86,1
+69253,Hesperia Unified School District,69256,Oak Hills High School,166,2
+69253,Hesperia Unified School District,69255,Sultana High School,290,3
+69331,Thompson School District - ClassLink,69351,Bill Reed Middle School,23,1
+69331,Thompson School District - ClassLink,69349,Lucile Erwin Middle School,26,1
+69616,Oak Grove School District 68,69617,Oak Grove School,92,1
+69709,DeKalb County School District,79400,Ashford Park Elementary School,186,1
+69709,DeKalb County School District,69713,Chamblee High School,243,2
+69709,DeKalb County School District,69711,Chamblee Middle School,749,4
+69709,DeKalb County School District,79398,Evansdale Elementary School,109,4
+69709,DeKalb County School District,79401,GLOBE Academy Charter School,40,2
+69709,DeKalb County School District,69710,Kittredge Magnet Elementary,699,1
+69709,DeKalb County School District,79399,Rockbridge Elementary,88,6
+69729,Portland Public Schools (OR),69746,Access,157,1
+69729,Portland Public Schools (OR),69750,Astor K-8,26,1
+69729,Portland Public Schools (OR),69752,Beaumont M.S.,25,1
+69729,Portland Public Schools (OR),72524,Beverly Cleary K-8,,
+69729,Portland Public Schools (OR),69740,Beverly Cleary K-8,153,1
+69729,Portland Public Schools (OR),69737,Bridger Creative Science School,78,1
+69729,Portland Public Schools (OR),69738,Cesar Chavez K-8,19,2
+69729,Portland Public Schools (OR),69783,Clark E.S.,,
+69729,Portland Public Schools (OR),71083,Cleveland H.S.,2,
+69729,Portland Public Schools (OR),69753,Faubion PK-8,29,1
+69729,Portland Public Schools (OR),69754,George M.S.,24,2
+69729,Portland Public Schools (OR),69764,Harriet Tubman M.S.,163,2
+69729,Portland Public Schools (OR),69782,Harrison Park M.S.,70,1
+69729,Portland Public Schools (OR),69756,Hosford M.S.,196,1
+69729,Portland Public Schools (OR),69771,Ida B. Wells-Barnett H.S.,3,
+69729,Portland Public Schools (OR),69733,Jackson M.S.,175,3
+69729,Portland Public Schools (OR),69757,Kellogg M.S.,35,1
+69729,Portland Public Schools (OR),74708,Lane M.S.,,
+69729,Portland Public Schools (OR),69732,Lane M.S.,191,1
+69729,Portland Public Schools (OR),69741,Laurelhurst K-8,171,1
+69729,Portland Public Schools (OR),69748,Le Monde French Immersion,105,1
+69729,Portland Public Schools (OR),69768,Leodis V. McDaniel H.S.,1,
+69729,Portland Public Schools (OR),69767,Lincoln H.S.,5,1
+69729,Portland Public Schools (OR),69769,Metropolitan Learning Ctr HS,2,1
+69729,Portland Public Schools (OR),69770,Metropolitan Learning Ctr K-8,59,1
+69729,Portland Public Schools (OR),69758,Mt Tabor M.S.,64,1
+69729,Portland Public Schools (OR),69759,Ockley Green M.S.,42,2
+69729,Portland Public Schools (OR),69739,Odyssey Program K-8,24,1
+69729,Portland Public Schools (OR),69749,Reconnection Outreach Services,2,
+69729,Portland Public Schools (OR),69755,Robert Gray M.S.,160,1
+69729,Portland Public Schools (OR),69742,Roseway Heights M.S.,120,2
+69729,Portland Public Schools (OR),69743,Sabin E.S.,,1
+69729,Portland Public Schools (OR),69762,Sellwood M.S.,191,1
+69729,Portland Public Schools (OR),69763,Skyline K-8,75,1
+69729,Portland Public Schools (OR),69731,SPED - ESY,4,1
+69729,Portland Public Schools (OR),69747,Summer Programs-PPS,72,
+69729,Portland Public Schools (OR),69744,Sunnyside Environmental K-8,136,3
+69729,Portland Public Schools (OR),69745,Vernon K-8,179,1
+69729,Portland Public Schools (OR),69765,West Sylvan M.S.,428,7
+69729,Portland Public Schools (OR),69735,Winterhaven K-8,52,2
+70480,Lyons Township High School District 204,70497,Lyons Township High School D204,160,3
+70550,Department of Defense Education Activity (DoDEA),70776,Americas - Mid-Atlantic - Albritton Middle School,141,1
+70550,Department of Defense Education Activity (DoDEA),71702,Americas - Mid-Atlantic - Antilles Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71704,Americas - Mid-Atlantic - Antilles High School,1,
+70550,Department of Defense Education Activity (DoDEA),71703,Americas - Mid-Atlantic - Antilles Middle School,1,
+70550,Department of Defense Education Activity (DoDEA),71708,Americas - Mid-Atlantic - Bitz Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71691,Americas - Mid-Atlantic - Bowley Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71709,Americas - Mid-Atlantic - Brewster Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71714,Americas - Mid-Atlantic - Crossroads Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71706,Americas - Mid-Atlantic - Dahlgren School,,
+70550,Department of Defense Education Activity (DoDEA),71710,Americas - Mid-Atlantic - DeLalio Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71694,Americas - Mid-Atlantic - Devers Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71695,Americas - Mid-Atlantic - Gordon Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71713,Americas - Mid-Atlantic - Heroes Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71693,Americas - Mid-Atlantic - Irwin Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71707,Americas - Mid-Atlantic - Johnson Primary School,,
+70550,Department of Defense Education Activity (DoDEA),71692,Americas - Mid-Atlantic - Kimberly Hampton Primary School,,
+70550,Department of Defense Education Activity (DoDEA),70777,Americas - Mid-Atlantic - Lejeune High School,36,1
+70550,Department of Defense Education Activity (DoDEA),71697,Americas - Mid-Atlantic - Mildred B. Poole Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71715,Americas - Mid-Atlantic - Quantico Middle/High School,4,
+70550,Department of Defense Education Activity (DoDEA),71705,Americas - Mid-Atlantic - Ramey School,,
+70550,Department of Defense Education Activity (DoDEA),71711,Americas - Mid-Atlantic - Shughart Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71689,Americas - Mid-Atlantic - Shughart Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71712,Americas - Mid-Atlantic - Tarawa Terrace Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71686,Americas - Mid-Atlantic - West Point Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71688,Americas - Mid-Atlantic - West Point Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71721,Americas - Mid-Atlantic - WT Sampson Elementary/High School,,
+70550,Department of Defense Education Activity (DoDEA),71679,Americas - Southeast - Andre Lucas Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71680,Americas - Southeast - Barkley Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71699,Americas - Southeast - Charles Cotesworth Pinckney Elementary,,
+70550,Department of Defense Education Activity (DoDEA),71700,Americas - Southeast - Charles F Bolden Elementary/Middle,,
+70550,Department of Defense Education Activity (DoDEA),71696,Americas - Southeast - Charles P Murray Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71677,Americas - Southeast - Diamond Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71676,Americas - Southeast - Don C. Faith Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71674,Americas - Southeast - Edward A. White Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71671,Americas - Southeast - Ellis D. Parker Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71683,Americas - Southeast - Fort Campbell High School,2,
+70550,Department of Defense Education Activity (DoDEA),78472,Americas - Southeast - Fort Campbell Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71684,Americas - Southeast - Fort Knox Middle/High School,1,
+70550,Department of Defense Education Activity (DoDEA),71673,Americas - Southeast - Freddie Stowers Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71675,Americas - Southeast - Herbert J. Dexter Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71690,Americas - Southeast - Kingsolver Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71682,Americas - Southeast - Mahaffey Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71681,Americas - Southeast - Marshall Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71701,Americas - Southeast - Maxwell AFB Elementary/Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71716,Americas - Southeast - Middleton S. Elliott Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71672,Americas - Southeast - Morris R. McBride Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71593,Americas - Southeast - Olinto Mark Barsanti Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71678,Americas - Southeast - Patrick L. Kessler Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71698,Americas - Southeast - Pierce Terrace Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71687,Americas - Southeast - Scott Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),78364,Americas - Southeast - Scott Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71685,Americas - Southeast - Van Voorhis Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71574,DoDEA Virtual High School,110,2
+70550,Department of Defense Education Activity (DoDEA),76957,DoDEA Virtual High School,,
+70550,Department of Defense Education Activity (DoDEA),71587,Europe - Central - Aukamm Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71584,Europe - Central - Baumholder Middle/High School,,
+70550,Department of Defense Education Activity (DoDEA),71601,Europe - Central - Kaiserslautern Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71596,Europe - Central - Kaiserslautern High School,4,
+70550,Department of Defense Education Activity (DoDEA),71597,Europe - Central - Kaiserslautern Middle School,1,
+70550,Department of Defense Education Activity (DoDEA),71603,Europe - Central - Landstuhl Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71604,Europe - Central - Ramstein Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71595,Europe - Central - Ramstein High School,8,
+70550,Department of Defense Education Activity (DoDEA),71605,Europe - Central - Ramstein Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71598,Europe - Central - Ramstein Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71606,Europe - Central - Sembach Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71588,Europe - Central - Smith Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71599,Europe - Central - Vogelweh Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71589,Europe - Central - Wiesbaden Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71585,Europe - Central - Wiesbaden High School,6,
+70550,Department of Defense Education Activity (DoDEA),71586,Europe - Central - Wiesbaden Middle School,1,
+70550,Department of Defense Education Activity (DoDEA),71613,Europe - East - Ansbach Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71607,Europe - East - Ansbach Middle/High School,,
+70550,Department of Defense Education Activity (DoDEA),71614,Europe - East - Garmisch Elementary/Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71615,Europe - East - Grafenwoehr Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71617,Europe - East - Hohenfels Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71608,Europe - East - Hohenfels Middle/High School,,
+70550,Department of Defense Education Activity (DoDEA),71616,Europe - East - Netzaberg Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71620,Europe - East - Netzaberg Middle School,1,
+70550,Department of Defense Education Activity (DoDEA),71618,Europe - East - Patch Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71619,Europe - East - Patch Middle School,2,
+70550,Department of Defense Education Activity (DoDEA),71611,Europe - East - Robinson Barracks Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71594,Europe - East - Stuttgart Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71609,Europe - East - Stuttgart High School,11,
+70550,Department of Defense Education Activity (DoDEA),71610,Europe - East - Vilseck Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71612,Europe - East - Vilseck High School,4,
+70550,Department of Defense Education Activity (DoDEA),71627,Europe - South - Ankara Elementary/High School,2,
+70550,Department of Defense Education Activity (DoDEA),71628,Europe - South - Aviano Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70774,Europe - South - Aviano Middle/High School,49,1
+70550,Department of Defense Education Activity (DoDEA),71623,Europe - South - Bahrain Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70770,Europe - South - Bahrain Middle/High School,34,1
+70550,Department of Defense Education Activity (DoDEA),71621,Europe - South - Livorno Elementary/Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71624,Europe - South - Naples Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70771,Europe - South - Naples Middle/High School,155,2
+70550,Department of Defense Education Activity (DoDEA),71625,Europe - South - Rota Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70772,Europe - South - Rota Middle/High School,15,1
+70550,Department of Defense Education Activity (DoDEA),71629,Europe - South - Sevilla Elementary/Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71626,Europe - South - Sigonella Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70773,Europe - South - Sigonella Middle/High School,44,1
+70550,Department of Defense Education Activity (DoDEA),71622,Europe - South - Vicenza Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70768,Europe - South - Vicenza High School,81,1
+70550,Department of Defense Education Activity (DoDEA),70769,Europe - South - Vicenza Middle School,61,1
+70550,Department of Defense Education Activity (DoDEA),71575,Europe - West - AFNorth Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70763,Europe - West - AFNorth Middle/High School,8,
+70550,Department of Defense Education Activity (DoDEA),71579,Europe - West - Alconbury Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71577,Europe - West - Alconbury Middle/High School,4,
+70550,Department of Defense Education Activity (DoDEA),70764,Europe - West - Brussels Unit School,49,2
+70550,Department of Defense Education Activity (DoDEA),71580,Europe - West - Feltwell Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71581,Europe - West - Kleine Brogel Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71582,Europe - West - Lakenheath Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70767,Europe - West - Lakenheath High School,55,1
+70550,Department of Defense Education Activity (DoDEA),71578,Europe - West - Lakenheath Middle School,3,
+70550,Department of Defense Education Activity (DoDEA),71583,Europe - West - Liberty Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71576,Europe - West - SHAPE Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70765,Europe - West - SHAPE High School,136,3
+70550,Department of Defense Education Activity (DoDEA),70766,Europe - West - SHAPE Middle School,89,1
+70550,Department of Defense Education Activity (DoDEA),71592,Europe - West - Spangdahlem Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71591,Europe - West - Spangdahlem High School,,
+70550,Department of Defense Education Activity (DoDEA),71590,Europe - West - Spangdahlem Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71634,Pacific - East - Ernest J. King Middle/High School,1,
+70550,Department of Defense Education Activity (DoDEA),71642,Pacific - East - Ikego Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71645,Pacific - East - Iwakuni Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71644,Pacific - East - Iwakuni Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71640,Pacific - East - Jack N Darby Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71651,Pacific - East - Joan K. Mendel Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71633,Pacific - East - John O Arnn Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71636,Pacific - East - Matthew C Perry High School,,
+70550,Department of Defense Education Activity (DoDEA),71639,Pacific - East - Matthew C Perry Primary School,,
+70550,Department of Defense Education Activity (DoDEA),71635,Pacific - East - Nile C Kinnick High School,6,
+70550,Department of Defense Education Activity (DoDEA),71647,Pacific - East - Robert D Edgren Middle/High School,,
+70550,Department of Defense Education Activity (DoDEA),71637,Pacific - East - Sasebo Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71638,Pacific - East - Shirley Lanham Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71650,Pacific - East - Sollars Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71641,Pacific - East - Sullivans Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71643,Pacific - East - Yokosuka Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71646,Pacific - East - Yokosuka Primary School,,
+70550,Department of Defense Education Activity (DoDEA),71648,Pacific - East - Yokota High School,4,
+70550,Department of Defense Education Activity (DoDEA),71654,Pacific - East - Yokota Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71652,Pacific - East - Yokota West Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71630,Pacific - East - Zama Middle/High School,1,
+70550,Department of Defense Education Activity (DoDEA),71663,Pacific - South - Amelia Earhart Intermediate School,,
+70550,Department of Defense Education Activity (DoDEA),71669,Pacific - South - Bechtel Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71670,Pacific - South - Bob Hope Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71666,Pacific - South - Kadena Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71661,Pacific - South - Kadena High School,23,1
+70550,Department of Defense Education Activity (DoDEA),71662,Pacific - South - Kadena Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71667,Pacific - South - Killin Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71659,Pacific - South - Kinser Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71658,Pacific - South - Kubasaki High School,5,
+70550,Department of Defense Education Activity (DoDEA),71664,Pacific - South - Lester Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71668,Pacific - South - Ralph F. Stearley Primary School,,
+70550,Department of Defense Education Activity (DoDEA),71665,Pacific - South - Ryukyu Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71660,Pacific - South - Zukeran Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71717,Pacific - West - Andersen Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71720,Pacific - West - Andersen Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71631,Pacific - West - Daegu Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71632,Pacific - West - Daegu Middle/High School,,
+70550,Department of Defense Education Activity (DoDEA),71719,Pacific - West - Guam High School,3,
+70550,Department of Defense Education Activity (DoDEA),71655,Pacific - West - Humphreys Central Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),70775,Pacific - West - Humphreys High School,39,1
+70550,Department of Defense Education Activity (DoDEA),71656,Pacific - West - Humphreys Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71657,Pacific - West - Humphreys West Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71718,Pacific - West - McCool Elementary/Middle School,,
+70550,Department of Defense Education Activity (DoDEA),71653,Pacific - West - Osan Elementary School,,
+70550,Department of Defense Education Activity (DoDEA),71649,Pacific - West - Osan Middle/High School,2,
+70550,Department of Defense Education Activity (DoDEA),70778,Strategic Literacy School,19,1
+70563,South Kitsap School District,70640,SOUTH KITSAP HIGH SCHOOL,22,1
+70646,Northshore School District 417,70647,Bothell High School,,
+70646,Northshore School District 417,71789,Inglemoor High School,3,1
+70646,Northshore School District 417,70994,Woodinville High School,6,1
+70659,St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated,70663,St Charles East High School,595,6
+70659,St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated,70664,St Charles North High School,751,7
+70659,St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated,70665,Thompson Campus,771,8
+70659,St. Charles Community Unit School District 303 (IL) -- ClassLink -- updated,70666,Wredling Middle School,811,7
+70841,Ritenour School District,75985,Husky,5,
+70841,Ritenour School District,70842,Ritenour High School,535,5
+70905,Poplar Bluff School District R1,70906,High School,211,2
+70963,College Place School Dist 250,70964,COLLEGE PLACE HIGH SCHOOL,127,1
+71015,Rise Prep Mayoral Academy,71017,RPA High School,63,1
+71015,Rise Prep Mayoral Academy,71016,RPMA ES/MS,222,1
+71063,Lake Orion Community School District,71065,Lake Orion High School,725,5
+71063,Lake Orion Community School District,71098,Oakview Middle School,119,1
+71063,Lake Orion Community School District,71097,Scripps Middle School,156,1
+71063,Lake Orion Community School District,71259,Waldon Middle School,129,1
+71140,Waukesha School District (WI),71165,Academy Of Health Professions,22,
+71140,Waukesha School District (WI),71874,Bethesda Elementary School,,
+71140,Waukesha School District (WI),71160,Butler Middle School,2,
+71140,Waukesha School District (WI),71166,eAchieve Academy - Wisconsin,244,3
+71140,Waukesha School District (WI),71875,eAchieve Elementary,,
+71140,Waukesha School District (WI),71330,East Alternative School,,1
+71140,Waukesha School District (WI),71162,Horning Middle School,,1
+71140,Waukesha School District (WI),73472,Les Paul Middle School,39,1
+71140,Waukesha School District (WI),71159,North High School,99,4
+71140,Waukesha School District (WI),71158,School District of Waukesha,,1
+71140,Waukesha School District (WI),71167,SDW Elementary Summer Academy,,4
+71140,Waukesha School District (WI),71164,South High School,102,3
+71140,Waukesha School District (WI),71163,Waukesha Eng Preparatory Academy,22,
+71140,Waukesha School District (WI),71329,Waukesha STEM Academy - Saratoga,,
+71140,Waukesha School District (WI),71161,West High School,268,4
+71173,Divine Savior Academy,71181,Divine Savior Academy High School - Doral,54,1
+71205,Franklin Towne Charter High School,71206,Franklin Towne Charter High School,171,3
+71238,Vallejo City Unified School District,71504,Jesse Bethel High School,136,1
+71238,Vallejo City Unified School District,71503,Vallejo High School,314,4
+71246,Waukee Community School District,71459,North Middle School,,
+71246,Waukee Community School District,71251,Northwest High School,153,3
+71246,Waukee Community School District,71249,Prairieview School,319,4
+71246,Waukee Community School District,71458,South Middle School,,1
+71246,Waukee Community School District,71250,Timberline School,630,6
+71246,Waukee Community School District,71253,Trailridge Middle School,226,3
+71246,Waukee Community School District,77860,Trailridge School,,
+71246,Waukee Community School District,71247,Waukee High School,476,3
+71246,Waukee Community School District,71248,Waukee Middle School,166,1
+71296,Culpeper County Public Schools,71297,Culpeper County High School,120,1
+71296,Culpeper County Public Schools,71299,Eastern View High School,102,1
+71347,Grand Ledge Public School Dist,71349,Beagle Middle School,22,1
+71347,Grand Ledge Public School Dist,74880,Comet Academy,1,
+71347,Grand Ledge Public School Dist,71348,Grand Ledge High School,124,1
+71540,Jennings School District,71541,Jennings High School,148,2
+71977,Belton Independent School District (TX),71982,BELTON HIGH SCHOOL,32,1
+71977,Belton Independent School District (TX),71983,LAKE BELTON HIGH SCHOOL,43,1
+72056,Eau Claire Area School District,72057,MEMORIAL HIGH SCHOOL,23,1
+72089,Kern High School District,72090,Ridgeview High School,84,2
+72203,Uniondale School District,72244,Lawrence Road Middle School,151,2
+72203,Uniondale School District,72243,Turtle Hook Middle School,140,1
+72203,Uniondale School District,72242,Uniondale High School,112,1
+72239,Greenfield Union School District,72246,Greenfield Middle School,,1
+72239,Greenfield Union School District,72247,McKee Middle School,,1
+72239,Greenfield Union School District,72240,Ollivier Middle School,52,1
+72271,East Rockaway Union Free SD,72287,East Rockaway Jr/Sr High,393,6
+72360,Greater Albany Public Schools,72361,South Albany High School,102,1
+72470,Brandywine Heights Area School District ,72471,Brandywine Heights High School,5,1
+72470,Brandywine Heights Area School District ,,,,
+72470,Brandywine Heights Area School District ,,,,
+72470,Brandywine Heights Area School District ,,,,
+72807,San Diego Unified School District,72808,De Portola Middle,17,2
+73028,Whittier Union High Sch Dist,73030,California High School,477,5
+73028,Whittier Union High Sch Dist,73034,La Serna High School,676,4
+73028,Whittier Union High Sch Dist,73033,Pioneer High School,237,2
+73028,Whittier Union High Sch Dist,73031,Santa Fe High School,573,5
+73028,Whittier Union High Sch Dist,73029,Whittier High School,310,4
+73151,Nogales Unified School Dist 1,73152,Nogales High School,123,1
+73151,Nogales Unified School Dist 1,75759,NUSD Online,2,
+73313,Shawnee Mission School District (KS),73336,Indian Hills Middle,175,1
+73313,Shawnee Mission School District (KS),73332,Shawnee Mission East High,111,1
+73313,Shawnee Mission School District (KS),73331,Shawnee Mission North High,98,1
+73313,Shawnee Mission School District (KS),73335,Shawnee Mission Northwest High,125,1
+73313,Shawnee Mission School District (KS),73334,Shawnee Mission South High,73,1
+73313,Shawnee Mission School District (KS),73333,Shawnee Mission West High,33,1
+73313,Shawnee Mission School District (KS),73337,Trailridge Middle,112,1
+73514,Dearborn Public School District,73580,Dearborn Magnet School,2,1
+73514,Dearborn Public School District,73515,Dearborn Senior High,146,2
+73514,Dearborn Public School District,73518,Edsel Ford Senior High,213,2
+73514,Dearborn Public School District,78260,Extended School Day DHS,12,
+73514,Dearborn Public School District,78333,Extended School Day EHS,10,
+73514,Dearborn Public School District,78361,Extended School Day FHS,7,
+73514,Dearborn Public School District,74320,Extended School Year HS,28,
+73514,Dearborn Public School District,73519,Fordson Senior High,53,1
+73514,Dearborn Public School District,73540,Smith Middle School,96,1
+73514,Dearborn Public School District,73541,Unis Middle School,46,1
+73516,Portland Public Schools,73517,Portland High School,172,3
+73668,Oxford Community School District,73675,Oxford High School,175,1
+73668,Oxford Community School District,73676,Oxford Middle School,184,1
+74274,Southern Berkshire Regional School District,74276,Southern Berkshire Test School,1,1
+76007,Alameda Unified School District,76010,Alameda High School,868,6
+76007,Alameda Unified School District,79222,Alameda Science & Technology Inst,,
+76007,Alameda Unified School District,79223,Bay Farm,24,1
+76007,Alameda Unified School District,76009,Encinal Jr-Sr High School,533,5
+76007,Alameda Unified School District,76008,Lincoln Middle School,252,2
+76290,West Lafayette Community School District,76291,West Lafayette Junior / Senior,23,1
+77050,Mount Horeb Area School District,77051,Middle School,49,1
+77617,Olathe Unified School District 233,77634,Olathe Advanced Technical Center,5,
+77617,Olathe Unified School District 233,77635,Olathe Advanced Technical Center,,
+77617,Olathe Unified School District 233,77626,Olathe East High School,57,2
+77617,Olathe Unified School District 233,77628,Olathe North High School,54,2
+77617,Olathe Unified School District 233,77629,Olathe Northwest High School,88,3
+77617,Olathe Unified School District 233,77630,Olathe Northwest High School,,
+77617,Olathe Unified School District 233,77631,Olathe South High School,81,2
+77617,Olathe Unified School District 233,77632,Olathe South High School,,
+77617,Olathe Unified School District 233,77633,Olathe West High School,4,1
+77618,Millburn Township School District,77627,Millburn Middle School,596,7
+77661,Brookfield Public Schools (IL),77681,Brookfield High School,16,1
+77685,Test CW Canvas District,77686,Test CW Canvas District SCHOOL,,
+77700,License Consumption Data Test,77701,License Data Test School1,,2
+77750,Carlsbad Unified School District,77752,Aviara Oaks Middle,138,1
+77750,Carlsbad Unified School District,77753,Calavera Hills Middle,163,1
+77750,Carlsbad Unified School District,77751,Carlsbad High,401,2
+77750,Carlsbad Unified School District,77754,Sage Creek High,435,4
+77750,Carlsbad Unified School District,77755,Valley Middle School,78,1
+77924,Plum Borough School District,77926,Plum Middle School,276,3
+77924,Plum Borough School District,77925,Plum Senior High School,608,7
+78009,Twinsburg City School District,78010,R B CHAMBERLIN MIDDLE SCHOOL,74,1
+78009,Twinsburg City School District,78011,TWINSBURG HIGH SCHOOL,319,4
+78116,Hawaii Dept Of Education,78117,Kalaheo High School,36,1
+78197,Wapato School District 207,78198,WAPATO HIGH SCHOOL,107,1
+78530,Union-Endicott Ctl Sch Dist,78532,JennieF.SnappMiddleSchool/MiddleSchool,,6
+78530,Union-Endicott Ctl Sch Dist,78531,UnionEndicottHighSchool/HighSchool,,3
+78619,Lakeville Area Schools - Classlink,78679,Lake Marion Elementary School,,2
+78619,Lakeville Area Schools - Classlink,78821,Lakeview Elementary School,,1
+78619,Lakeville Area Schools - Classlink,78682,Lakeville North High School,,5
+78619,Lakeville Area Schools - Classlink,78681,Lakeville Online Academy High School,,2
+78619,Lakeville Area Schools - Classlink,78684,Lakeville Online Academy Middle School,,1
+78619,Lakeville Area Schools - Classlink,78676,Lakeville South High School,,7
+78619,Lakeville Area Schools - Classlink,78678,McGuire Middle School,,2
+78619,Lakeville Area Schools - Classlink,78675,Oak Hills Elementary School,,1
+78621,Kirkwood School District - Classlink,78694,ASC,,10
+78621,Kirkwood School District - Classlink,78692,Keysor Elementary,,1
+78621,Kirkwood School District - Classlink,78690,Kirkwood High School,1684,148
+78621,Kirkwood School District - Classlink,78686,Nipher Middle School,854,85
+78621,Kirkwood School District - Classlink,78693,North Glendale Elementary,,4
+78621,Kirkwood School District - Classlink,78691,North Middle School,694,77
+78621,Kirkwood School District - Classlink,78687,Robinson Elementary,,2
+78621,Kirkwood School District - Classlink,78688,Tillman Elementary,,3
+78621,Kirkwood School District - Classlink,78689,Westchester Elementary,,4
+78650,South Sioux City CSD 22-0011,78651,South Sioux City High School,460,2
+78929,Duchesne Academy of the Sacred Heart,78930,Duchesne Academy of the Sacred Heart,159,5
+79264,Olentangy Local School District (OH),79361,Olentangy Berkshire Middle School,1,
+79264,Olentangy Local School District (OH),79364,Olentangy Berlin High School,108,5
+79264,Olentangy Local School District (OH),79370,Olentangy Berlin Middle School,2,1
+79264,Olentangy Local School District (OH),79366,Olentangy High School,76,4
+79264,Olentangy Local School District (OH),79376,Olentangy Hyatts Middle School,1,
+79264,Olentangy Local School District (OH),79368,Olentangy Liberty High School,83,5
+79264,Olentangy Local School District (OH),79378,Olentangy Liberty Middle School,28,1
+79264,Olentangy Local School District (OH),79372,Olentangy Orange High School,94,4
+79264,Olentangy Local School District (OH),79374,Olentangy Orange Middle School,,1
+79264,Olentangy Local School District (OH),79362,Olentangy Shanahan Middle School,26,1
+79278,Paradise Valley Unified School District,79279,Paradise Valley High School,,2
+79278,Paradise Valley Unified School District,79280,Pinnacle High School,42,1
+79278,Paradise Valley Unified School District,79281,Shadow Mountain High School,2,1
+79383,Lodi Unified School District,79384,Lodi High School,63,1
+79383,Lodi Unified School District,79385,Tokay High School,11,1
+79412,Kingsport City Schools (TN),79413,Dobyns Bennett High School,80,1
+__NO_DISTRICT__,No Parent District,78856,15740-Paradise Valley High School,,
+__NO_DISTRICT__,No Parent District,78855,15740-North Canyon High School,,
+__NO_DISTRICT__,No Parent District,78854,15740-~~ PV Schools Summer School,,
+__NO_DISTRICT__,No Parent District,78853,15740-Sky Crossing Elementary School,,
+__NO_DISTRICT__,No Parent District,78852,15740-Pinnacle High School,,
+__NO_DISTRICT__,No Parent District,78851,15740-PVOnline School,,
+__NO_DISTRICT__,No Parent District,78850,15740-~~ Community Ed School,,
+__NO_DISTRICT__,No Parent District,78849,15740-Horizon High School,,
+__NO_DISTRICT__,No Parent District,79355,Worcester Polytechnic Institute (MA),,
+__NO_DISTRICT__,No Parent District,79305,Community Unit School District 300 (IL) DEMO,,
+__NO_DISTRICT__,No Parent District,79298,Shawnee Mission School District KS,,
+__NO_DISTRICT__,No Parent District,79217,Kenyon College (OH),,
+__NO_DISTRICT__,No Parent District,79207,Gonzaga College High School - DC,,
+__NO_DISTRICT__,No Parent District,79131,University of Pennsylvania (PA),,
+__NO_DISTRICT__,No Parent District,60959,15648-West Covina High School,,
+__NO_DISTRICT__,No Parent District,79113,University of Washington Bothell (WA),,
+__NO_DISTRICT__,No Parent District,79076,Green Bay Area Public School District-CANVAS,,
+__NO_DISTRICT__,No Parent District,79076,Green Bay Area Public School District-CANVAS,,
+__NO_DISTRICT__,No Parent District,79076,Green Bay Area Public School District-CANVAS,,
+__NO_DISTRICT__,No Parent District,79076,Green Bay Area Public School District-CANVAS,,
+__NO_DISTRICT__,No Parent District,79066,Mississippi State University,,
+__NO_DISTRICT__,No Parent District,74325,15634-Granby Memorial High School,,
+__NO_DISTRICT__,No Parent District,74324,15634-Granby Memorial Middle School,,
+__NO_DISTRICT__,No Parent District,79026,University of Rochester (NY),,
+__NO_DISTRICT__,No Parent District,78931,Wofford College (SC),,
+__NO_DISTRICT__,No Parent District,58901,15558-Walden School of Louisville (KY),,
+__NO_DISTRICT__,No Parent District,78898,Johns Hopkins University (MD),,
+__NO_DISTRICT__,No Parent District,78895,Hanover College (IN),,
+__NO_DISTRICT__,No Parent District,78894,Vanderbilt University (TN),,
+__NO_DISTRICT__,No Parent District,78066,The Browning School - Canvas2025-06-27 15:20:20.411,,
+__NO_DISTRICT__,No Parent District,78875,Poudre School District DEMO,,
+__NO_DISTRICT__,No Parent District,78875,Poudre School District DEMO,,
+__NO_DISTRICT__,No Parent District,78875,Poudre School District DEMO,,
+__NO_DISTRICT__,No Parent District,78862,St. Thomas Aquinas High School NJ,,
+__NO_DISTRICT__,No Parent District,78862,St. Thomas Aquinas High School NJ,,
+__NO_DISTRICT__,No Parent District,78862,St. Thomas Aquinas High School NJ,,
+__NO_DISTRICT__,No Parent District,78839,New York University Berlin (DEU),,
+__NO_DISTRICT__,No Parent District,78783,Mercy High School Burlingame - Schoology,,
+__NO_DISTRICT__,No Parent District,78783,Mercy High School Burlingame - Schoology,,
+__NO_DISTRICT__,No Parent District,78781,West Chester University (PA),,
+__NO_DISTRICT__,No Parent District,78661,St. Olaf College (MN),,
+__NO_DISTRICT__,No Parent District,73464,15505-Holten-Richmond Middle School,,
+__NO_DISTRICT__,No Parent District,63927,15505-Main Street Middle School,,
+__NO_DISTRICT__,No Parent District,63928,15505-Soledad High School,,
+__NO_DISTRICT__,No Parent District,70266,Episcopal Day School (GA),,
+__NO_DISTRICT__,No Parent District,70266,Episcopal Day School (GA),,
+__NO_DISTRICT__,No Parent District,61210,15505-Online Learning Program 4x4,,
+__NO_DISTRICT__,No Parent District,61119,15505-Online Learning Program Semester,,
+__NO_DISTRICT__,No Parent District,59683,15505-Summer School - ESY,,
+__NO_DISTRICT__,No Parent District,59682,15505-San Dieguito Summer School,,
+__NO_DISTRICT__,No Parent District,59680,15505-Canyon Crest Academy,,
+__NO_DISTRICT__,No Parent District,59676,15505-La Costa Canyon High School,,
+__NO_DISTRICT__,No Parent District,59675,15505-Sunset High School,,
+__NO_DISTRICT__,No Parent District,59669,15505-Torrey Pines High School,,
+__NO_DISTRICT__,No Parent District,59665,15505-San Dieguito Academy,,
+__NO_DISTRICT__,No Parent District,59662,15505-Oak Crest Middle School,,
+__NO_DISTRICT__,No Parent District,59660,15505-Diegueno Middle School,,
+__NO_DISTRICT__,No Parent District,59657,15505-Pacific Trails Middle School,,
+__NO_DISTRICT__,No Parent District,59656,15505-Not Returning School,,
+__NO_DISTRICT__,No Parent District,59655,15505-SDUHSD Inactives,,
+__NO_DISTRICT__,No Parent District,59654,15505-Oak Crest Middle School Supplemental,,
+__NO_DISTRICT__,No Parent District,59653,15505-Carmel Valley Middle School Supplemental,,
+__NO_DISTRICT__,No Parent District,59652,15505-Transfer School,,
+__NO_DISTRICT__,No Parent District,59651,15505-San Dieguito Union High School District,,
+__NO_DISTRICT__,No Parent District,59650,15505-Earl Warren Middle School,,
+__NO_DISTRICT__,No Parent District,59647,15505-Carmel Valley Middle School,,
+__NO_DISTRICT__,No Parent District,58729,15505-San Dieguito HS Academy,,
+__NO_DISTRICT__,No Parent District,61892,15505-Loveland High School,,
+__NO_DISTRICT__,No Parent District,61893,15505-Harold Ferguson High School,,
+__NO_DISTRICT__,No Parent District,61894,15505-Walt Clark Middle School,,
+__NO_DISTRICT__,No Parent District,61895,15505-Thompson Valley High School,,
+__NO_DISTRICT__,No Parent District,61896,15505-Turner Middle School,,
+__NO_DISTRICT__,No Parent District,61897,15505-Mountain View High School,,
+__NO_DISTRICT__,No Parent District,61898,15505-Berthoud High School,,
+__NO_DISTRICT__,No Parent District,61442,15505-Lucile Erwin Middle School,,
+__NO_DISTRICT__,No Parent District,61441,15505-Bill Reed Middle School,,
+__NO_DISTRICT__,No Parent District,60334,15505-Jane Lathrop Stanford Middle,,
+__NO_DISTRICT__,No Parent District,60335,15505-Frank S. Greene Jr. Middle,,
+__NO_DISTRICT__,No Parent District,59885,15505-Palo Alto High,,
+__NO_DISTRICT__,No Parent District,59887,15505-Henry M. Gunn High,,
+__NO_DISTRICT__,No Parent District,60338,15505-Ellen Fletcher Middle,,
+__NO_DISTRICT__,No Parent District,70729,15505-MOUNT VERNON HIGH SCHOOL,,
+__NO_DISTRICT__,No Parent District,71096,15505-MOUNT BAKER MIDDLE SCHOOL,,
+__NO_DISTRICT__,No Parent District,58727,15505-whatever2023-06-15 18:28:58.845,,
+__NO_DISTRICT__,No Parent District,58719,15505-San Dieguito HS Academy2023-06-15 15:47:59.944,,
+__NO_DISTRICT__,No Parent District,58716,15505-San Dieguito HS Academy2023-06-15 15:46:45.093,,
+__NO_DISTRICT__,No Parent District,67198,15505-20631-St. Matthew Lutheran School,,
+__NO_DISTRICT__,No Parent District,67215,15505-20631-Oxford High School,,
+__NO_DISTRICT__,No Parent District,67216,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,67217,15505-20631-Genesee Christian School,,
+__NO_DISTRICT__,No Parent District,67218,15505-20631-Lutheran High School-Westland,,
+__NO_DISTRICT__,No Parent District,67219,15505-20631-Oakland Christian School,,
+__NO_DISTRICT__,No Parent District,67220,15505-20631-Oxford Virtual Academy,,
+__NO_DISTRICT__,No Parent District,67221,15505-20631-Online Learning,,
+__NO_DISTRICT__,No Parent District,67205,15505-20631-Holy Family Catholic School,,
+__NO_DISTRICT__,No Parent District,67206,15505-20631-St. Thomas More Academy,,
+__NO_DISTRICT__,No Parent District,67207,15505-20631-Faith Baptist School,,
+__NO_DISTRICT__,No Parent District,67208,15505-20631-Most Holy Trinity Catholic School,,
+__NO_DISTRICT__,No Parent District,67209,15505-20631-St. Mary Cathedral Gaylord,,
+__NO_DISTRICT__,No Parent District,67210,15505-20631-OMS Seated Pre-enrollment,,
+__NO_DISTRICT__,No Parent District,67211,15505-20631-OVA Pre-enrollment,,
+__NO_DISTRICT__,No Parent District,67212,15505-20631-Clear Lake Elementary,,
+__NO_DISTRICT__,No Parent District,67213,15505-20631-Oxford Bridges High School,,
+__NO_DISTRICT__,No Parent District,67214,15505-20631-Daniel Axford Elementary,,
+__NO_DISTRICT__,No Parent District,67215,15505-20631-Oxford High School,,
+__NO_DISTRICT__,No Parent District,67216,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,67217,15505-20631-Genesee Christian School,,
+__NO_DISTRICT__,No Parent District,67218,15505-20631-Lutheran High School-Westland,,
+__NO_DISTRICT__,No Parent District,67219,15505-20631-Oakland Christian School,,
+__NO_DISTRICT__,No Parent District,67220,15505-20631-Oxford Virtual Academy,,
+__NO_DISTRICT__,No Parent District,67221,15505-20631-Online Learning,,
+__NO_DISTRICT__,No Parent District,67361,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,67658,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,67943,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,70980,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,71446,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,71722,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,71792,15505-20631-St. Mary Lake Leelanau School,,
+__NO_DISTRICT__,No Parent District,71877,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,71878,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,72063,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,72177,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,72178,15505-20631-Oxford Middle School,,
+__NO_DISTRICT__,No Parent District,59549,15505-West High School2023-07-25 21:04:47.697,,
+__NO_DISTRICT__,No Parent District,59550,15505-South High School2023-07-25 21:04:37.948,,
+__NO_DISTRICT__,No Parent District,59551,15505-North High School2023-07-25 21:04:30.777,,
+__NO_DISTRICT__,No Parent District,59878,15505-Kirkwood High School,,
+__NO_DISTRICT__,No Parent District,59889,15505-North Middle School,,
+__NO_DISTRICT__,No Parent District,59890,15505-Westchester Elementary,,
+__NO_DISTRICT__,No Parent District,59893,15505-Kirkwood Early Childhood,,
+__NO_DISTRICT__,No Parent District,59894,15505-Robinson Elementary,,
+__NO_DISTRICT__,No Parent District,59895,15505-North Glendale Elementary,,
+__NO_DISTRICT__,No Parent District,59896,15505-Tillman Elementary,,
+__NO_DISTRICT__,No Parent District,59897,15505-SSD Separate Placement,,
+__NO_DISTRICT__,No Parent District,59898,15505-Nipher Middle School,,
+__NO_DISTRICT__,No Parent District,59899,15505-Keysor Elementary,,
+__NO_DISTRICT__,No Parent District,59900,15505-ASC,,
+__NO_DISTRICT__,No Parent District,59901,15505-Default District Office (Auto-generated),,
+__NO_DISTRICT__,No Parent District,71069,15505-15505-Lakeville North High School,,
+__NO_DISTRICT__,No Parent District,71070,15505-15505-Lakeville South High School,,
+__NO_DISTRICT__,No Parent District,71073,15505-15505-Lakeville Online Academy High School,,
+__NO_DISTRICT__,No Parent District,76955,15505-Lakeville Pathways Academy,,
+__NO_DISTRICT__,No Parent District,78490,San Francisco Day School,,
+__NO_DISTRICT__,No Parent District,78571,Baltimore County Public Schools2025-06-11 21:34:38.98,,
+__NO_DISTRICT__,No Parent District,78554,School District of Palm Beach County (FL) French DEMO,,
+__NO_DISTRICT__,No Parent District,78501,Grace College (IN),,
+__NO_DISTRICT__,No Parent District,78499,School District of Palm Beach County (FL) DEMO,,
+__NO_DISTRICT__,No Parent District,78498,John Jay College of Criminal Justice (NY),,
+__NO_DISTRICT__,No Parent District,78496,Santa Rosa Junior College (CA),,
+__NO_DISTRICT__,No Parent District,78483,Carleton University (ON),,
+__NO_DISTRICT__,No Parent District,78456,Schoology Support Ticket - LTI 1.3 Testing Tool,,
+__NO_DISTRICT__,No Parent District,78455,University of Toronto (ON),,
+__NO_DISTRICT__,No Parent District,78440,Grinnell College (IA),,
+__NO_DISTRICT__,No Parent District,78440,Grinnell College (IA),,
+__NO_DISTRICT__,No Parent District,54800,Google Classroom Test School,,
+__NO_DISTRICT__,No Parent District,78425,City Colleges of Chicago (IL),,
+__NO_DISTRICT__,No Parent District,78425,City Colleges of Chicago (IL),,
+__NO_DISTRICT__,No Parent District,78351,University at Buffalo (NY),,
+__NO_DISTRICT__,No Parent District,78325,Indiana University of Pennsylvania (PA),,
+__NO_DISTRICT__,No Parent District,78310,University of St. Thomas (MN),,
+__NO_DISTRICT__,No Parent District,78299,Franklin and Marshall College (PA),,
+__NO_DISTRICT__,No Parent District,78293,Tulane University (LA),,
+__NO_DISTRICT__,No Parent District,78213,Gregory-Portland Independent School District DEMO (TX),,
+__NO_DISTRICT__,No Parent District,78199,Austin Peay State University,,
+__NO_DISTRICT__,No Parent District,78172,College of the Holy Cross (MA),,
+__NO_DISTRICT__,No Parent District,78166,Brown University (RI),,
+__NO_DISTRICT__,No Parent District,78161,Lawrence University (WI),,
+__NO_DISTRICT__,No Parent District,78154,Macalester College (MN),,
+__NO_DISTRICT__,No Parent District,78149,Butler University (IN),,
+__NO_DISTRICT__,No Parent District,78144,Massachusetts Institute of Technology (MA),,
+__NO_DISTRICT__,No Parent District,77943,East Carolina University (NC),,
+__NO_DISTRICT__,No Parent District,77942,Milwaukee School of Engineering (WI),,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77927,Punahou School (HI) - Canvas,,
+__NO_DISTRICT__,No Parent District,77839,University of Cincinnati (OH),,
+__NO_DISTRICT__,No Parent District,77808,University of North Georgia - Dahlonega (GA),,
+__NO_DISTRICT__,No Parent District,77796,Bowdoin College (ME),,
+__NO_DISTRICT__,No Parent District,77794,University of Southern Mississippi,,
+__NO_DISTRICT__,No Parent District,77666,University of Delaware (DE),,
+__NO_DISTRICT__,No Parent District,77616,Davidson College (NC),,
+__NO_DISTRICT__,No Parent District,77576,Washington University in St. Louis,,
+__NO_DISTRICT__,No Parent District,69726,Newton Public Schools,,
+__NO_DISTRICT__,No Parent District,70356,University of Pittsburgh2025-04-14 20:07:54.512,,
+__NO_DISTRICT__,No Parent District,77456,University of Pittsburgh (PA)2025-04-14 20:06:21.546,,
+__NO_DISTRICT__,No Parent District,77440,West Chicago Community High School (IL),,
+__NO_DISTRICT__,No Parent District,77440,West Chicago Community High School (IL),,
+__NO_DISTRICT__,No Parent District,77440,West Chicago Community High School (IL),,
+__NO_DISTRICT__,No Parent District,77440,West Chicago Community High School (IL),,
+__NO_DISTRICT__,No Parent District,77388,Black Hills State University,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,77300,The International School Nido de Aguilas,,
+__NO_DISTRICT__,No Parent District,59462,Klett World Languages Internal Team,,
+__NO_DISTRICT__,No Parent District,59462,Klett World Languages Internal Team,,
+__NO_DISTRICT__,No Parent District,59462,Klett World Languages Internal Team,,
+__NO_DISTRICT__,No Parent District,77221,Bethel University,,
+__NO_DISTRICT__,No Parent District,77193,New York University (NY),,
+__NO_DISTRICT__,No Parent District,77193,New York University (NY),,
+__NO_DISTRICT__,No Parent District,77193,New York University (NY),,
+__NO_DISTRICT__,No Parent District,77192,The Ohio State University (OH),,
+__NO_DISTRICT__,No Parent District,77184,University of Washington - WA,,
+__NO_DISTRICT__,No Parent District,77061,Rochester Institute of Technology (NY),,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76853,Derby Unified School District 260 - Canvas,,
+__NO_DISTRICT__,No Parent District,76523,Derby Unified School District 260 - Canvas2025-03-20 15:06:29.274,,
+__NO_DISTRICT__,No Parent District,75776,22071-Derby Middle School,,
+__NO_DISTRICT__,No Parent District,75777,22071-Derby High School,,
+__NO_DISTRICT__,No Parent District,75779,22071-Derby North Middle School,,
+__NO_DISTRICT__,No Parent District,76597,Swarthmore College,,
+__NO_DISTRICT__,No Parent District,76419,Prince William County Public School UAT,,
+__NO_DISTRICT__,No Parent District,60386,21729-Ballard High,,
+__NO_DISTRICT__,No Parent District,60553,21729-Eastern High,,
+__NO_DISTRICT__,No Parent District,60935,21729-Mill Creek Elementary,,
+__NO_DISTRICT__,No Parent District,60936,21729-Rutherford Elementary,,
+__NO_DISTRICT__,No Parent District,60937,21729-Grace M. James Academy of Excellence,,
+__NO_DISTRICT__,No Parent District,71255,21729-Hawthorne Elementary,,
+__NO_DISTRICT__,No Parent District,75911,DEMO - Tempe Union High School District (AZ),,
+__NO_DISTRICT__,No Parent District,75911,DEMO - Tempe Union High School District (AZ),,
+__NO_DISTRICT__,No Parent District,75814,Canvas Sandbox KWL Demo 2025,,
+__NO_DISTRICT__,No Parent District,75814,Canvas Sandbox KWL Demo 2025,,
+__NO_DISTRICT__,No Parent District,75728,Saratoga High School - Canvas,,
+__NO_DISTRICT__,No Parent District,69206,Rabun Gap-Nacoochee School,,
+__NO_DISTRICT__,No Parent District,69206,Rabun Gap-Nacoochee School,,
+__NO_DISTRICT__,No Parent District,69206,Rabun Gap-Nacoochee School,,
+__NO_DISTRICT__,No Parent District,69206,Rabun Gap-Nacoochee School,,
+__NO_DISTRICT__,No Parent District,69206,Rabun Gap-Nacoochee School,,
+__NO_DISTRICT__,No Parent District,75615,Lafayette College,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74711,Klett World Languages Demo Academy 2,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,74647,KWL Florida Adoption,,
+__NO_DISTRICT__,No Parent District,61617,21421-21421-St. Luke's School,,
+__NO_DISTRICT__,No Parent District,74183,Hollow Rock-Bruceton Special School District,,
+__NO_DISTRICT__,No Parent District,74275,Southern Berkshire Regional Test School,,
+__NO_DISTRICT__,No Parent District,74219,Binghamton University,,
+__NO_DISTRICT__,No Parent District,74219,Binghamton University,,
+__NO_DISTRICT__,No Parent District,74219,Binghamton University,,
+__NO_DISTRICT__,No Parent District,74219,Binghamton University,,
+__NO_DISTRICT__,No Parent District,74217,Old Saybrook High School,,
+__NO_DISTRICT__,No Parent District,68678,21340-Schoology Sandbox,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,74044,Wallingford-Swarthmore School PA,,
+__NO_DISTRICT__,No Parent District,73993,Columbia University,,
+__NO_DISTRICT__,No Parent District,73993,Columbia University,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,55194,Klett World Languages Demo Academy,,
+__NO_DISTRICT__,No Parent District,73985,Class Management Training,,
+__NO_DISTRICT__,No Parent District,73847,Loyola Blakefield High School,,
+__NO_DISTRICT__,No Parent District,72743,University of California Berkeley2024-11-20 21:25:11.497,,
+__NO_DISTRICT__,No Parent District,73780,University of Oregon,,
+__NO_DISTRICT__,No Parent District,73527,Culpeper County Public Schools -- Lotterhos,,
+__NO_DISTRICT__,No Parent District,73754,Paradise Valley USD DEMO,,
+__NO_DISTRICT__,No Parent District,72294,21189-Oxford Community Schools - Schoology,,
+__NO_DISTRICT__,No Parent District,73532,City of St Charles School District R6 MO,,
+__NO_DISTRICT__,No Parent District,73532,City of St Charles School District R6 MO,,
+__NO_DISTRICT__,No Parent District,73584,GC School,,
+__NO_DISTRICT__,No Parent District,73528,UC Berkeley,,
+__NO_DISTRICT__,No Parent District,68630,21164-St. Charles West High School,,
+__NO_DISTRICT__,No Parent District,68631,21164-Hardin Middle School,,
+__NO_DISTRICT__,No Parent District,68632,21164-St. Charles High School,,
+__NO_DISTRICT__,No Parent District,73305,Cranston High School East,,
+__NO_DISTRICT__,No Parent District,73291,Wayne State University,,
+__NO_DISTRICT__,No Parent District,73291,Wayne State University,,
+__NO_DISTRICT__,No Parent District,73219,Prince George's County Public Schools,,
+__NO_DISTRICT__,No Parent District,72746,Western Kentucky University,,
+__NO_DISTRICT__,No Parent District,72745,Mount Holyoke College,,
+__NO_DISTRICT__,No Parent District,72745,Mount Holyoke College,,
+__NO_DISTRICT__,No Parent District,72669,Portland State University,,
+__NO_DISTRICT__,No Parent District,72669,Portland State University,,
+__NO_DISTRICT__,No Parent District,72636,Duke University,,
+__NO_DISTRICT__,No Parent District,72636,Duke University,,
+__NO_DISTRICT__,No Parent District,72432,Oakwood Middle School,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72194,Pioneer Academy NJ,,
+__NO_DISTRICT__,No Parent District,72139,Magic School Noida 2,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72049,Mount Vernon School District 320 - Canvas,,
+__NO_DISTRICT__,No Parent District,72007,Francis W. Parker School,,
+__NO_DISTRICT__,No Parent District,71964,Gradepassback Demo School,,
+__NO_DISTRICT__,No Parent District,71564,Whitman College,,
+__NO_DISTRICT__,No Parent District,61481,20311-Sacramento Accelerated Academy,,
+__NO_DISTRICT__,No Parent District,61482,20311-The Met High School,,
+__NO_DISTRICT__,No Parent District,61483,20311-West Campus HS,,
+__NO_DISTRICT__,No Parent District,61484,20311-Rosemont HS,,
+__NO_DISTRICT__,No Parent District,61485,20311-Arthur A. Benjamin Health Profes,,
+__NO_DISTRICT__,No Parent District,61486,20311-Sam Brannan MS,,
+__NO_DISTRICT__,No Parent District,61487,20311-John F Kennedy HS,,
+__NO_DISTRICT__,No Parent District,61488,20311-George W. Carver SAS,,
+__NO_DISTRICT__,No Parent District,61489,20311-C K McClatchy HS,,
+__NO_DISTRICT__,No Parent District,61490,20311-Hiram W Johnson HS,,
+__NO_DISTRICT__,No Parent District,61491,20311-Luther Burbank HS,,
+__NO_DISTRICT__,No Parent District,61492,20311-Capital City School,,
+__NO_DISTRICT__,No Parent District,61493,20311-School of Engineering and Scienc,,
+__NO_DISTRICT__,No Parent District,61494,20311-American Legion HS,,
+__NO_DISTRICT__,No Parent District,62082,20311-New Tech High,,
+__NO_DISTRICT__,No Parent District,63070,20311-Umoja International Academy,,
+__NO_DISTRICT__,No Parent District,71499,Colorado Christian University2024-09-03 21:38:01.321,,
+__NO_DISTRICT__,No Parent District,71485,MB Test School,,
+__NO_DISTRICT__,No Parent District,66645,Waukee Community School District-FD-20171,,
+__NO_DISTRICT__,No Parent District,67343,The Langley School,,
+__NO_DISTRICT__,No Parent District,67343,The Langley School,,
+__NO_DISTRICT__,No Parent District,70937,Northwest School,,
+__NO_DISTRICT__,No Parent District,70937,Northwest School,,
+__NO_DISTRICT__,No Parent District,70891,Canvas Gilman School,,
+__NO_DISTRICT__,No Parent District,70747,Loudoun County Public Schools2024-08-21 13:46:10.063,,
+__NO_DISTRICT__,No Parent District,66504,Williamsville High School,,
+__NO_DISTRICT__,No Parent District,70849,Latin School of Chicago IL,,
+__NO_DISTRICT__,No Parent District,70543,St. Joseph Public Schools,,
+__NO_DISTRICT__,No Parent District,70355,St. Agnes Academy,,
+__NO_DISTRICT__,No Parent District,70353,University of Pittsburgh2024-08-13 13:35:48.875,,
+__NO_DISTRICT__,No Parent District,70331,Virginia Military Institute,,
+__NO_DISTRICT__,No Parent District,70303,Tufts University,,
+__NO_DISTRICT__,No Parent District,70303,Tufts University,,
+__NO_DISTRICT__,No Parent District,70303,Tufts University,,
+__NO_DISTRICT__,No Parent District,70286,University of Arkansas,,
+__NO_DISTRICT__,No Parent District,69730,Yale University,,
+__NO_DISTRICT__,No Parent District,69730,Yale University,,
+__NO_DISTRICT__,No Parent District,69727,University of Georgia,,
+__NO_DISTRICT__,No Parent District,67746,La Junta Jr-Sr High School,,
+__NO_DISTRICT__,No Parent District,67746,La Junta Jr-Sr High School,,
+__NO_DISTRICT__,No Parent District,67746,La Junta Jr-Sr High School,,
+__NO_DISTRICT__,No Parent District,69645,Northeastern University,,
+__NO_DISTRICT__,No Parent District,69426,Sales KWL School,,
+__NO_DISTRICT__,No Parent District,69137,Schoology Demo Sandbox2024-08-01 17:51:34.271,,
+__NO_DISTRICT__,No Parent District,69114,KWL Middle School2024-08-01 11:42:12.427,,
+__NO_DISTRICT__,No Parent District,69113,School Demo2024-08-01 11:42:04.576,,
+__NO_DISTRICT__,No Parent District,69090,Klett World Languages Academy Canada,,
+__NO_DISTRICT__,No Parent District,55976,Jefferson County Public Schools2024-07-31 17:08:24.951,,
+__NO_DISTRICT__,No Parent District,69066,Louisville Collegiate School,,
+__NO_DISTRICT__,No Parent District,68806,LTI 1.3 Brightspace D2L Sandbox,,
+__NO_DISTRICT__,No Parent District,68764,Carleton College,,
+__NO_DISTRICT__,No Parent District,68517,Seton Hill University,,
+__NO_DISTRICT__,No Parent District,68760,Seton Hill University2024-07-23 20:04:30.73,,
+__NO_DISTRICT__,No Parent District,68728,University of Rhode Island,,
+__NO_DISTRICT__,No Parent District,68727,Cranston East High School,,
+__NO_DISTRICT__,No Parent District,68726,North Kingstown High School,,
+__NO_DISTRICT__,No Parent District,68725,University of Pittsburgh,,
+__NO_DISTRICT__,No Parent District,68724,University of Massachusetts Amherst,,
+__NO_DISTRICT__,No Parent District,68724,University of Massachusetts Amherst,,
+__NO_DISTRICT__,No Parent District,68723,Boston University,,
+__NO_DISTRICT__,No Parent District,68723,Boston University,,
+__NO_DISTRICT__,No Parent District,68722,Kalamazoo College,,
+__NO_DISTRICT__,No Parent District,67347,Liberty High School2024-07-22 21:06:08.075,,
+__NO_DISTRICT__,No Parent District,68588,Forsyth School Placholder,,
+__NO_DISTRICT__,No Parent District,68520,The University of Texas at El Paso,,
+__NO_DISTRICT__,No Parent District,68519,University of Alabama,,
+__NO_DISTRICT__,No Parent District,68461,Impuls Deutsch University,,
+__NO_DISTRICT__,No Parent District,68285,Valparaiso University,,
+__NO_DISTRICT__,No Parent District,68283,Michigan Technological University,,
+__NO_DISTRICT__,No Parent District,68136,Battlefield HS2024-07-11 15:51:09.665,,
+__NO_DISTRICT__,No Parent District,68155,Louise A. Benton Middle School2024-07-11 15:26:49.352,,
+__NO_DISTRICT__,No Parent District,68174,Graham Park Middle School2024-07-11 15:17:49.257,,
+__NO_DISTRICT__,No Parent District,68175,George M. Hampton Middle School2024-07-11 15:17:02.789,,
+__NO_DISTRICT__,No Parent District,68173,Gar-Field HS2024-07-11 15:16:57.748,,
+__NO_DISTRICT__,No Parent District,68146,Potomac HS2024-07-11 14:31:17.086,,
+__NO_DISTRICT__,No Parent District,67954,St. Laurence High School IL,,
+__NO_DISTRICT__,No Parent District,67953,The University of Chicago,,
+__NO_DISTRICT__,No Parent District,67953,The University of Chicago,,
+__NO_DISTRICT__,No Parent District,67953,The University of Chicago,,
+__NO_DISTRICT__,No Parent District,67952,University of Georgia,,
+__NO_DISTRICT__,No Parent District,67951,McHenry County College,,
+__NO_DISTRICT__,No Parent District,67950,University of Denver,,
+__NO_DISTRICT__,No Parent District,67939,University of Minnesota Twin Cities,,
+__NO_DISTRICT__,No Parent District,67938,University of Tulsa,,
+__NO_DISTRICT__,No Parent District,67925,KWL Safari Montage Sandbox,,
+__NO_DISTRICT__,No Parent District,67787,Prince William School Safari Montage,,
+__NO_DISTRICT__,No Parent District,67787,Prince William School Safari Montage,,
+__NO_DISTRICT__,No Parent District,67787,Prince William School Safari Montage,,
+__NO_DISTRICT__,No Parent District,67787,Prince William School Safari Montage,,
+__NO_DISTRICT__,No Parent District,67921,The University of Texas at Austin,,
+__NO_DISTRICT__,No Parent District,67920,Loyola University Chicago,,
+__NO_DISTRICT__,No Parent District,67920,Loyola University Chicago,,
+__NO_DISTRICT__,No Parent District,67560,Canvas - Kern High School District,,
+__NO_DISTRICT__,No Parent District,67560,Canvas - Kern High School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67456,Murrieta Valley Unified School District,,
+__NO_DISTRICT__,No Parent District,67269,Lewiston-Porter Central School District,,
+__NO_DISTRICT__,No Parent District,67136,Lake Forest Academy IL,,
+__NO_DISTRICT__,No Parent District,67136,Lake Forest Academy IL,,
+__NO_DISTRICT__,No Parent District,67136,Lake Forest Academy IL,,
+__NO_DISTRICT__,No Parent District,66643,Waukee Community School District - school integration2024-06-03 18:38:03.978,,
+__NO_DISTRICT__,No Parent District,66641,Waukee Community School District2024-06-03 18:36:51.034,,
+__NO_DISTRICT__,No Parent District,66557,Schoology Demo School,,
+__NO_DISTRICT__,No Parent District,66554,Green Bay Canvas Test,,
+__NO_DISTRICT__,No Parent District,66380,Great Neck North Middle School,,
+__NO_DISTRICT__,No Parent District,66249,May 6th Training,,
+__NO_DISTRICT__,No Parent District,66204,Sacred Heart Schools Atherton,,
+__NO_DISTRICT__,No Parent District,66204,Sacred Heart Schools Atherton,,
+__NO_DISTRICT__,No Parent District,66204,Sacred Heart Schools Atherton,,
+__NO_DISTRICT__,No Parent District,66117,Purdue University,,
+__NO_DISTRICT__,No Parent District,65821,KWL HigherEd School,,
+__NO_DISTRICT__,No Parent District,65816,B2C School,,
+__NO_DISTRICT__,No Parent District,65453,Chadwick School Demo Admin,,
+__NO_DISTRICT__,No Parent District,65246,NYC DOE Testing Environment,,
+__NO_DISTRICT__,No Parent District,65191,CW Test Moodle School LTI Global2024-03-07 21:31:42.63,,
+__NO_DISTRICT__,No Parent District,64131,Marist High School,,
+__NO_DISTRICT__,No Parent District,64006,School District of Onalaska,,
+__NO_DISTRICT__,No Parent District,64006,School District of Onalaska,,
+__NO_DISTRICT__,No Parent District,63738,Clayton Schools MO,,
+__NO_DISTRICT__,No Parent District,63738,Clayton Schools MO,,
+__NO_DISTRICT__,No Parent District,63738,Clayton Schools MO,,
+__NO_DISTRICT__,No Parent District,63680,Solon City Schools,,
+__NO_DISTRICT__,No Parent District,63680,Solon City Schools,,
+__NO_DISTRICT__,No Parent District,62971,Maplewood High School (Demo)2023-11-28 20:01:39.677,,
+__NO_DISTRICT__,No Parent District,62972,Windy City High School2023-11-28 20:01:29.103,,
+__NO_DISTRICT__,No Parent District,62463,King's School2023-10-20 16:07:37.561,,
+__NO_DISTRICT__,No Parent District,62149,King's Schools (WA)2023-10-13 14:14:05.618,,
+__NO_DISTRICT__,No Parent District,61256,Roycemore School,,
+__NO_DISTRICT__,No Parent District,61245,Ideaventions Academy,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,56223,Platte County School District 1,,
+__NO_DISTRICT__,No Parent District,60718,Fremont Unified School District--Circle of Independent Learning,,
+__NO_DISTRICT__,No Parent District,60653,Great Bridge Middle School,,
+__NO_DISTRICT__,No Parent District,60652,Western Branch High School,,
+__NO_DISTRICT__,No Parent District,60651,Oscar Smith High School,,
+__NO_DISTRICT__,No Parent District,60650,Indian River High School,,
+__NO_DISTRICT__,No Parent District,60649,Hickory High School,,
+__NO_DISTRICT__,No Parent District,60648,Grassfield High School,,
+__NO_DISTRICT__,No Parent District,60647,Great Bridge High School,,
+__NO_DISTRICT__,No Parent District,60646,Deep Creek High School,,
+__NO_DISTRICT__,No Parent District,60078,Millard Public Schools,,
+__NO_DISTRICT__,No Parent District,60555,Kavod Charter School2023-08-14 16:13:39.118,,
+__NO_DISTRICT__,No Parent District,60340,Lausanne Collegiate School (TN),,
+__NO_DISTRICT__,No Parent District,60340,Lausanne Collegiate School (TN),,
+__NO_DISTRICT__,No Parent District,60340,Lausanne Collegiate School (TN),,
+__NO_DISTRICT__,No Parent District,60283,Fox Valley Lutheran High School2023-08-07 18:42:21.678,,
+__NO_DISTRICT__,No Parent District,60273,Cedar Cliff Local School District,,
+__NO_DISTRICT__,No Parent District,60273,Cedar Cliff Local School District,,
+__NO_DISTRICT__,No Parent District,60273,Cedar Cliff Local School District,,
+__NO_DISTRICT__,No Parent District,60273,Cedar Cliff Local School District,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60270,DIFU School,,
+__NO_DISTRICT__,No Parent District,60263,All Saints Academy,,
+__NO_DISTRICT__,No Parent District,60237,Neenah Lutheran School,,
+__NO_DISTRICT__,No Parent District,60236,W.E.B. DuBois Academy,,
+__NO_DISTRICT__,No Parent District,59619,Trinity Episcopal School,,
+__NO_DISTRICT__,No Parent District,59635,Millard North High School2023-07-27 14:59:44.755,,
+__NO_DISTRICT__,No Parent District,59568,Montabella,,
+__NO_DISTRICT__,No Parent District,59521,Test School2023-07-21 14:24:58.557,,
+__NO_DISTRICT__,No Parent District,59495,Dummy School,,
+__NO_DISTRICT__,No Parent District,59231,Magic Demo School,,
+__NO_DISTRICT__,No Parent District,59231,Magic Demo School,,
+__NO_DISTRICT__,No Parent District,59162,Mishawaka,,
+__NO_DISTRICT__,No Parent District,59161,Mishawaka High School2023-07-06 17:57:46.883,,
+__NO_DISTRICT__,No Parent District,59160,Mishawaka High School2023-07-06 17:37:27.951,,
+__NO_DISTRICT__,No Parent District,58951,Utah State Board of Education2023-06-29 20:26:38.238,,
+__NO_DISTRICT__,No Parent District,58965,Placentia-Yorba Linda Unified School District2023-06-29 17:00:52.203,,
+__NO_DISTRICT__,No Parent District,58844,The Walden School2023-06-23 14:23:45.813,,
+__NO_DISTRICT__,No Parent District,58720,San Dieguito HS Academy2023-06-15 18:18:57.044,,
+__NO_DISTRICT__,No Parent District,58715,San Dieguito HS Academy2023-06-15 15:12:16.025,,
+__NO_DISTRICT__,No Parent District,57816,MBQA School,,
+__NO_DISTRICT__,No Parent District,57816,MBQA School,,
+__NO_DISTRICT__,No Parent District,57612,Alhambra USD (CA),,
+__NO_DISTRICT__,No Parent District,56517,Lorain City Schools,,
+__NO_DISTRICT__,No Parent District,56277,Berkeley County School (WV),,
+__NO_DISTRICT__,No Parent District,56276,Midwood High School,,
+__NO_DISTRICT__,No Parent District,56275,Fruitport Community Schools,,
+__NO_DISTRICT__,No Parent District,56273,Fayette County Schools,,
+__NO_DISTRICT__,No Parent District,56168,Gulliver Preparatory Schools,,
+__NO_DISTRICT__,No Parent District,56165,St. Andrew's School,,
+__NO_DISTRICT__,No Parent District,56164,The Episcopal School of Dallas,,
+__NO_DISTRICT__,No Parent District,56159,Crawfordsville Community Schools,,
+__NO_DISTRICT__,No Parent District,56141,City School District of Albany,,
+__NO_DISTRICT__,No Parent District,56140,Barbour County Schools,,
+__NO_DISTRICT__,No Parent District,56065,Victor Valley Union High School District,,
+__NO_DISTRICT__,No Parent District,56064,North Cross School,,
+__NO_DISTRICT__,No Parent District,56035,Township High School District 214,,
+__NO_DISTRICT__,No Parent District,56033,Salisbury School,,
+__NO_DISTRICT__,No Parent District,56029,Greece Central School District,,
+__NO_DISTRICT__,No Parent District,56028,Provo City School District,,
+__NO_DISTRICT__,No Parent District,55997,Pioneer Central Schools,,
+__NO_DISTRICT__,No Parent District,55996,Orange County Public Schools,,
+__NO_DISTRICT__,No Parent District,55980,Georgetown Day School,,
+__NO_DISTRICT__,No Parent District,55978,Conference,,
+__NO_DISTRICT__,No Parent District,55975,Topeka Public Schools,,
+__NO_DISTRICT__,No Parent District,55969,Pine Richland School District,,
+__NO_DISTRICT__,No Parent District,55964,Thompson School District,,
+__NO_DISTRICT__,No Parent District,55956,Harrison County Schools,,
+__NO_DISTRICT__,No Parent District,55939,Kirkwood School District,,
+__NO_DISTRICT__,No Parent District,55928,Union County Public Schools,,
+__NO_DISTRICT__,No Parent District,55926,North Plainfield School District,,
+__NO_DISTRICT__,No Parent District,55570,Cannon-McMillan,,
+__NO_DISTRICT__,No Parent District,55540,Upper Arlington City School District,,
+__NO_DISTRICT__,No Parent District,55488,North Kitsap School District,,
+__NO_DISTRICT__,No Parent District,55270,Pellissippi State Community College,,
+__NO_DISTRICT__,No Parent District,55268,Littleton PS,,
+__NO_DISTRICT__,No Parent District,55219,Birmingham Public Schools,,
+__NO_DISTRICT__,No Parent District,54960,Phoenix Union,,
+__NO_DISTRICT__,No Parent District,54723,Green Bay,,
+__NO_DISTRICT__,No Parent District,54722,Simi Valley,,
+__NO_DISTRICT__,No Parent District,54696,Oro Grande,,
+__NO_DISTRICT__,No Parent District,54547,Magic School,,
+__NO_DISTRICT__,No Parent District,54547,Magic School,,
+__NO_DISTRICT__,No Parent District,54547,Magic School,,
+__NO_DISTRICT__,No Parent District,54547,Magic School,,
+__NO_DISTRICT__,No Parent District,54130,Klett School Demo,,
+__NO_DISTRICT__,No Parent District,53368,klettt School,,
+__NO_DISTRICT__,No Parent District,53313,Klett School 13,,
+__NO_DISTRICT__,No Parent District,37603,Klett,,

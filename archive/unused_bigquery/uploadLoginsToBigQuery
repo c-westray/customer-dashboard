@@ -1,0 +1,93 @@
+// uploadLoginsToBigQuery.js
+const { BigQuery } = require('@google-cloud/bigquery');
+const fs = require('fs');
+const path = require('path');
+const { parse } = require('csv-parse/sync');
+
+const projectId = 'klett-cx-analytics';
+const datasetId = 'kwlhub_logins_all';
+const tableId = 'combined_logins';
+const sourceFolder = '/Users/cellawestray/Desktop/cx-analytics/logins-assignments-data/logins-csv-exports';
+
+const bigquery = new BigQuery({ projectId });
+
+function parseFile(filePath) {
+  const ext = path.extname(filePath).toLowerCase();
+  const content = fs.readFileSync(filePath, 'utf8');
+
+  if (ext === '.json') {
+    return JSON.parse(content);
+  } else if (ext === '.csv') {
+    return parse(content, {
+      columns: true,
+      skip_empty_lines: true,
+    });
+  } else {
+    throw new Error(`Unsupported file type: ${ext}`);
+  }
+}
+
+function generateSchema(sampleRow) {
+  const schema = [];
+  for (const [key, value] of Object.entries(sampleRow)) {
+    let type = 'STRING'; // default
+    if (typeof value === 'number') {
+      type = Number.isInteger(value) ? 'INT64' : 'FLOAT64';
+    } else if (typeof value === 'boolean') {
+      type = 'BOOL';
+    }
+    schema.push({ name: key, type, mode: 'NULLABLE' });
+  }
+  return schema;
+}
+
+async function uploadToBigQuery(tableId, rows) {
+  const dataset = bigquery.dataset(datasetId);
+  const table = dataset.table(tableId);
+
+  try {
+    console.log(`Deleting table ${tableId} if it exists...`);
+    await table.delete().catch(() => {});
+
+    console.log(`Creating table ${tableId} with schema inferred from first row...`);
+    await table.create({ schema: generateSchema(rows[0]) });
+
+    console.log(`Inserting ${rows.length} rows into table ${tableId}...`);
+    await table.insert(rows);
+
+    console.log(`Upload completed successfully.`);
+  } catch (error) {
+    console.error('Error uploading data:', error);
+  }
+}
+
+async function main() {
+  const files = fs.readdirSync(sourceFolder);
+  const allRows = [];
+
+  for (const file of files) {
+    const fullPath = path.join(sourceFolder, file);
+    if (!fs.statSync(fullPath).isFile()) continue;
+
+    try {
+      const data = parseFile(fullPath);
+      if (!Array.isArray(data)) {
+        console.warn(`Skipping ${file} because parsed data is not an array.`);
+        continue;
+      }
+      allRows.push(...data);
+      console.log(`Parsed ${data.length} rows from ${file}`);
+    } catch (err) {
+      console.error(`Failed to parse ${file}:`, err.message);
+    }
+  }
+
+  if (allRows.length === 0) {
+    console.error('No data found in any file to upload.');
+    return;
+  }
+
+  await uploadToBigQuery(tableId, allRows);
+}
+
+main().catch(console.error);

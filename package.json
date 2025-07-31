@@ -10,7 +10,10 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google-cloud/bigquery": "^8.1.1",
+    "csv-parse": "^6.1.0",
     "date-fns": "^4.1.0",
+    "json2csv": "^6.0.0-alpha.2",
     "node": "^22.15.0"
   }
 }

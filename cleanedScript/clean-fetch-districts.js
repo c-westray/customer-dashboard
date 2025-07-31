@@ -78,68 +78,6 @@ async function fetchJson(url) {
 }
 
 //----------------------------------------------------------------------------
-//SETUP BATCHER
-//batch function and companion processor companion processor to batch large vols of calls (otherwise MB api returns "You are not authorized" message)
-//not sure if this is rate limit or why
-//----------------------------------------------------------------------------
-async function batchProcessor(enrichedDistrictArray) {
-    const arrayLength = enrichedDistrictArray.length;
-    let batchNumber = 1; // //start at 1 but for batchMinIndex subtract 1 to make sure the index of my actual for loop starts at 0 (in the other function)
-    const numberPerBatch = 10;
-   // const maxNumBatches = arrayLength / numberPerBatch;
-   const maxNumBatches = 2;
-
-    while (batchNumber <= maxNumBatches) {
-    try {
-    const result = await batchMyBatch(batchNumber, numberPerBatch, enrichedDistrictArray);
-            batchNumber++
-            //optionally do something w/result, not in this case
-    } catch (error) {
-      console.error(`Error processing batch ${batchNumber}:`, error);
-      throw error;
-    }}
-}
-
-async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
-    try {
-        const batchMinIndex = (batchNumber - 1) * numberPerBatch; // subtract 1 since the batch number starts at 1 but the index of my for loop should start at zero.
-        const batchMaxIndex = (batchNumber * numberPerBatch) - 1;  // 
-        console.log(`Processing batchNumber: ${batchNumber}, indices ${batchMinIndex} through ${batchMaxIndex}`);
-        //batch 1: 0 through 9; batch 2: 10 through 19; batch 3: 20 through 29;
-        //general formulas: batchMinIndex through batchMaxIndex
-        
-        //batchNumber --> batchMin Index
-        //1 --> 0
-        //2 --> 10
-        //3 --> 20
-        //4 --> 30
-        //general formula: batchMinIndex = (batchNumber - 1) * 10;
-        //or in other words: batchMinIndex = (batchNumber - 1) * numberPerBatch;
-        
-        //batchNumber --> batchMax Index
-        //1 --> 9
-        //2 --> 19
-        //3 --> 29
-        //4 --> 39
-        //general formula: batchMaxIndex = (batchNumber * 10) - 1;
-        //or in other words: batchMaxIndex = (batchNumber * numberPerBatch) - 1;
-
-        for (let i = batchMinIndex; i <= batchMaxIndex; i++) {
-            console.log(`I\'m batching the batch. Batch number ${batchNumber}, index ${i}`);
-            console.log(`I'm also doing other things with districtArray.`);
-      
-            const currentValueOfArray = districtArray[i]?.districtName;
-           console.log(`For example, current index ${i} of this array is: ${currentValueOfArray}`);
-          //  } else {
-            //    continue;
-           // };
-        };
-    } catch (error) {
-      console.error(`Error processing batch ${batchNumber}:`, error);
-      throw error;
-    }
-}
-//----------------------------------------------------------------------------
 //// MAIN()
 // only use for final script when ready to make high vol of api calls
 
@@ -275,11 +213,12 @@ try {
 
 //SAVE TO FILE
 let formattedDate = makeFormattedTodayDate();
-saveToFile(poEnrichedDistricts, `cleanedScript ${formattedDate}`); // save file with all districts and nested under each district are POs and schools
+saveToFile(poEnrichedDistricts, `LicenseData_${formattedDate}`); // save file with all districts and nested under each district are POs and schools
 }
 
 
-//Enriches either a School or District by attaching its purchase order information.
+
+//----------------------------------------------------------------------------
 //Takes a schoolId or districtId 
 //--> fetches poList for that school or district by calling getActivePoList(),
 //--> then fetches individual PO details and processes them by calling getPoData(), 
@@ -927,7 +866,7 @@ async function readDistrictList() {
 
 
 async function addExpiredPOInfo(poEnrichedDistricts) {
-   
+
   const expiredPoArray = [];
    for (let i = 0; i < poEnrichedDistricts.length; i++) {
         const district = poEnrichedDistricts[i];
@@ -995,8 +934,6 @@ async function addExpiredPOInfo(poEnrichedDistricts) {
 
 
 
-
-
 //KEEP IN MIND WILL ONLY RETURN 100 ITEMS, GO BACK AND EDIT LATER TO IMPLEMENT PAGINATION
 async function getExpiredPOsForDistrict(districtName) {
 
@@ -1028,3 +965,65 @@ async function getExpiredPOsForDistrict(districtName) {
 }
 
 
+//----------------------------------------------------------------------------
+//SETUP BATCHER
+//batch function and companion processor companion processor to batch large vols of calls (otherwise MB api returns "You are not authorized" message)
+//not sure if this is rate limit or why
+//----------------------------------------------------------------------------
+async function batchProcessor(enrichedDistrictArray) {
+    const arrayLength = enrichedDistrictArray.length;
+    let batchNumber = 1; // //start at 1 but for batchMinIndex subtract 1 to make sure the index of my actual for loop starts at 0 (in the other function)
+    const numberPerBatch = 10;
+   // const maxNumBatches = arrayLength / numberPerBatch;
+   const maxNumBatches = 2;
+
+    while (batchNumber <= maxNumBatches) {
+    try {
+    const result = await batchMyBatch(batchNumber, numberPerBatch, enrichedDistrictArray);
+            batchNumber++
+            //optionally do something w/result, not in this case
+    } catch (error) {
+      console.error(`Error processing batch ${batchNumber}:`, error);
+      throw error;
+    }}
+}
+
+async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
+    try {
+        const batchMinIndex = (batchNumber - 1) * numberPerBatch; // subtract 1 since the batch number starts at 1 but the index of my for loop should start at zero.
+        const batchMaxIndex = (batchNumber * numberPerBatch) - 1;  // 
+        console.log(`Processing batchNumber: ${batchNumber}, indices ${batchMinIndex} through ${batchMaxIndex}`);
+        //batch 1: 0 through 9; batch 2: 10 through 19; batch 3: 20 through 29;
+        //general formulas: batchMinIndex through batchMaxIndex
+        
+        //batchNumber --> batchMin Index
+        //1 --> 0
+        //2 --> 10
+        //3 --> 20
+        //4 --> 30
+        //general formula: batchMinIndex = (batchNumber - 1) * 10;
+        //or in other words: batchMinIndex = (batchNumber - 1) * numberPerBatch;
+        
+        //batchNumber --> batchMax Index
+        //1 --> 9
+        //2 --> 19
+        //3 --> 29
+        //4 --> 39
+        //general formula: batchMaxIndex = (batchNumber * 10) - 1;
+        //or in other words: batchMaxIndex = (batchNumber * numberPerBatch) - 1;
+
+        for (let i = batchMinIndex; i <= batchMaxIndex; i++) {
+            console.log(`I\'m batching the batch. Batch number ${batchNumber}, index ${i}`);
+            console.log(`I'm also doing other things with districtArray.`);
+      
+            const currentValueOfArray = districtArray[i]?.districtName;
+           console.log(`For example, current index ${i} of this array is: ${currentValueOfArray}`);
+          //  } else {
+            //    continue;
+           // };
+        };
+    } catch (error) {
+      console.error(`Error processing batch ${batchNumber}:`, error);
+      throw error;
+    }
+}
