@@ -3,14 +3,21 @@
 //----------------------------------------------------------------------------
 // do postman at very end
 // AT VERY END DRY WITH fetchJson(url). Do at very end
-//get /school/v1.1/getSchools ADD NOTE THAT THERE IS NO DISTRICT INFO HERE, IT ALWAYS SAYS 0 FOR DISTRICTID (MISSING INFORMATION)
 //add note about:   // Step 3.0: Fetch complete list of all schools (ENDPOINT: get /school/v1.1/getSchools)
     //Realized that studentcount and teachercount are always null at this endpoint...missing that data. still useful to keep in district school data
 // add note about: ENDPOINT: GET /license/v1.0/poListBySchoolId/{schoolId} NOTE!!! {schoolId} can also be a district ID.
 // add note about keeping old IDs for deleted districts...
-// add note about urli / slash incoding for consumeUsers endpoint. /*
+// add note about urli / slash incoding for consumeUsers endpoint. Issue w/MB api server does not accept / in URL encoding
+// I couldn't fix this issue so just skipped these POs, there will be missing data for these POS with a / in their name/*
 //Error in getPoData for PO KSO4355000002106716 All PD Neu 1,2,3/4 all user: Error: Failed to fetch: 400 Bad Request
 
+//Add final notes re: expired po fetching, I didn't implement this in final program
+//but ideally we want this
+
+//FINALLY -- add note about saving aggregate copy of district/school mapping
+//otherwise any districts or schools that get deleted will not properly pull license and assignment data
+// (e.g. if district stop sharing 1 or more schools or switches integration methods)
+//
 //----------------------------------------------------------------------------
 //NOTES
 //----------------------------------------------------------------------------
@@ -63,6 +70,8 @@ function makeFormattedTodayDate() {
 //----------------------------------------------------------------------------
 //SETUP REUSABLE FETCH PATTERNS
 //----------------------------------------------------------------------------
+
+//I didn't actually end up using this--go back and add to abstract pattern
 async function fetchJson(url) {
   try {
     const response = await fetch(url);
@@ -72,7 +81,7 @@ async function fetchJson(url) {
     const jsonParsedResponse = await response.json();
     return jsonParsedResponse;
   } catch (error) {
-    console.error('Error in fetchJson:', error);
+    console.error('Error in fetchJson:', error); // log error
     throw error; // re-throw if the caller needs to react
   }
 }
@@ -324,10 +333,10 @@ function processDistricts(rawDistrictArray) {
 
 //----------------------------------------------------------------------------
 //ENDPOINT: GET /districts/v1.0/district/{id}/schools
-//Get list of schools in a particular district
-
+//Get list of schools in a particular district.
+//districtId comes out as 0 here, missing data for this endpoint
 //there is also another endpoint get /districts/v1.0/district/{id}/schools which returns just the school name and ID, 
-//however there's some other info e.g. number of teachers and students in each school we could use to monitor the current
+//but with this there's some other info e.g. number of teachers and students in each school we could use to monitor the current
 //student population shared, this is useful so saving to our data
 //----------------------------------------------------------------------------
 async function getSchoolsInDistrict(districtId) {
@@ -396,13 +405,13 @@ try {
 
 function processSchools(rawSchoolArray) {
 //Data fields we want: schoolcount (number of schools in district), schoolName, schoolId
-//maybe useful but not totally necessary: studentcount, teachercount
+//tried to get studentcount and teachercount but returned null here
     const processedSchoolArray = rawSchoolArray.map(school => {
         return {
         schoolId: school?.schoolId ?? null,
         schoolName: school?.schoolName ?? null,
-        studentcount: school?.studentcount ?? null,
-        teachercount: school?.teachercount ?? null
+        //studentcount: school?.studentcount ?? null,
+        //teachercount: school?.teachercount ?? null
         }
     });
     return processedSchoolArray;
@@ -468,7 +477,7 @@ Old version adding one entry per school
 //----------------------------------------------------------------------------
 // PURCHASE ORDER (PO) ENDPOINTS
 //----------------------------------------------------------------------------
-//ENDPOINT: GET /license/v1.0/poListBySchoolId/{schoolId}
+//ENDPOINT: GET /license/v1.0/poListBySchoolId/{schoolId} //{{districtOrSchoolId}}
 // 
 // Returns poList for that district or school, array of pos with:
 // DATA FIELDS: 
@@ -476,15 +485,14 @@ Old version adding one entry per school
 // purchaseOrderId (Number, e.g. 547276)
 
 // Only returns active POs. Any expired POs are not accessible directly through the Magicbox api at least currently 
-// --> If a PO expires and we need the info for calculating consumption, I use superpub login + html scraping method due to lack of official endpoint
+// --> If a PO expires and we need the info for calculating consumption, I use superpub login + scraping method due to lack of official endpoint
 // --> If a PO is completely deleted, it can never be recovered
 
 //NOTE {schoolId} can also be a {districtId}. If it is a district ID, this endpoint will actually return the POs for the entire district  (more accurately this SHOULD be called /poListByDistrictId{districtId} )
 
 //On the Hub there are two types of Purchase Orders (POs):
 //    District-level (applies to all districts). The PO is associated with the entire district.  
-//        *note (For District-level POs, each PO ---may or may not--- also be associated with individual schools under that district, depending on whether the district admin has assigned it to that school. Therefore ignore the PO information for the individual schools nested under the district as this is not reliable)
-//    School-level (applies to any school WITHOUT a parent district, aka orphan schools)
+//for District-level POs, each PO ---may or may not--- also be associated with individual schools under that district, depending on whether the district admin has assigned it to that school. So just ignore the PO information for the individual schools nested under the district since this is not relevant
 
 // If parent district exists:
 //    --> call GET /license/v1.0/poListBySchoolId/{districtId}  (more accurately this SHOULD be called /poListByDistrictId{districtId} )
@@ -492,7 +500,7 @@ Old version adding one entry per school
 //    (IGNORE the individual nested schoolIDs under that district, since we already called the method on the entire district, we already have all the district's POs.)
 
 //If a parent district does NOT exist (aka orphan school):
-//    --> call GET /license/v1.0/poListBySchoolId/{schoolId}
+//    -> call GET /license/v1.0/poListBySchoolId/{schoolId}
 //    --> returns list of POs in that school
 //----------------------------------------------------------------------------
 async function getActivePoList(districtOrSchoolId) {
@@ -514,33 +522,39 @@ async function getActivePoList(districtOrSchoolId) {
 //----------------------------------------------------------------------------
 //ENDPOINT: GET /license/v1.0/consumedata/{poNumber}
 // For each purchase order, get details (expiration date and consumption details)
+//----------------------------------------------------------------------------
 
 // 
 // Used for DATA FIELDS: 
 // startDate // Date as string
 // expiryDate // Date as string 
 // licenseCount // total license count
-// licenseConsumeCount // We now know this IS the real number of consumed licenses. (Licenses assigned where the user has logged in WITH the book) 
+// licenseConsumeCount // Confirmed with Magicbox that this IS the real number of consumed licenses. (Licenses assigned where the user has logged in WITH the book) 
 // consumeUsers (don't necessarily need this but could be useful to see which user TYPES have consumed the licenses: how many ADMINS, TEACHERS, LEARNERS
 //  --> esp since admin and teacher licenses are provided complimentary, we want to assess actual student consumption metrics
 //  --> consumeUsers result overspills / is paginated so to get total count we need to page through. this might not be worth it....
 
 // Discarded info about autoassign b/c we don't currently need this, however can re-add in future if needed
 /*
-Example cleaned data after processing:
-    {
-  purchaseOrderNumber: 'PO_60427_PD_Neu_1',
-  startDate: '2024-08-20',
-  expiryDate: '2025-09-23',
-  totalLicenseCount: 10598,
-  licenseConsumeCount: 95,
+//Example cleaned data after processing: 
+/*
+{
+  purchaseOrderNumber: 'WhittierUHSD_pilot_Reporteros1-3',
+  startDate: '2024-10-21',
+  expiryDate: '2025-11-30',
+  totalLicenseCount: 2620,
+  licenseConsumeCount: 1470,
+  productTitles: [ 'Reporteros 1', 'Reporteros 2 ', 'Reporteros 3' ],
   userCounts: {
-    'District Admin': 1,
-    'School Administrator': 31, // important b/c this is a large district using Clever, district admin automatically consume licenses...compare vs. actual student consumption data
-    'School Teacher': 32,
-    'School Student': 41 // student licenses (what we bill for) make up less than half of the consumption! problem w/large districts
-  }
+    'District Admin': 2,
+    'School Administrator': 5,
+    'School Student': 1443,
+    'School Teacher': 20
+  },
+  rawConsumeUserCount: 524999,
+  duplicateUserCount: 523529 // how many were filtered out to get userCounts aka licenseConsume count. 
 }
+
 */
 
 //----------------------------------------------------------------------------
@@ -624,27 +638,189 @@ async function getPoData(purchaseOrderNumber) {
   }
 }
 
-//Example output: 
-/*
-  purchaseOrderNumber: 'WhittierUHSD_pilot_Reporteros1-3',
-  startDate: '2024-10-21',
-  expiryDate: '2025-11-30',
-  totalLicenseCount: 2620,
-  licenseConsumeCount: 1470,
-  productTitles: [ 'Reporteros 1', 'Reporteros 2 ', 'Reporteros 3' ],
-  userCounts: {
-    'District Admin': 2,
-    'School Administrator': 5,
-    'School Student': 1443,
-    'School Teacher': 20
-  },
-  rawConsumeUserCount: 524999,
-  duplicateUserCount: 523529 // how many were filtered out to get userCounts aka licenseConsume count. 
-}
-{
-*/
 
-///TO DO -- GET RID OF THIS FUNCTION async function getProductTitles(purchaseOrderNumber) { AS IT'S NO LONGER ENEDED.
+//----------------------------------------------------------------------------
+// UNUSED FUNCTIONS
+//----------------------------------------------------------------------------
+
+
+//----------------------------------------------------------------------------
+// EXPIRED POs
+//----------------------------------------------------------------------------
+
+//Same approach as what I used before I had access to mb api...
+//I used this in my old really messy script but not in my current cleaned script...need to enter JSESSION cookie from active
+//superpublisher login session every time
+async function addExpiredPOInfo(poEnrichedDistricts) {
+
+  const expiredPoArray = [];
+   for (let i = 0; i < poEnrichedDistricts.length; i++) {
+        const district = poEnrichedDistricts[i];
+
+        if (!district?.districtName) {
+            console.warn("Error fetching district, skipping.");
+            continue;
+        };
+
+        const response = await getExpiredPOsForDistrict(district?.districtName);
+        const rawData = response?.poListResponse?.data; //gets only the PO part of the response. only present for districts
+        //with expired POs.
+
+        if (!rawData) {
+            console.warn('There are no expired POs here, skipping.');
+            continue;
+        }
+         //if there adistrict without Pos, skip
+        //got it...ugh, so if there are multiple expired POs, it returns an 
+        //array. Otherwise, it returns a single object. I'll have to normalize it
+        // all to an array to be ocnsistent.
+       
+        //Otherwise, keep running:
+
+        console.log('There are expired POs here!');
+
+        console.log('Raw data: ', rawData);
+        console.log('Normalizing to array....');
+        const dataGuaranteedArray = Array.isArray(rawData) ? rawData : [rawData];
+        console.log('The guaranteed array is: ', dataGuaranteedArray);
+     
+        console.log('Now iterating through array and adding any expired Pos...');
+
+        const cleanedArray = []; 
+
+        for (const po of dataGuaranteedArray) {
+
+            const expiredPo = {
+                startDate: po?.subscriptionStartDate
+                    ? new Date(po.subscriptionStartDate).toISOString().split('T')[0]
+                    : undefined,
+                expiryDate: po?.expiryDate
+                    ? new Date(po.expiryDate).toISOString().split('T')[0]
+                    : undefined,
+            //  schoolDistrictName: po?.schoolName,
+                licenseCount: po?.licenseCount,
+                purchaseOrderId: po?.purchaseOrderId,
+                purchaseOrderNumber: po?.purchaseOrderNumber,
+                trialPO: po?.trialPO,
+                licenseType: po?.licenseTitle
+                };
+            cleanedArray.push(expiredPo);
+        };
+        console.log('Creating new property district.expiredPoArray: ', cleanedArray);
+        //After loooping through all pos, assign (simply a reference in memory) to cleanedPoArray
+       //CREATE NEW PROPERTY ON THE DISTRICT
+           //FINALLY assign this expiredPo aray as a new PROPERTY created on the 
+    //whole object:
+        district.expiredPoArray = cleanedArray;
+    };
+
+    console.log("After adding expired po arrays: ", poEnrichedDistricts);
+//do not need to return anything, sinc emutating the overall json/array
+};  
+
+
+
+//KEEP IN MIND WILL ONLY RETURN 100 ITEMS, GO BACK AND EDIT LATER TO IMPLEMENT PAGINATION
+async function getExpiredPOsForDistrict(districtName) {
+
+    const encodedDistrictName = encodeURIComponent(districtName);
+    const base = 'https://klettlp.com/services/purchaseorders/getPurchaseOrderDetailList.json'
+    const url = `${base}?sEcho=1&iColumns=13&sColumns=%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=1000&mDataProp_0=0&bSortable_0=false&mDataProp_1=1&bSortable_1=true&mDataProp_2=2&bSortable_2=true&mDataProp_3=3&bSortable_3=false&mDataProp_4=4&bSortable_4=true&mDataProp_5=5&bSortable_5=true&mDataProp_6=6&bSortable_6=false&mDataProp_7=7&bSortable_7=true&mDataProp_8=8&bSortable_8=true&mDataProp_9=9&bSortable_9=true&mDataProp_10=10&bSortable_10=false&mDataProp_11=11&bSortable_11=false&mDataProp_12=12&bSortable_12=true&iSortCol_0=2&sSortDir_0=desc&iSortingCols=1&tenantId=804&pageNumber=1&maxRecordCount=10&rowField=EMAIL_ID&sortOrder=desc&searchText=${encodedDistrictName}&expiryFilter=Expired&licenceTypeCode=All`;
+
+    const response = await fetch(url, {
+        "headers": {
+            "accept": "*/*",
+            "accept-language": "en-US,en;q=0.9",
+            "priority": "u=1, i",
+            "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
+            "sec-ch-ua-mobile": "?0",
+            "sec-ch-ua-platform": "\"macOS\"",
+            "sec-fetch-dest": "empty",
+            "sec-fetch-mode": "cors",
+            "sec-fetch-site": "same-origin",
+            "x-requested-with": "XMLHttpRequest",
+            "cookie": "_ga=GA1.1.1042487296.1746109864; SESSIONID=66B60C729C3A3FC0CAF348E24170F622; JSESSIONID=c55e4cca-7c02-4d59-9043-bc6c2350065c; jwt_token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjd2VzdHJheUBrbGV0dHdsLmNvbSIsInVzZXJOYW1lIjoiY3dlc3RyYXlAa2xldHR3bC5jb20iLCJ1c2VyUm9sZSI6IlNVUF9QVUJMSVNIRVIiLCJ1c2VyR3VpZCI6IjY0MmM5OGEwLTY5NWQtNGRjMC1iN2IyLTBmMDM3NDZlMjM2YSIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiU3VwIiwibGFzdE5hbWUiOiJwdWJsaXNoZXIiLCJkb21haW4iOiJrbGV0dGxwLmNvbSJ9.HsIOqir3kx6vtkjUsZE2Qdww6DFO8Wk8aCDB9sqbNGTUER12dgYJWNtuoK7ERyjr78hRQQgbQ2Zj7C_iJrF0yPEuzZlKiQTTzJ1aoKFdLd8QHhwUffLNVW7O7Gf-xdlrKsSJZhFeRqLNti7TT3I-8Emay0EzGn4UqqAtZlW5bHE; CloudFront-Key=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Policy=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Signature=c55e4cca-7c02-4d59-9043-bc6c2350065c; Cloudfront-domain=https://klettlp-mbx-cloud.klettlp.com/content/secure/804/0/; CloudFront-Key-Pair-Id=c55e4cca-7c02-4d59-9043-bc6c2350065c; pdftronAppUrl=https://klettlp-mbx-cloud.klettlp.com/static/pdftron/26/index.html; pdftronWebLicense=; Cloudfront-parent-domain=klettlp.com; _ga_E6TQHW6LEH=GS1.1.1746121362.2.1.1746121372.0.0.0",
+            "Referer": "https://klettlp.com/admin/purchaseorder/polist.htm",
+            "Referrer-Policy": "strict-origin-when-cross-origin"
+      },
+  }); 
+
+    const jsonParsedResponse = await response.json();
+    //console.log(jsonParsedResponse);
+    return jsonParsedResponse;
+}
+
+/*
+//----------------------------------------------------------------------------
+//SETUP BATCHER
+//batch function and companion processor companion processor to batch large vols of calls (otherwise MB api returns "You are not authorized" message)
+//not sure if this is rate limit or why
+//EDIT -- Idk what I did before but I don't seem to need this once I correctly implemented pagination...no longer going to use
+//Maybe this was needed due to adding in the expired POs, which i'm no longer doing in my current cleaned script?
+//----------------------------------------------------------------------------
+async function batchProcessor(enrichedDistrictArray) {
+    const arrayLength = enrichedDistrictArray.length;
+    let batchNumber = 1; // //start at 1 but for batchMinIndex subtract 1 to make sure the index of my actual for loop starts at 0 (in the other function)
+    const numberPerBatch = 10;
+   // const maxNumBatches = arrayLength / numberPerBatch;
+   const maxNumBatches = 2;
+
+    while (batchNumber <= maxNumBatches) {
+    try {
+    const result = await batchMyBatch(batchNumber, numberPerBatch, enrichedDistrictArray);
+            batchNumber++
+            //optionally do something w/result, not in this case
+    } catch (error) {
+      console.error(`Error processing batch ${batchNumber}:`, error);
+      throw error;
+    }}
+}
+
+async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
+    try {
+        const batchMinIndex = (batchNumber - 1) * numberPerBatch; // subtract 1 since the batch number starts at 1 but the index of my for loop should start at zero.
+        const batchMaxIndex = (batchNumber * numberPerBatch) - 1;  // 
+        console.log(`Processing batchNumber: ${batchNumber}, indices ${batchMinIndex} through ${batchMaxIndex}`);
+        //batch 1: 0 through 9; batch 2: 10 through 19; batch 3: 20 through 29;
+        //general formulas: batchMinIndex through batchMaxIndex
+        
+        //batchNumber --> batchMin Index
+        //1 --> 0
+        //2 --> 10
+        //3 --> 20
+        //4 --> 30
+        //general formula: batchMinIndex = (batchNumber - 1) * 10;
+        //or in other words: batchMinIndex = (batchNumber - 1) * numberPerBatch;
+        
+        //batchNumber --> batchMax Index
+        //1 --> 9
+        //2 --> 19
+        //3 --> 29
+        //4 --> 39
+        //general formula: batchMaxIndex = (batchNumber * 10) - 1;
+        //or in other words: batchMaxIndex = (batchNumber * numberPerBatch) - 1;
+
+        for (let i = batchMinIndex; i <= batchMaxIndex; i++) {
+            console.log(`I\'m batching the batch. Batch number ${batchNumber}, index ${i}`);
+            console.log(`I'm also doing other things with districtArray.`);
+      
+            const currentValueOfArray = districtArray[i]?.districtName;
+           console.log(`For example, current index ${i} of this array is: ${currentValueOfArray}`);
+          //  } else {
+            //    continue;
+           // };
+        };
+    } catch (error) {
+      console.error(`Error processing batch ${batchNumber}:`, error);
+      throw error;
+    }
+}
+    */
+
+
+
+
+
 
 //----------------------------------------------------------------------------
 //wow I don't need this after all....
@@ -655,8 +831,9 @@ async function getPoData(purchaseOrderNumber) {
 // I am only using this to pull product titles (since product titles are not provided by the GET /license/v1.0/consumedata/{poNumber} endpoint
 // other data here is mostly overlapping with the consumedata endpoint, discard
 // note this endpoint provides a "redeemedCount", I don't actually know what this represents but doesn't correspond to actual license consumption
-  //----------------------------------------------------------------------------
-
+///TO DO -- GET RID OF THIS FUNCTION async function getProductTitles(purchaseOrderNumber) { AS IT'S NO LONGER ENEDED.  
+//----------------------------------------------------------------------------
+/*
 async function getProductTitles(purchaseOrderNumber) {
 try {
   const urlEncodedPoNumber = encodeURIComponent(purchaseOrderNumber);
@@ -675,7 +852,7 @@ try {
     throw error; // re-throw
   }
 }
-
+*/
 //----------------------------------------------------------------------------
 //----------------------------------------------------------------------------
 // TEST FUNCTIONS
@@ -839,6 +1016,7 @@ async function testPartialGetPoEnrichedDistricts(batchNumber) {
             return(enrichedDistrictArray);
         };
         
+    
 //For testing: File-reading functions (mock data for test to avoid abusing api)
 /*
 Unused since didn't end up needing it:
@@ -864,166 +1042,3 @@ async function readDistrictList() {
 
 
 
-
-async function addExpiredPOInfo(poEnrichedDistricts) {
-
-  const expiredPoArray = [];
-   for (let i = 0; i < poEnrichedDistricts.length; i++) {
-        const district = poEnrichedDistricts[i];
-
-        if (!district?.districtName) {
-            console.warn("Error fetching district, skipping.");
-            continue;
-        };
-
-        const response = await getExpiredPOsForDistrict(district?.districtName);
-        const rawData = response?.poListResponse?.data; //gets only the PO part of the response. only present for districts
-        //with expired POs.
-
-        if (!rawData) {
-            console.warn('There are no expired POs here, skipping.');
-            continue;
-        }
-         //if there adistrict without Pos, skip
-        //got it...ugh, so if there are multiple expired POs, it returns an 
-        //array. Otherwise, it returns a single object. I'll have to normalize it
-        // all to an array to be ocnsistent.
-       
-        //Otherwise, keep running:
-
-        console.log('There are expired POs here!');
-
-        console.log('Raw data: ', rawData);
-        console.log('Normalizing to array....');
-        const dataGuaranteedArray = Array.isArray(rawData) ? rawData : [rawData];
-        console.log('The guaranteed array is: ', dataGuaranteedArray);
-     
-        console.log('Now iterating through array and adding any expired Pos...');
-
-        const cleanedArray = []; 
-
-        for (const po of dataGuaranteedArray) {
-
-            const expiredPo = {
-                startDate: po?.subscriptionStartDate
-                    ? new Date(po.subscriptionStartDate).toISOString().split('T')[0]
-                    : undefined,
-                expiryDate: po?.expiryDate
-                    ? new Date(po.expiryDate).toISOString().split('T')[0]
-                    : undefined,
-            //  schoolDistrictName: po?.schoolName,
-                licenseCount: po?.licenseCount,
-                purchaseOrderId: po?.purchaseOrderId,
-                purchaseOrderNumber: po?.purchaseOrderNumber,
-                trialPO: po?.trialPO,
-                licenseType: po?.licenseTitle
-                };
-            cleanedArray.push(expiredPo);
-        };
-        console.log('Creating new property district.expiredPoArray: ', cleanedArray);
-        //After loooping through all pos, assign (simply a reference in memory) to cleanedPoArray
-       //CREATE NEW PROPERTY ON THE DISTRICT
-           //FINALLY assign this expiredPo aray as a new PROPERTY created on the 
-    //whole object:
-        district.expiredPoArray = cleanedArray;
-    };
-
-    console.log("After adding expired po arrays: ", poEnrichedDistricts);
-//do not need to return anything, sinc emutating the overall json/array
-};  
-
-
-
-//KEEP IN MIND WILL ONLY RETURN 100 ITEMS, GO BACK AND EDIT LATER TO IMPLEMENT PAGINATION
-async function getExpiredPOsForDistrict(districtName) {
-
-    const encodedDistrictName = encodeURIComponent(districtName);
-    const base = 'https://klettlp.com/services/purchaseorders/getPurchaseOrderDetailList.json'
-    const url = `${base}?sEcho=1&iColumns=13&sColumns=%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C%2C&iDisplayStart=0&iDisplayLength=1000&mDataProp_0=0&bSortable_0=false&mDataProp_1=1&bSortable_1=true&mDataProp_2=2&bSortable_2=true&mDataProp_3=3&bSortable_3=false&mDataProp_4=4&bSortable_4=true&mDataProp_5=5&bSortable_5=true&mDataProp_6=6&bSortable_6=false&mDataProp_7=7&bSortable_7=true&mDataProp_8=8&bSortable_8=true&mDataProp_9=9&bSortable_9=true&mDataProp_10=10&bSortable_10=false&mDataProp_11=11&bSortable_11=false&mDataProp_12=12&bSortable_12=true&iSortCol_0=2&sSortDir_0=desc&iSortingCols=1&tenantId=804&pageNumber=1&maxRecordCount=10&rowField=EMAIL_ID&sortOrder=desc&searchText=${encodedDistrictName}&expiryFilter=Expired&licenceTypeCode=All`;
-
-    const response = await fetch(url, {
-        "headers": {
-            "accept": "*/*",
-            "accept-language": "en-US,en;q=0.9",
-            "priority": "u=1, i",
-            "sec-ch-ua": "\"Google Chrome\";v=\"135\", \"Not-A.Brand\";v=\"8\", \"Chromium\";v=\"135\"",
-            "sec-ch-ua-mobile": "?0",
-            "sec-ch-ua-platform": "\"macOS\"",
-            "sec-fetch-dest": "empty",
-            "sec-fetch-mode": "cors",
-            "sec-fetch-site": "same-origin",
-            "x-requested-with": "XMLHttpRequest",
-            "cookie": "_ga=GA1.1.1042487296.1746109864; SESSIONID=66B60C729C3A3FC0CAF348E24170F622; JSESSIONID=c55e4cca-7c02-4d59-9043-bc6c2350065c; jwt_token=Bearer eyJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJjd2VzdHJheUBrbGV0dHdsLmNvbSIsInVzZXJOYW1lIjoiY3dlc3RyYXlAa2xldHR3bC5jb20iLCJ1c2VyUm9sZSI6IlNVUF9QVUJMSVNIRVIiLCJ1c2VyR3VpZCI6IjY0MmM5OGEwLTY5NWQtNGRjMC1iN2IyLTBmMDM3NDZlMjM2YSIsInRlbmFudElkIjo4MDQsInRlbmFudE5hbWUiOiJrbGV0dGxwIiwiZmlyc3ROYW1lIjoiU3VwIiwibGFzdE5hbWUiOiJwdWJsaXNoZXIiLCJkb21haW4iOiJrbGV0dGxwLmNvbSJ9.HsIOqir3kx6vtkjUsZE2Qdww6DFO8Wk8aCDB9sqbNGTUER12dgYJWNtuoK7ERyjr78hRQQgbQ2Zj7C_iJrF0yPEuzZlKiQTTzJ1aoKFdLd8QHhwUffLNVW7O7Gf-xdlrKsSJZhFeRqLNti7TT3I-8Emay0EzGn4UqqAtZlW5bHE; CloudFront-Key=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Policy=c55e4cca-7c02-4d59-9043-bc6c2350065c; CloudFront-Signature=c55e4cca-7c02-4d59-9043-bc6c2350065c; Cloudfront-domain=https://klettlp-mbx-cloud.klettlp.com/content/secure/804/0/; CloudFront-Key-Pair-Id=c55e4cca-7c02-4d59-9043-bc6c2350065c; pdftronAppUrl=https://klettlp-mbx-cloud.klettlp.com/static/pdftron/26/index.html; pdftronWebLicense=; Cloudfront-parent-domain=klettlp.com; _ga_E6TQHW6LEH=GS1.1.1746121362.2.1.1746121372.0.0.0",
-            "Referer": "https://klettlp.com/admin/purchaseorder/polist.htm",
-            "Referrer-Policy": "strict-origin-when-cross-origin"
-      },
-  }); 
-
-    const jsonParsedResponse = await response.json();
-    //console.log(jsonParsedResponse);
-    return jsonParsedResponse;
-}
-
-
-//----------------------------------------------------------------------------
-//SETUP BATCHER
-//batch function and companion processor companion processor to batch large vols of calls (otherwise MB api returns "You are not authorized" message)
-//not sure if this is rate limit or why
-//----------------------------------------------------------------------------
-async function batchProcessor(enrichedDistrictArray) {
-    const arrayLength = enrichedDistrictArray.length;
-    let batchNumber = 1; // //start at 1 but for batchMinIndex subtract 1 to make sure the index of my actual for loop starts at 0 (in the other function)
-    const numberPerBatch = 10;
-   // const maxNumBatches = arrayLength / numberPerBatch;
-   const maxNumBatches = 2;
-
-    while (batchNumber <= maxNumBatches) {
-    try {
-    const result = await batchMyBatch(batchNumber, numberPerBatch, enrichedDistrictArray);
-            batchNumber++
-            //optionally do something w/result, not in this case
-    } catch (error) {
-      console.error(`Error processing batch ${batchNumber}:`, error);
-      throw error;
-    }}
-}
-
-async function batchMyBatch(batchNumber, numberPerBatch, districtArray) {
-    try {
-        const batchMinIndex = (batchNumber - 1) * numberPerBatch; // subtract 1 since the batch number starts at 1 but the index of my for loop should start at zero.
-        const batchMaxIndex = (batchNumber * numberPerBatch) - 1;  // 
-        console.log(`Processing batchNumber: ${batchNumber}, indices ${batchMinIndex} through ${batchMaxIndex}`);
-        //batch 1: 0 through 9; batch 2: 10 through 19; batch 3: 20 through 29;
-        //general formulas: batchMinIndex through batchMaxIndex
-        
-        //batchNumber --> batchMin Index
-        //1 --> 0
-        //2 --> 10
-        //3 --> 20
-        //4 --> 30
-        //general formula: batchMinIndex = (batchNumber - 1) * 10;
-        //or in other words: batchMinIndex = (batchNumber - 1) * numberPerBatch;
-        
-        //batchNumber --> batchMax Index
-        //1 --> 9
-        //2 --> 19
-        //3 --> 29
-        //4 --> 39
-        //general formula: batchMaxIndex = (batchNumber * 10) - 1;
-        //or in other words: batchMaxIndex = (batchNumber * numberPerBatch) - 1;
-
-        for (let i = batchMinIndex; i <= batchMaxIndex; i++) {
-            console.log(`I\'m batching the batch. Batch number ${batchNumber}, index ${i}`);
-            console.log(`I'm also doing other things with districtArray.`);
-      
-            const currentValueOfArray = districtArray[i]?.districtName;
-           console.log(`For example, current index ${i} of this array is: ${currentValueOfArray}`);
-          //  } else {
-            //    continue;
-           // };
-        };
-    } catch (error) {
-      console.error(`Error processing batch ${batchNumber}:`, error);
-      throw error;
-    }
-}
