@@ -1,0 +1,29 @@
+name: Weekly Data Job
+
+on:
+  schedule:
+    - cron: "15 13 * * FRI" # every Friday at 13:15 UTC
+  workflow_dispatch: # allows manual trigger
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repo
+      - uses: actions/checkout@v3
+
+      # Step 2: Setup Node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Step 3: Run your script
+      - name: Run fetchData script
+        run: node fetchData.js
+
+      # Step 4: Upload the output as an artifact
+      - name: Upload License Data
+        uses: actions/upload-artifact@v3
+        with:
+          name: license-data
+          path: LicenseData_*   # adjust pattern if your script outputs different filename
