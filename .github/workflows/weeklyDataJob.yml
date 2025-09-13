@@ -1,0 +1,20 @@
+name: Weekly Data Job
+
+on:
+  schedule:
+    - cron: "0 3 * * SAT" # every Saturday at 3 am UTC
+    # Min (0-59) = 0
+    # Hour (0-23) = 3 (3 am UTC)
+    # Day of the month (1-31) (*, wildcard / ignore)
+    # Month (1-12) (*, wildcard / ignore)
+    # Day of the week (0-6; or SUN to SAT; or 7 for Sunday) (SAT, every saturday)
+
+    jobs:
+      run-script:
+        runs-on: ubuntu-latest
+        steps:
+          - uses: actions/checkout@v3
+          - uses: actions/setup-node@v3
+            with:
+              node-version: 20
+            - run: node fetchData.js
