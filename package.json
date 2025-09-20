@@ -3,23 +3,32 @@
   "version": "1.0.0",
   "type": "module",
   "main": "app/server/index.js",
+  "description": "Customer dashboard with Observable notebook integration",
   "scripts": {
-    "start": "node app/server/index.js",
+    "start": "node app/server/index.js",       // main server
+    "start-dashboard": "node server.js",      // Observable dashboard server
+    "dev": "nodemon app/server/index.js",     // optional: auto-reload main server
+    "dev-dashboard": "nodemon server.js",     // optional: auto-reload dashboard
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@google-cloud/bigquery": "^8.1.1",
     "@google-cloud/storage": "^7.17.0",
     "csv-parse": "^6.1.0",
     "date-fns": "^4.1.0",
     "express": "^5.1.0",
-    "json2csv": "^6.0.0-alpha.2"
+    "json2csv": "^6.0.0-alpha.2",
+    "node-fetch": "^3.3.2",
+    "dotenv": "^16.4.5",
+    "cors": "^2.8.5"
   },
-  "engines": {
-    "node": ">=18"
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }

@@ -4,6 +4,7 @@
     <title>Klett Cx Analytics</title>
     <meta charset="UTF-8" lang="en" />
     <meta name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
       html {
         box-sizing: border-box;
@@ -19,19 +20,26 @@
         box-sizing: inherit;
       }
 
-      body {
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      }
-
-      h1 {
-        
-      }
+   body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 1rem;
+}
+body {
+  background: #f9fafb; /* light gray background */
+  color: #111827; /* dark gray text */
+  line-height: 1.5;
+}
 
       .banner {
         position: sticky;
         top: 0;
         z-index: 1000;
-        background: rgb(120, 195, 245);
+        background: #f3f4f6; /* gray-100 */
+        color: #111827; /* gray-900 */
         width: calc(100% + 40px);
         margin-top: -20px;
         margin-left: -20px;
@@ -45,8 +53,24 @@
   <body>
     <div class="banner">
       <h1>Klett Cx Analytics</h1>
-    </div>
+      </div>
+<div id="observablehq-bee28a48"></div>
+<p>Credit: <a href="https://observablehq.com/d/98ba04b43c04d700@20">The Aleph by KWL</a></p>
 
-    <script></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+
+// Load proxied notebook from server (no API key exposed)
+const moduleResponse = await fetch("/api/observable");
+const moduleCode = await moduleResponse.text();
+const blob = new Blob([moduleCode], { type: "application/javascript" });
+const url = URL.createObjectURL(blob);
+
+const define = await import(url);
+new Runtime().module(define.default, Inspector.into("#observablehq-bee28a48"));
+</script>
+
+        <div><p>Test</p></div>
   </body>
 </html>

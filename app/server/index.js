@@ -1,68 +1,83 @@
-// require = old (common js)
-//import = new (ES modules). Asynchronous, so code can continue. And can import only quat you need
-
-import { Storage } from "@google-cloud/storage";
-import path from "path";
-import { fileURLToPath} from "url";
 import express from "express";
+import cors from "cors";
 import dotenv from "dotenv";
-dotenv.config();
-import cors from 'cors';
+import path from "path";
+import { fileURLToPath } from "url";
+import fetch from "node-fetch";
+import { Storage } from "@google-cloud/storage";
 
-// ES module equivalent of __dirname
+dotenv.config();
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-const app = express(); //needs to be the FUNCTION express(), not just the
-//express app instance.
-app.use(cors());
+const app = express();
 const PORT = process.env.PORT || 8080;
 
-// === Cloud Storage config for cached BigQuery results === //
-const storage = new Storage(); // client for interacting with Google Cloud Storage (read/write files)
-// https://console.cloud.google.com/storage/browser?project=klett-cx-analytics
+// === Middleware ===
+app.use(cors());
+app.use(
+  "/static",
+  express.static("public", { maxAge: "1h" }) // serve /public files at /static
+);
+
+// === Google Cloud Storage config ===
+const storage = new Storage();
 const BUCKET_NAME = process.env.CACHE_BUCKET || "cx-analytics-cache";
 const CACHE_FILE = "latest_query.json";
 
-// express.static middleware to serve public resources:
+// === Routes ===
 
-//app.use(express.static(root, [options]); //
-//**Good to remember to cache BigQuery responses to reduce repeated queries */
-//Cache-control headers:
-app.use(
-  "/static",
-  express.static("public", {
-    maxAge: "1h", // cache for 1 hour
-  })
-);
-
-//app.use(express.static('files'));
-
-//Explicit route to serve index.html static file (and other static /public files) at the root ("/") route:
+// Root: serve the dashboard
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "..", "public", "index.html"));
-})
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
 
-
-// === API endpoint: serve cached BigQuery data ===
+// API: cached BigQuery data
 app.get("/api/data", async (req, res) => {
   try {
     const file = storage.bucket(BUCKET_NAME).file(CACHE_FILE);
     const [contents] = await file.download();
     const data = JSON.parse(contents.toString());
-    res.json(data); // sends a json body response to the api request
+    res.json(data);
   } catch (err) {
     console.error("Error reading cache:", err);
     res.status(500).json({ error: "Failed to read cached data." });
   }
 });
 
-// === Optional: manual refresh endpoint === 
-app.post('/api/refresh', async (req, res) => {
-    //To do: Implement BigQuery query + cache update here if needed
-    res.json({ message: 'Manual refresh endpoint - not yet implemented.'});
-})
+// API: manual refresh (optional placeholder)
+app.post("/api/refresh", async (req, res) => {
+  // TODO: implement BigQuery refresh logic
+  res.json({ message: "Manual refresh endpoint - not yet implemented." });
+});
 
+// API: Observable notebook proxy (HIDES API KEY)
+app.get("/api/observable", async (req, res) => {
+  try {
+    const response = await fetch(
+      "https://api.observablehq.com/d/98ba04b43c04d700@20.js?v=4",
+      {
+        headers: {
+          Authorization: `Bearer ${process.env.OBSERVABLE_API_KEY}`,
+        },
+      }
+    );
+
+    if (!response.ok) {
+      throw new Error(`Observable API error: ${response.status}`);
+    }
+
+    const js = await response.text();
+    res.setHeader("Content-Type", "application/javascript");
+    res.send(js);
+  } catch (err) {
+    console.error("Error fetching Observable notebook:", err);
+    res.status(500).send("Failed to fetch notebook.");
+  }
+});
+
+// === Start server ===
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+  console.log(`Server running at http://localhost:${PORT}`);
 });
