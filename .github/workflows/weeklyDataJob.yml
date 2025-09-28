@@ -27,8 +27,8 @@ jobs:
           project_id: klett-cx-analytics
 
       # Step 4: Run main script (generates timestamped JSON in data/)
-      - name: Run cleanedScript.cjs
-        run: node scripts/cleanedScript.cjs
+      - name: Run clean-fetch-districts.cjs
+        run: node scripts/clean-fetch-districts.cjs
 
       # Step 5: Flatten the latest JSON file
       - name: Flatten latest JSON
@@ -36,7 +36,7 @@ jobs:
           DATA_DIR="./data"
           latest_file=$(ls -t "$DATA_DIR"/LicenseData_*.json | head -n 1)
           echo "Flattening $latest_file"
-          node scripts/jsonToCsv.cjs "$latest_file"
+          node scripts/flattenerJsonToCsv.cjs "$latest_file"
 
       # Step 6: Upload all JSON and flattened CSV files as artifacts
       - name: Upload License Data
