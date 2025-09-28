@@ -5,10 +5,10 @@
   "main": "app/server/index.js",
   "description": "Customer dashboard with Observable notebook integration",
   "scripts": {
-    "start": "node app/server/index.js",       // main server
-    "start-dashboard": "node server.js",      // Observable dashboard server
-    "dev": "nodemon app/server/index.js",     // optional: auto-reload main server
-    "dev-dashboard": "nodemon server.js",     // optional: auto-reload dashboard
+    "start": "node app/server/index.js",
+    "start-dashboard": "node server.js",
+    "dev": "nodemon app/server/index.js",
+    "dev-dashboard": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

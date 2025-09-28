@@ -61,6 +61,12 @@ body {
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
 
+const runtime = new Runtime({color: "red"}); // red is a buildin, aka a constant like a global variable scoped only to this Observable runtime.
+const module = runtime.module();
+
+
+
+/*
 // Load proxied notebook from server (no API key exposed)
 const moduleResponse = await fetch("/api/observable");
 const moduleCode = await moduleResponse.text();
@@ -69,6 +75,7 @@ const url = URL.createObjectURL(blob);
 
 const define = await import(url);
 new Runtime().module(define.default, Inspector.into("#observablehq-bee28a48"));
+*
 </script>
 
         <div><p>Test</p></div>

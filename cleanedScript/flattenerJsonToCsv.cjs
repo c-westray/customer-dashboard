@@ -54,7 +54,7 @@ function flattenDistrictDataFlexible(nestedData) {
 // === Main ===
 (async () => {
   try {
-    const fileName = 'cleanedScript 2025-7-24_09-53';
+    const fileName = 'LicenseData_2025-9-14_08-50';
     const inputFile = path.join(__dirname, `${fileName}`); 
     const outputFile = path.join(__dirname, `flattened_output_${fileName}.csv`);
 

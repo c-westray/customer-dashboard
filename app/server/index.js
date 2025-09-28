@@ -8,8 +8,8 @@ import { Storage } from "@google-cloud/storage";
 
 dotenv.config();
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
+const __filename = fileURLToPath(import.meta.url);  //points to current file
+const __dirname = path.dirname(__filename); //points to parent directory
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -18,8 +18,15 @@ const PORT = process.env.PORT || 8080;
 app.use(cors());
 app.use(
   "/static",
-  express.static("public", { maxAge: "1h" }) // serve /public files at /static
+  express.static(path.join(__dirname, "../public"), { maxAge: "1h" }) // serve /public files at /static
 );
+
+const mypath = path.join(__dirname, "../public");
+const indexpath = path.join(__dirname, "../public", "index.html");
+
+console.log("Hello world", mypath);
+console.log("Index path is: ", indexpath);
+console.log(PORT);
 
 // === Google Cloud Storage config ===
 const storage = new Storage();
@@ -30,7 +37,7 @@ const CACHE_FILE = "latest_query.json";
 
 // Root: serve the dashboard
 app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
 });
 
 // API: cached BigQuery data
