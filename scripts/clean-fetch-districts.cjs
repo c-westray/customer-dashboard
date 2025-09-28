@@ -34,6 +34,7 @@
 const dotenv = require('dotenv');
 dotenv.config();
 
+
 const MagicBoxApiKey = process.env.MAGICBOX_API_KEY;
 const MagicBoxBaseUrl = process.env.MAGICBOX_BASE_URL;
 
@@ -45,11 +46,19 @@ const JSESSIONCOOKIE = '30e1201d-ddd8-461c-92f8-94cb0c9f9cff'; //replace w/my cu
 //----------------------------------------------------------------------------
 //SETUP FILE SAVING / NAMING
 //---------------------------------------------------------------------------- 
-const fs = require('fs').promises; //promise-based fs
-async function saveToFile(data, filename) {
+const fs = require('fs').promises; //promise-based fs. Atually access filesystem.
+const path = require('path'); // build/reference file paths safely in a cross-platform way (works for both Linux/macOS as well as Windows)
+
+async function saveToFile(data, prefix = 'LicenseData') {
     try {
-        await fs.writeFile(filename, JSON.stringify(data, null, 2));
-        console.log(`Data successfully saved to ${filename}`);
+        const dir = path.join(__dirname, '..', 'data');
+        await fs.mkdir(dir, { recursive: true }); // to prevent errors, if the directory data doesn't already exist, creat it
+
+        const filename = `LicenseData_${makeFormattedTodayDate()}.json`;
+        const filepath = path.join(dir, filename);
+
+        await fs.writeFile(filepath, JSON.stringify(data, null, 2));
+        console.log(`Data successfully saved to ${filepath}`);
     } catch (err) {
         console.error("Error writing file:", err);
     }
@@ -221,12 +230,10 @@ try {
 }
 
 //SAVE TO FILE
-let formattedDate = makeFormattedTodayDate();
-saveToFile(poEnrichedDistricts, `LicenseData_${formattedDate}`); // save file with all districts and nested under each district are POs and schools
+await saveToFile(poEnrichedDistricts);
+console.log('File saved, continuing...');
+
 }
-
-
-
 //----------------------------------------------------------------------------
 //Takes a schoolId or districtId 
 //--> fetches poList for that school or district by calling getActivePoList(),
@@ -272,6 +279,7 @@ try{
 //invoking main function
 
 (async () => {
+  console.log('Beginning license data retrieval.')
   try {
     await main();
     console.log('Process completed successfully.');
@@ -1039,6 +1047,4 @@ async function readDistrictList() {
     }
 }
 */
-
-
 

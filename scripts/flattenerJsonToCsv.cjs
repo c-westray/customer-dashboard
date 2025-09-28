@@ -54,11 +54,29 @@ function flattenDistrictDataFlexible(nestedData) {
 // === Main ===
 (async () => {
   try {
-    const fileName = 'LicenseData_2025-9-14_08-50';
-    const inputFile = path.join(__dirname, `${fileName}`); 
-    const outputFile = path.join(__dirname, `flattened_output_${fileName}.csv`);
+    const dataDir = path.join(__dirname, '../data');
 
-    // Read JSON file
+    // --- Find the latest LicenseData JSON file ---
+    const files = fs.readdirSync(dataDir)
+      .filter(f => f.startsWith('LicenseData_') && f.endsWith('.json'))
+      .map(f => ({
+        name: f,
+        time: fs.statSync(path.join(dataDir, f)).mtime.getTime()
+      }))
+      .sort((a, b) => a.time - b.time)  // chronological
+      .map(f => f.name);
+
+    if (files.length === 0) {
+      throw new Error('No LicenseData JSON files found in data directory.');
+    }
+
+    const latestFile = files[files.length - 1];
+    console.log(`Latest file detected: ${latestFile}`);
+
+    const inputFile = path.join(dataDir, latestFile);
+    const outputFile = path.join(dataDir, `flattened_output_${latestFile.replace('.json', '.csv')}`);
+
+    // Read JSON
     const rawData = fs.readFileSync(inputFile, 'utf8');
     const jsonData = JSON.parse(rawData);
 
@@ -69,7 +87,7 @@ function flattenDistrictDataFlexible(nestedData) {
     const parser = new Parser();
     const csv = parser.parse(flattenedData);
 
-    // Write CSV to file
+    // Write CSV
     fs.writeFileSync(outputFile, csv);
 
     console.log(`Flattened CSV written to ${outputFile}`);
