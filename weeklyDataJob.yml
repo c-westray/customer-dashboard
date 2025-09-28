@@ -1,0 +1,38 @@
+name: Weekly Data Job
+
+on:
+  schedule:
+    - cron: "15 11 * * SAT" # every Saturday at 11:00 UTC
+  workflow_dispatch: # allows manual trigger
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout repo
+      - uses: actions/checkout@v3
+
+      # Step 2: Setup Node
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Step 3: Authenticate with GCP (replace your manual step)
+      - uses: google-github-actions/auth@v2
+        with:
+          credentials_json: ${{ secrets.GCP_SA_KEY }}
+
+      - uses: google-github-actions/setup-gcloud@v2
+        with:
+          project_id: klett-cx-analytics
+
+      # Step 4: Run your script
+      - name: Run cleanedScript.cjs
+        run: node cleanedScript.cjs
+
+      # Step 5: Upload the output as an artifact
+      - name: Upload License Data
+        uses: actions/upload-artifact@v4
+        with:
+          name: license-data
+          path: LicenseData_*
