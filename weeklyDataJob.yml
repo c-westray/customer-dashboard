@@ -19,27 +19,29 @@ jobs:
         with:
           node-version: 20
 
-      # Step 3: Install npm dependencies
+      # Step 3: Install dependencies
       - name: Install npm dependencies
         run: npm ci
 
-      # Step 4: Authenticate with GCP (placeholder, update later)
+      # Step 4: Authenticate with GCP (optional for now)
       - uses: google-github-actions/auth@v2
         with:
           credentials_json: ${{ secrets.GCP_SA_KEY }}
-
       - uses: google-github-actions/setup-gcloud@v2
         with:
           project_id: klett-cx-analytics
 
       # Step 5: Run cleanedScript.cjs
       - name: Run cleanedScript.cjs
+        env:
+          MAGICBOX_API_URL: ${{ secrets.MAGICBOX_API_URL }}
+          MAGICBOX_API_TOKEN: ${{ secrets.MAGICBOX_API_TOKEN }}
         run: |
           echo "Starting cleanedScript.cjs..."
-          node ./scripts/cleanedScript.cjs
+          node ./scripts/clean-fetch-districts.cjs
           echo "cleanedScript.cjs finished running."
 
-      # Step 6: Debug step
+      # Step 6: Debug data directory
       - name: Debug data directory
         run: |
           echo "Repo root:"
@@ -47,25 +49,25 @@ jobs:
           echo "Data folder:"
           ls -R data || echo "No data folder found"
 
-      # Step 7: Wait for file output
+      # Step 7: Wait for output file
       - name: Wait for file output
         run: |
-          echo "Checking for LicenseData JSON files..."
+          echo "Checking for LicenseData JSON..."
           ls -lh data/LicenseData_* || echo "No LicenseData file yet"
 
       # Step 8: Run flattener script
-      - name: Run flattener script
+      - name: Run flattenerJsonToCsv.cjs
         run: |
-          echo "Running flattenerJsonToCsv.cjs..."
+          echo "Running flattener script..."
           node ./scripts/flattenerJsonToCsv.cjs
           echo "flattener finished running."
 
-      # Step 9: Upload all JSON + CSV artifacts
+      # Step 9: Upload artifacts
       - name: Upload License Data
         uses: actions/upload-artifact@v4
         with:
           name: license-data
           path: |
             data/LicenseData_*.json
-            data/flattened_*.csv
+            data/flattened_output_*.csv
           if-no-files-found: warn
