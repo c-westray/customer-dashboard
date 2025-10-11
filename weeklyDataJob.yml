@@ -9,7 +9,7 @@ jobs:
   run-script:
     runs-on: ubuntu-latest
     timeout-minutes: 60
-    environment: License Script   # environment with secrets
+    environment: License Script   # Environment that contains your secrets
 
     steps:
       # Step 1: Checkout repo
@@ -32,8 +32,11 @@ jobs:
         with:
           project_id: klett-cx-analytics
 
-      # Step 5: Run cleanedScript.cjs
+      # Step 5: Run cleanedScript.cjs with MagicBox secrets
       - name: Run cleanedScript.cjs
+        env:
+          MAGICBOX_API_KEY: ${{ secrets.MAGICBOX_API_KEY }}
+          MAGICBOX_BASE_URL: ${{ secrets.MAGICBOX_BASE_URL }}
         run: |
           echo "Starting cleanedScript.cjs..."
           node ./scripts/clean-fetch-districts.cjs
@@ -47,7 +50,7 @@ jobs:
           echo "Data folder:"
           ls -R data || echo "No data folder found"
 
-      # Step 7: Wait for output file
+      # Step 7: Wait for LicenseData JSON
       - name: Wait for LicenseData JSON
         run: |
           echo "Checking for LicenseData JSON..."
