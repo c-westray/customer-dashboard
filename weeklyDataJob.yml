@@ -34,8 +34,8 @@ jobs:
       # Step 5: Run cleanedScript.cjs
       - name: Run cleanedScript.cjs
         env:
-          MAGICBOX_API_URL: ${{ secrets.MAGICBOX_API_URL }}
-          MAGICBOX_API_TOKEN: ${{ secrets.MAGICBOX_API_TOKEN }}
+          MAGICBOX_API_URL: ${{ secrets.MAGICBOX_BASE_URL }}
+          MAGICBOX_API_KEY: ${{ secrets.MAGICBOX_API_KEY }}
         run: |
           echo "Starting cleanedScript.cjs..."
           node ./scripts/clean-fetch-districts.cjs
