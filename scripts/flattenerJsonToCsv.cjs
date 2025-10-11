@@ -32,19 +32,12 @@ function flattenDistrictDataFlexible(nestedData) {
 
     for (const school of schools) {
       const schoolPOs = school.activePurchaseOrders || [];
-      if (schoolPOs.length === 0) {
-        pushRow(school, null);
-      } else {
-        for (const po of schoolPOs) {
-          pushRow(school, po);
-        }
-      }
+      if (schoolPOs.length === 0) pushRow(school, null);
+      else schoolPOs.forEach(po => pushRow(school, po));
     }
 
     if (Array.isArray(districtPOs)) {
-      for (const po of districtPOs) {
-        pushRow(null, po);
-      }
+      districtPOs.forEach(po => pushRow(null, po));
     }
   }
 
@@ -56,28 +49,13 @@ function flattenDistrictDataFlexible(nestedData) {
   try {
     const dataDir = path.join(__dirname, '../data');
 
-    // --- Find the latest LicenseData JSON file ---
-    const files = fs.readdirSync(dataDir)
-      .filter(f => f.startsWith('LicenseData_') && f.endsWith('.json'))
-      .map(f => ({
-        name: f,
-        time: fs.statSync(path.join(dataDir, f)).mtime.getTime()
-      }))
-      .sort((a, b) => a.time - b.time)  // chronological
-      .map(f => f.name);
-
-    if (files.length === 0) {
-      throw new Error('No LicenseData JSON files found in data directory.');
+    // --- Use the CURRENT JSON file ---
+    const currentFile = path.join(dataDir, 'LicenseData_CURRENT.json');
+    if (!fs.existsSync(currentFile)) {
+      throw new Error('LicenseData_CURRENT.json not found in data directory.');
     }
 
-    const latestFile = files[files.length - 1];
-    console.log(`Latest file detected: ${latestFile}`);
-
-    const inputFile = path.join(dataDir, latestFile);
-    const outputFile = path.join(dataDir, `flattened_output_${latestFile.replace('.json', '.csv')}`);
-
-    // Read JSON
-    const rawData = fs.readFileSync(inputFile, 'utf8');
+    const rawData = fs.readFileSync(currentFile, 'utf8');
     const jsonData = JSON.parse(rawData);
 
     // Flatten data
@@ -87,10 +65,17 @@ function flattenDistrictDataFlexible(nestedData) {
     const parser = new Parser();
     const csv = parser.parse(flattenedData);
 
-    // Write CSV
-    fs.writeFileSync(outputFile, csv);
+    // --- Write CURRENT flattened CSV ---
+    const currentCsvFile = path.join(dataDir, 'flattened_CURRENT.csv');
+    fs.writeFileSync(currentCsvFile, csv);
+    console.log(`Flattened CSV written to ${currentCsvFile}`);
 
-    console.log(`Flattened CSV written to ${outputFile}`);
+    // --- Optional: Write historical CSV with timestamp ---
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-'); // e.g. 2025-10-11T12-30-00-000Z
+    const historicalCsvFile = path.join(dataDir, `flattened_${timestamp}.csv`);
+    fs.writeFileSync(historicalCsvFile, csv);
+    console.log(`Historical flattened CSV written to ${historicalCsvFile}`);
+
   } catch (err) {
     console.error('Error:', err);
   }

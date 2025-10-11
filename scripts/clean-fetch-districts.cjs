@@ -50,32 +50,36 @@ const fs = require('fs').promises; //promise-based fs. Atually access filesystem
 const path = require('path'); // build/reference file paths safely in a cross-platform way (works for both Linux/macOS as well as Windows)
 
 async function saveToFile(data, prefix = 'LicenseData') {
-    try {
-        const dir = path.join(__dirname, '..', 'data');
-        await fs.mkdir(dir, { recursive: true }); // to prevent errors, if the directory data doesn't already exist, creat it
+  try {
+    const dir = path.join(__dirname, '..', 'data');
+    await fs.mkdir(dir, { recursive: true });
 
-        const filename = `LicenseData_${makeFormattedTodayDate()}.json`;
-        const filepath = path.join(dir, filename);
+    // --- Historical copy ---
+    const timestampedFilename = `${prefix}_${makeFormattedTodayDate()}.json`;
+    const timestampedFilepath = path.join(dir, timestampedFilename);
+    await fs.writeFile(timestampedFilepath, JSON.stringify(data, null, 2));
+    console.log(`Historical data saved to ${timestampedFilepath}`);
 
-        await fs.writeFile(filepath, JSON.stringify(data, null, 2));
-        console.log(`Data successfully saved to ${filepath}`);
-    } catch (err) {
-        console.error("Error writing file:", err);
-    }
+    // --- Current copy (overwrites each run) ---
+    const currentFilename = `${prefix}_CURRENT.json`;
+    const currentFilepath = path.join(dir, currentFilename);
+    await fs.writeFile(currentFilepath, JSON.stringify(data, null, 2));
+    console.log(`Current data saved to ${currentFilepath}`);
+
+  } catch (err) {
+    console.error("Error writing file:", err);
+  }
 }
 
 function makeFormattedTodayDate() {
-    const now = new Date();
-    const day = now.getDate();
-    const month = (now.getMonth() + 1);
-    const year = now.getFullYear();
-    const hour = String(now.getHours()).padStart(2, '0');
-    const minute = String(now.getMinutes()).padStart(2, '0');
-    const formattedDate = `${year}-${month}-${day}_${hour}-${minute}`;
-    // console.log(formattedDate);
-    return formattedDate;
+  const now = new Date();
+  const day = String(now.getDate()).padStart(2, '0');
+  const month = String(now.getMonth() + 1).padStart(2, '0');
+  const year = now.getFullYear();
+  const hour = String(now.getHours()).padStart(2, '0');
+  const minute = String(now.getMinutes()).padStart(2, '0');
+  return `${year}-${month}-${day}_${hour}-${minute}`;
 }
-
 //----------------------------------------------------------------------------
 //SETUP REUSABLE FETCH PATTERNS
 //----------------------------------------------------------------------------
