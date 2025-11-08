@@ -37,10 +37,6 @@ dotenv.config();
 const MagicBoxApiKey = process.env.MAGICBOX_API_KEY;
 const MagicBoxBaseUrl = process.env.MAGICBOX_BASE_URL;
 
-if (!MagicBoxApiKey || !MagicBoxBaseUrl) {
-  throw new Error('Keys not set in environment');
-}
-
 //jsession cookie only necessary for function addExpiredPOInfo(poEnrichedDistricts)
 //necessary b/c there's no endpoint for expired POs but sometimes we need this historical data
 const JSESSIONCOOKIE = '30e1201d-ddd8-461c-92f8-94cb0c9f9cff'; //replace w/my current session jsession cookie before running script
