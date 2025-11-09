@@ -3,60 +3,93 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 from google.cloud import bigquery
-import pandas as pd
-from transform_data import fetch_data 
+from .transform_data import fetch_data
 
 app = FastAPI()
 
 @app.get("/")
+def root():
+    return {"message": "FastAPI is working."}
+
+@app.get("/data")
 def run_query():
+    # Fetch data from transform_data.py
     rows = fetch_data()
-    #Convert BigQuery Row objects to dictionaries
+    # Convert BigQuery Row objects to dictionaries
     output = [dict(row) for row in rows]
-    #JSONREsponse is a class provided by FastAPI, will return object "data" in the api response with the output.
-    return JSONResponse(content="data": output)
-    ''' #output is a list of dictionaries, e.g.:
+    # JSONResponse is a class provided by FastAPI, will return object "data" in the api response with the output.
+    return JSONResponse(content={"data": output})
+    '''
+    # output is a list of dictionaries, e.g.:
     [
         {"name": "Alice", "location": "NY"},
         {"name": "Bob", "location": "CA"}
     ]
     '''
 
+@app.get("/api/licenses")
+def get_licenses():
+    try:
+        client = bigquery.Client()
+        query = """
+            SELECT
+            DATE_TRUNC(startDate, MONTH) AS month,
+            locationId,
+            locationName,
+            schoolId,
+            schoolName,
+            SUM(totalLicenseCount) AS totalLicenseCount,
+            SUM(studentcount) AS totalStudents,
+            SUM(teachercount) AS totalTeachers,
+            SUM(licenseConsumeCount) AS totalConsumedLicenses,
+            ARRAY_AGG(DISTINCT productTitles) AS products,
+            SUM(rawConsumeUserCount) AS totalRawConsumeUsers,
+            SUM(duplicateUserCount) AS totalDuplicateUsers,
+            SUM(userCounts) AS totalUsers,
+            ANY_VALUE(purchaseOrderNumber) AS purchaseOrderNumber,
+            ANY_VALUE(expiryDate) AS expiryDate,
+            ANY_VALUE(is_pilot) AS is_pilot
+            FROM `klett-cx-analytics.license_staging_cleaned.step_zero_make_location_id`
+            GROUP BY month, locationId, locationName, schoolId, schoolName
+            ORDER BY month, locationId, schoolId
+        """
+        df = client.query(query).result()
+        output = [dict(row) for row in df]
+        return {"data": output}
+    except Exception as e:
+        return {"error": str(e)}
 
-@app.get("api/logins")
+'''
+Typical workflow:
 
-def get_logins():
-    client = bigquery.Client()
-    query = """
-    SELECT * FROM `klett-cx-analytics.license_staging_cleaned.step_zero_make_location_id`
-    """
+Make changes to your code (e.g., server.py, transform_data.py).
 
-df = client.query 
+Rebuild the image for the correct architecture (on M1/M2 Macs):
+
+docker buildx build --platform linux/amd64 -t gcr.io/klett-cx-analytics/customer-dashboard --push .
 
 
-'''Deploying to Cloud Run: 
-#Install Gcloud CLI: https://docs.cloud.google.com/sdk/docs/install
+Make sure the google cloud services is running with the correct
+service account:
+gcloud run services update customer-dashboard \
+  --service-account=cx-analytics-pipeline-runner@klett-cx-analytics.iam.gserviceaccount.com \
+  --region=us-central1
 
-# Enable necessary APIs
-# These sould already be nabled
-gcloud services enable run.googleapis.com bigquery.googleapis.com
 
-# Set your GCP project (only need to do once)
-gcloud config set project klett-cx-analytics
+Deploy the new image to Cloud Run:
 
-# Build container and push to Google Container Registry
-gcloud builds submit --tag gcr.io/klett-cx-analytics/transform-data
-
-If this takes a long time:
-Once you’ve submitted the build with gcloud builds submit, the actual build happens in Google Cloud, not on your laptop. You can safely close it — the process will continue in the cloud.
-
-You’ll just need to check back later (or run the gcloud builds list or gcloud builds describe [BUILD_ID] commands) to see when it’s done.
-
-# Deploy to Cloud Run
-gcloud run deploy transform-data \
-  --image gcr.io/klett-cx-analytics/transform-data \
+gcloud run deploy customer-dashboard \
+  --image gcr.io/klett-cx-analytics/customer-dashboard \
   --platform managed \
   --region us-central1 \
   --allow-unauthenticated \
-  --service-account YOUR_SERVICE_ACCOUNT_EMAIL
-'''
+  --port 8080
+
+Optional: Faster local iteration
+
+You can test changes locally using:
+
+docker run -p 8080:8080 gcr.io/klett-cx-analytics/customer-dashboard
+
+
+Or even without Docker for FastAPI routes:'''

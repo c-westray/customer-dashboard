@@ -1,0 +1,8 @@
+# Ignore the .git directory
+.git
+
+# Ignore node_modules
+node_modules/
+
+# Ignore gcloudignore itself
+.gcloudignore

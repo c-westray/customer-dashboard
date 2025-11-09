@@ -13,8 +13,16 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the rest of your project files
 COPY . .
 
-# Expose port 8080 for Cloud Run
+# Expose port (Cloud Run will set PORT environment variable)
 EXPOSE 8080
 
-# Command to run the FastAPI app with Uvicorn
-CMD ["uvicorn", "app.server.main:app", "--host", "0.0.0.0", "--port", "8080"]
+# Command to run the FastAPI app with Uvicorn, using the PORT env variable
+# FastAPI app entrypoint: app.server.main:app
+# $PORT is automatically provided by Cloud Run
+CMD ["sh", "-c", "uvicorn app.server.server:app --host 0.0.0.0 --port ${PORT:-8080}"]
+
+# To build:
+    # docker build -t customer-dashboard .
+
+# To run locally:  
+#docker run -p 8080:8080 customer-dashboard

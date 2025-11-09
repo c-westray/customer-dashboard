@@ -51,20 +51,29 @@ pandas
 
 From the project root (where your Dockerfile lives), which is just the customer-dashboard root:
 
-```bash
-# Replace YOUR_PROJECT_ID with your actual Google Cloud project ID
-## Which is klett-cx-analytics
-gcloud builds submit --tag gcr.io/klett-cx-analytics/fastapi-app
+# STEP ONE Build and push docker image:
+
+docker buildx build --platform linux/amd64 -t gcr.io/klett-cx-analytics/customer-dashboard --push .
+
+
+# OPTIONAL ALTERNATE METHOD, IGNORE THIS IF YOU DID STEP 1 and 2 above
+# OR do this. However you don't have to do this if you already did
+# the docker Build and push above!!
+# SKIP THIS gcloud builds submit --tag gcr.io/klett-cx-analytics/fastapi-app
 
 
 
-# 3 Deploy to Cloud Run
 
-gcloud run deploy fastapi-app \
-  --image gcr.io/klett-cx-analytics/fastapi-app \
+
+# STEP 2 Deploy to Cloud Run
+
+gcloud run deploy customer-dashboard \
+  --image gcr.io/klett-cx-analytics/customer-dashboard \
   --platform managed \
   --region us-central1 \
-  --allow-unauthenticated
+  --allow-unauthenticated \
+  --port 8080
+
 
   Cloud Run will return a URL — your app is live there.
 
