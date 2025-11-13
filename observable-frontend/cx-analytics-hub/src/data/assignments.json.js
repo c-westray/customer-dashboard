@@ -4,7 +4,7 @@
 
 import { BASEURL } from "../config.js";
 
-const logins_url = `${BASEURL}/api/logins/`;
+const assignments_url = `${BASEURL}/api/assignments/`;
 
 async function json(url) {
     const response = await fetch(url);
@@ -12,6 +12,5 @@ async function json(url) {
     return await response.json();
 }
 
-const data = await json(logins_url);
+const data = await json(assignments_url);
 process.stdout.write(JSON.stringify(data));
-

@@ -1,81 +1,140 @@
 ---
 theme: dashboard
-title: Logins dashboard
+title: Logins Dashboard
 toc: false
 ---
 
 # Logins Dashboard
 
-<!-- Load and transform the data -->
-
 ```js
-// 1️⃣ Load data
-const logins = await FileAttachment("../data/logins.json").json();
-const forecast = await FileAttachment("../data/forecast.json").json();
+// 1 Load data
 
-// Optional: display raw data
-display(logins);
-display(forecast);
-
-// 2️⃣ Prepare logins data: parse dates
-const loginsParsed = logins.map(d => ({
-  ...d,
-  created_month: new Date(d.created_month)
-}));
+/* @app.get("/api/logins")
+  School and district breakdown (does not have usertypes, totals them.)
+      //Table 4: `klett-cx-analytics.logins_staging_cleaned.step_four_separate_grand_totals_table`
+      // Important to filter by the total_level
+      // // total_level = DISTRICT or SCHOOL
+      // Ignores usertype. (user_type_id is always "All Users")
+*/
+const logins_district_school_breakdown = await FileAttachment("../data/logins.json").json();
 
 
-// 3️⃣ Summary plot across all districts
-// Aggregate total logins per month
+/* @app.get("/api/logins/usertypes")
+  Usertype breakdown.
+      Table 3: `klett-cx-analytics.logins_staging_cleaned.step_three_aggregate_monthly`//
+      //Groups by user_type_id = admin, teacher, student, parent
+*/
+const logins_usertype_breakdown = await FileAttachment("../data/logins_usertypes.json").json();
+
+
+/* @app.get("/api/logins/summary")
+"ALL_DISTRICTS" AND "ALL_DISTRICTS_ALL_TIME" grand summary (Still has user_type). 
+      Table 5: `klett-cx-analytics.logins_staging_cleaned.step_five_all_districts_total`
+      //Ignores district and school breakdown. SchoolName is always "All Schools", DistrictName is always "All Districts", locationName is always "All Locations"
+      //is_pilot is always null...
+      //Important to filter by user_type, 
+      //because does strill provide usertype breakdown.
+      //Also important to filter by total_level = "All
+      //
+*/ 
+
+const logins_all_locations_summary = await FileAttachment("../data/logins_summary.json").json()
+
+
+
+// 2 Parse dates and filter for district-level only
+
+//Table 4: Logins
+const loginsDistrict = logins
+  .filter(d => d.total_level === "DISTRICT")
+  .map(d => ({
+    ...d, // spread operator copies all original fields
+    // location_name: d.locationName,
+    // district_name: d.districtName, 
+    //etc. (but use ...d instead)
+    created_month: new Date(d.created_month) // transforms created_month into a date before mapping
+  }));
+
+
+
+// 3 Summary plot across all districts
+// d3.rollups(data, reduceFn, keyFn1, keyFn2, ...)
 const summary = d3.rollups(
-  loginsParsed,
-  v => d3.sum(v, d => d.total_logins),
+  loginsDistrict,
+  v => d3.sum(v, d => d.total_logins), // v is the array of row for each group. then passed to toal logins // groups across all districts, ***ignoring user type or district name***. So like the grand total 
   d => d.created_month
 );
 
-// Convert to objects and sort by month
+//summary looks like:
+/*
+[
+  [Date("2024-01-01"), 1200],
+  [Date("2024-02-01"), 1800],
+  [Date("2024-03-01"), 2400],
+  ...
+]
+*/
+
+//now, destructure summary by mapping each pair into an ojbect
 const summarySorted = summary
   .map(([month, total]) => ({ month, total }))
+  .sort((a, b) => a.month - b.month); // sorts by last to first month
+
+const summarySorted = summary
+  .map(month, total]) => ({ month, total })
   .sort((a, b) => a.month - b.month);
+ 
+// Produces an array of objects like this
+//for convenient plotting
+/*
+[
+  { month: new Date("2024-01-01"), total: 1200 },
+  { month: new Date("2024-02-01"), total: 1800 },
+  { month: new Date("2024-03-01"), total: 2400 }
+]
+*/
 
 display(
   Plot.plot({
     title: "Total Logins Across All Districts",
-    x: { type: "utc", label: "Month" },
+    x: { type: "utc", label: "Month" }, // utc is coordinated universal time, ignoring timezones.
     y: { grid: true, label: "Total Logins" },
     marks: [
       Plot.lineY(summarySorted, {
         x: "month",
         y: "total",
         stroke: "steelblue",
-        curve: "linear"
+        curve: "linear" // "linear" simply direclty connects points (jagged line)
       })
     ]
   })
 );
 
 
+const districtNames = Array.from(new Set(loginsDistrict.map(d => d.locationName))).sort();
 
-// 4️⃣ Single-district plot
-// Pick a district
-const districtName = "Plum Borough School District"; // change to any district you want
 
-// Filter and sort by month
-const districtDataSorted = loginsParsed
-  .filter(d => d.locationName === districtName)
-  .sort((a, b) => a.created_month - b.created_month);
 
-display(
-  Plot.plot({
-    title: `Logins for ${districtName}`,
-    x: { type: "utc", label: "Month" },
-    y: { grid: true, label: "Total Logins" },
-    marks: [
-      Plot.lineY(districtDataSorted, {
-        x: "created_month",
-        y: "total_logins",
-        stroke: "steelblue",
-        curve: "linear"
-      })
-    ]
-  })
-);
+```
+  <style>
+    select.district-select {
+      background-color: #feededff;
+      border-color: blue;
+      color: white;
+      padding: 0.5em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    select.district-select:hover {
+      background-color: #3b5cb0ff; /* darker blue on hover */
+    }
+  </style>
+
+  <select class="district-select">
+    ${districtNames.map(name => `<option value="${name}">${name}</option>`).join("")}
+  </select>
+```
+
