@@ -1,0 +1,5 @@
+fastapi[standard]==0.116.1
+uvicorn[standard]
+pandas
+google-cloud-bigquery
+db-dtypes

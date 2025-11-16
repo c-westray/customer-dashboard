@@ -4,9 +4,30 @@ toc: false
 
 <div class="hero">
   <h1>Klett Cx Analytics</h1>
-  <h2>Welcome to your new app! Edit&nbsp;<code style="font-size: 90%;">src/index.md</code> to change this page.</h2>
-  <a href="https://observablehq.com/framework/getting-started">Get started<span style="display: inline-block; margin-left: 0.25rem;">↗︎</span></a>
+
+<div class="grid grid-cols-1">
+  <div>
+    <body style="font-weight: semi-bold;"><body>
+  </div>
 </div>
+
+
+<div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
+  <div class="card">
+  <h2 style="text-align: left; font-size: 2rem; font-family: sans-serif">Leaderboard</h2>
+  </div>
+
+  <div>
+  <h2 style="font-size: 2rem; text-align: left; margin: 1rem; font-weight: bold">District search</h2>
+  <search class="district-search>
+    <form action="./search">
+    <label for="district"></label>
+    <input type="search" ></input>
+    </form>
+  </search>
+  </div>
+<div class=>
+
 
 <div class="grid grid-cols-2" style="grid-auto-rows: 504px;">
   <div class="card">${
@@ -106,6 +127,13 @@ Here are some ideas of things you could try…
   .hero h1 {
     font-size: 90px;
   }
+}
+
+input {
+  font-size: 3rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  width: 100%;
 }
 
 </style>

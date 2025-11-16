@@ -4,10 +4,17 @@ title: Logins Dashboard
 toc: false
 ---
 
+
+
 # Logins Dashboard
 
+```html
+<h1 class="hero">Hero</h1>
+```
+
 ```js
-// 1 Load data
+
+// 1 LOADING DATA
 
 /* @app.get("/api/logins")
   School and district breakdown (does not have usertypes, totals them.)
@@ -40,12 +47,41 @@ const logins_usertype_breakdown = await FileAttachment("../data/logins_usertypes
 
 const logins_all_locations_summary = await FileAttachment("../data/logins_summary.json").json()
 
+///////////////////////////////
+
+  
+ const logins_district_level = logins_district_school_breakdown.filter((entry) => {
+    return entry.total_level === "DISTRICT";
+  })
+
+  display(logins_district_level);
+```
+<label for="districts">Choose a district:</label>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```js
+///////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////////////////
 // 2 Parse dates and filter for district-level only
 
 //Table 4: Logins
-const loginsDistrict = logins
+const loginsDistrict = logins_district_school_breakdown
   .filter(d => d.total_level === "DISTRICT")
   .map(d => ({
     ...d, // spread operator copies all original fields
@@ -80,9 +116,6 @@ const summarySorted = summary
   .map(([month, total]) => ({ month, total }))
   .sort((a, b) => a.month - b.month); // sorts by last to first month
 
-const summarySorted = summary
-  .map(month, total]) => ({ month, total })
-  .sort((a, b) => a.month - b.month);
  
 // Produces an array of objects like this
 //for convenient plotting
@@ -116,25 +149,54 @@ const districtNames = Array.from(new Set(loginsDistrict.map(d => d.locationName)
 
 
 ```
-  <style>
-    select.district-select {
-      background-color: #feededff;
-      border-color: blue;
-      color: white;
-      padding: 0.5em 1em;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    select.district-select:hover {
-      background-color: #3b5cb0ff; /* darker blue on hover */
-    }
-  </style>
+ 
 
   <select class="district-select">
     ${districtNames.map(name => `<option value="${name}">${name}</option>`).join("")}
   </select>
-```
 
+
+  <style>
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--sans-serif);
+  margin: 4rem 0 8rem;
+  text-wrap: balance;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  max-width: none;
+  font-size: 14vw;
+  font-weight: 900;
+  line-height: 1;
+  background: linear-gradient(30deg, var(--theme-foreground-focus), currentColor);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h2 {
+  margin: 0;
+  max-width: 34em;
+  font-size: 20px;
+  font-style: initial;
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--theme-foreground-muted);
+}
+
+@media (min-width: 640px) {
+  .hero h1 {
+    font-size: 90px;
+  }
+}
+
+</style>
+
+```
